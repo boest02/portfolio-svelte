@@ -11,8 +11,8 @@
                 {#if Array.isArray(exps[key])}                
                     {#each exps[key] as items}
                         <Heading title="{items['title']}" start="{items['start_date']}" end="{items['end_date']}" /> 
-                        <ul>
-                            {#if Array.isArray(items['responsibilities'])}
+                        {#if Array.isArray(items['responsibilities'])}
+                            <ul>                                
                                 {#each items['responsibilities'] as resp}
                                     {#if Array.isArray(resp)}
                                         <ul>
@@ -23,9 +23,9 @@
                                     {:else}
                                         <li>{resp}</li>
                                     {/if}
-                                {/each}
-                            {/if}
-                        </ul>
+                                {/each}                                
+                            </ul>
+                        {/if}
                     {/each}
                 {:else}
                     <h2>{exps[key]}</h2>
@@ -47,7 +47,7 @@
             }
 
             &>ul {
-                margin: 10px 45px;
+                margin: 10px 45px 20px;
 
                 &>ul {
                     margin: 0px 35px;

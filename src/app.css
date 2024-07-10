@@ -45,7 +45,7 @@ body {
   margin: auto;
   width: 95%;
   backdrop-filter: blur(3px);
-
+  
   .page-content {
     padding: 20px;
     margin: 20px auto;
@@ -53,6 +53,18 @@ body {
     box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
     opacity: .75;
     min-height: 300px;
+            
+   .block {
+      margin: 10px 0 20px;
+      
+      @media only screen and (max-width:480px) {
+        margin: 10px;  
+      }
+      
+      h2 {
+        font-weight: 600;
+      }
+    }
   }
 }
 

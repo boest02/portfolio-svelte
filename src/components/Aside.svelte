@@ -7,11 +7,17 @@
 <style lang="scss">
     .aside-wrapper {
         width: 95%;
+        max-width: 1500px;
+        min-width: 925px;
         margin: 20px auto;
         padding: 20px;
         border: 4px solid #000;
-        box-shadow: -16px 7px 2px 1px rgba(0, 0, 0, 0.2);
+        background-color: rgb(236, 231, 231);
         container-type: inline-size;
+        
+        @media only screen and (max-width:480px) {
+            min-width: unset;            
+        }
     }
 
     .layout-wrapper {

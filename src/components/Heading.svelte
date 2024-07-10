@@ -17,7 +17,7 @@
         display: flex;
         flex-direction: row;
         gap: 10px;
-        margin: 15px;
+        margin: 10px 15px;
 
         h3 {
             font-weight: 700;

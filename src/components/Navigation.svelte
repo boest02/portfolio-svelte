@@ -12,7 +12,7 @@
     </div>
 </nav>
 
-<style>
+<style lang="scss">
     .nav-bar {
         display: flex;
         align-items: center;
@@ -22,22 +22,28 @@
         color: var(--nav-font-color);
         font-weight: 600;
         box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.3);
+
+        .inner-wrapper {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            height: fit-content;
+
+            :global(a) {
+                text-decoration: none;
+                color: var(--nav-font-color);
+                border-bottom: 2.5px solid transparent;
+            }
+
+            :global(a:hover) {
+                border-bottom-color: var(--nav-font-color);
+            }
+        }
     }
 
-    .nav-bar .inner-wrapper {
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-        height: fit-content;
-    }
-
-    .nav-bar .inner-wrapper :global(a) {
-        text-decoration: none;
-        color: var(--nav-font-color);   
-        border-bottom: 2.5px solid transparent;     
-    }
-    
-    .nav-bar .inner-wrapper :global(a:hover) {
-        border-bottom-color: var(--nav-font-color);
+    @media only screen and (max-width:480px) {
+        .nav-bar {
+            border: 3px solid magenta;
+        }
     }
 </style>

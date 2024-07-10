@@ -3,20 +3,20 @@
     export let data = [];    
 </script>
 
-<fieldset class="education-wrapper block">
+<fieldset class="education-wrapper">
     <legend>
         <h2>Education:</h2>
     </legend>
     <div class="alignment-wrapper">
-        {#each data as edu, index}        
-            <section>
-                {#each Object.keys(edu) as key}
-                    <KeyValue key="{key}" value="{edu[key]}" />
-                {/each}
-            </section>
-            {#if index === 0}
-                <div class="vertical-rule"></div>
-            {/if}
+        {#each data as edu, index}
+        <section>
+            {#each Object.keys(edu) as key}
+            <KeyValue key="{key}" value="{edu[key]}" />
+            {/each}
+        </section>
+        {#if index === 0}
+        <div class="vertical-rule"></div>
+        {/if}
         {/each}
     </div>
 </fieldset>
@@ -25,7 +25,9 @@
     .education-wrapper {
         border: 5px double black;
         border-radius: 10px;
-        width: 90%;
+        width: 95%;
+        max-width: 1500px;
+        min-width: 925px;
         margin: 10px auto;
 
         legend {
@@ -48,18 +50,24 @@
                 margin: 10px 0 15px 0;
                 border: 2px solid #000;
             }
+
             section {
                 margin: 10px;
-            }            
-            
-            @media only screen and (max-width:480px) {
+            }
+
+        }
+
+        @media only screen and (max-width:480px) {
+            min-width: unset;
+
+            .alignment-wrapper {
                 flex-direction: column;
 
                 .vertical-rule {
                     margin: 10px auto;
                     height: 5px;
                     width: 90%;
-                }                
+                }
             }
         }
     }
