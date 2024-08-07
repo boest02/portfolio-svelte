@@ -1,4 +1,5 @@
 <script lang="ts">
+    import DateRange from './DateRange.svelte';
     export let title = '';
     export let start = '';
     export let end = '';
@@ -8,7 +9,10 @@
     <dt>
         <h3>{title}</h3>
     </dt>
-    <dd>({start} - {end})</dd>
+    <dd>
+        <DateRange {start} {end} />   
+    </dd>
+     
 </dl>
 
 <style lang="scss">

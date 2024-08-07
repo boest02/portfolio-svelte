@@ -10,23 +10,38 @@
 </dl>
 
 <style lang="scss">
-    dl {
+    :global(.key-value) {
         display: flex;
+        align-items: end;
         gap: 5px;
         text-transform: capitalize;
 
-        dt {
-            text-decoration: underline;
+        :global(dt) {
+            font-weight: 800;
         }
 
-        dd {
-            font-style: italic;
+        :global(dd) {
 
             &::before {
-                content: ' -';
+                content: ' :';
                 padding-right: 5px;
             }
         }
+        
+        :global(dd > a) {
+            color: blue;
+            text-decoration: wavy;
+        }
+        
+        :global(dd > a::after) {
+            content: ' \261E';
+            font-size: 125%;
+        }
+        
+        :global(dd > a:hover) {
+            color: red;
+        }
+        
         &.row {
             display: inline-block;
             text-indent: -10px;
@@ -38,11 +53,11 @@
     }
 
     @media only screen and (max-width:480px) {
-        dl {
+        :global(dl) {
             margin: 10px;
             flex-direction: column;
 
-            dd {
+            :global(dd) {
                 margin-left: 10px;
             }
         }

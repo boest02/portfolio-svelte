@@ -1,37 +1,37 @@
 <script lang="ts">
     import Heading from './Heading.svelte';
+    import List from './List.svelte';
     export let data = [];
+    console.log("work: ", data);
+    
+    let parsedExperience = {};
+  
+    const parseExperience = (exp) => {
+        data.forEach(exp => {
+            parsedExperience[exp.name] === undefined && (parsedExperience[exp.name] = []);
+            parsedExperience[exp.name].push(exp);
+        });
+    };
+    parseExperience(data);
+    console.log("parsedExperience: ", parsedExperience);
 </script>
 
 <section class="experience-wrapper block">
     <h2>Experience:</h2>
-    {#each data as exps}
-        <section>
-            {#each Object.keys(exps) as key}            
-                {#if Array.isArray(exps[key])}                
-                    {#each exps[key] as items}
-                        <Heading title="{items['title']}" start="{items['start_date']}" end="{items['end_date']}" /> 
-                        {#if Array.isArray(items['responsibilities'])}
-                            <ul>                                
-                                {#each items['responsibilities'] as resp}
-                                    {#if Array.isArray(resp)}
-                                        <ul>
-                                            {#each resp as item}
-                                                <li>{item}</li>
-                                            {/each}
-                                        </ul>
-                                    {:else}
-                                        <li>{resp}</li>
-                                    {/if}
-                                {/each}                                
-                            </ul>
-                        {/if}
-                    {/each}
-                {:else}
-                    <h2>{exps[key]}</h2>
-                {/if}
-            {/each}
-        </section>
+    {#each Object.keys(parsedExperience) as key}       
+        <section> 
+            <h2>{key}</h2>
+            <p class="company-description">
+                {parsedExperience[key][0].summary}
+                <a href="{parsedExperience[key][0].url}" target="_blank">link</a>
+            </p>
+            {#each parsedExperience[key] as exp}
+                <Heading title="{exp.position}" start="{exp.startDate}" end="{exp.endDate}" />
+                <div class="highlights-wrapper">
+                    <List list="{exp.highlights}" />
+                </div>                
+            {/each}   
+        </section>    
     {/each}
 </section>
 
@@ -45,13 +45,19 @@
             h2 {
                 font-weight: 700;
             }
-
-            &>ul {
-                margin: 10px 45px 20px;
-
-                &>ul {
-                    margin: 0px 35px;
+            
+            .company-description {
+                margin: 10px;
+                font-size: 90%;
+                
+                a {
+                    margin: 0 5px;
+                    font-style: italic;
                 }
+            }   
+            
+            .highlights-wrapper {
+                margin: 5px 45px 10px;
             }
         }
     }

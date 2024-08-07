@@ -1,0 +1,298 @@
+{
+    "basics": {
+        "name": "Stephen Boettcher",
+        "label": "Senior Software Developer",
+        "image": "https://media.licdn.com/dms/image/C5603AQHGRmNOfmzG1Q/profile-displayphoto-shrink_800_800/0/1516321122761?e=1728518400&v=beta&t=QxyDQTBVH7gWAcoJQJ4NyInyJnpYOD3ZRJaK4BrHUyk",
+        "email": "boest02@gmail.com",
+        "phone": "516-220-4640",
+        "url": "https://steveb-portfolio.netlify.app/",
+        "summary": "Experienced software development professional with a robust 25-year track record spanning the entire development lifecycle, including planning, designing, building, testing, and deploying. In recent positions, I've excelled in crafting accessible and responsive web applications designed for optimal user engagement. Leveraging expertise in HTML, CSS, and various JavaScript frameworks, I contribute to the creation of dynamic and user-friendly digital solutions.",
+        "location": {
+            "address": "109 Aspen Street",
+            "postalCode": "NY 11001",
+            "city": "Floral Park",
+            "countryCode": "US",
+            "region": "New York"
+        },
+        "profiles": [
+            {
+                "network": "GitHub",
+                "username": "boest02",
+                "url": "https://github.com/boest02"
+            }
+        ]
+    },
+    "work": [
+        {
+            "name": "PUBLISHERS CLEARING HOUSE",
+            "position": "Lead Front-End Developer/Engineer",
+            "url": "https://www.pch.com/",
+            "startDate": "2019-08-01",
+            "endDate": "",
+            "summary": "Description…",
+            "highlights": [
+                "Led the development of a comprehensive new system for configurable user experiences, that could be themed and reused for onboarding and retaining users.",
+                "Creation of multiple new, reusable and customizable web components tailored for the site.",
+                "Implemented a new responsive universal navigation system for enhanced user experience.",
+                "Designed and integrated a dynamic hero section and image carousel to captivate user attention.",
+                "Developed info tips to provide users with relevant and contextual information.",
+                "Successfully incorporated ad placements and seamlessly integrated third-party components.",
+                "Configurability achieved through integration with a CMS (Content Management System).",
+                "Ensured the site is accessible to all users, emphasizing design and functionality.",
+                "Engaged in cross-functional collaboration with design teams using Figma.",
+                "Worked closely with stakeholders to align development with business goals.",
+                "Integrated configurable animations, actions, and analytic capturing functionalities for a dynamic user experience.",
+                "Played a pivotal role in rescuing and kick starting other projects by mentoring junior team members."
+            ]
+        },
+        {
+            "name": "PUBLISHERS CLEARING HOUSE",
+            "position": "Front-End Developer",
+            "url": "https://www.pch.com/",
+            "startDate": "2018-08-01",
+            "endDate": "2019-07-30",
+            "summary": "Description…",
+            "highlights": [
+                "Created a customizable targeted communication module deployed on the site, enabling the business to deliver personalized messages to users.",
+                "Elevated user engagement within a gaming environment through the implementation of innovative features.",
+                "Successfully created a user-centric site, providing an interactive platform for users to play and win prizes.",
+                "Engineered a new website that repurposed data from an external source, dynamically presenting articles based on configurable categories set within an admin interface.",
+                "Engaged in collaborative efforts with developers, QA, and creative teams within an agile project framework.",
+                "Contributed to the sizing, implementation, and rigorous testing of stories, ensuring seamless integration of features into our projects."
+            ]
+        },
+        {
+            "name": "PUBLISHERS CLEARING HOUSE",
+            "position": "Senior Business Analyst",
+            "url": "https://www.pch.com/",
+            "startDate": "2015-12-01",
+            "endDate": "2018-07-30",
+            "summary": "Description…",
+            "highlights": [
+                "Designed and spearheaded the implementation of an internal Web-based Contest Tracking System, focusing on: Prize tracking, Prize Drawing system, Winner fulfillment.",
+                "Captured high-level requirements from business stakeholders, translating them into comprehensive user and implementation stories for efficient feature delivery.",
+                "Acted on requirements to lead discussions with legacy systems where integration was required.",
+                "Formulated plans for implementing and delivering solutions, working closely with DB, Dev and QA teams.",
+                "Created mockup and PowerPoint presentations to present possible solution to business.",
+                "Groomed and pointed stories, modifying the approach as needed to fit sprint timeframe, while still providing business value.",
+                "Actively coded smaller features when time permitted (.NET, Razor, HTML, JavaScript and CSS).",
+                "Review QA test plans to ensure features are tested to meet specifications.",
+                "Assisted in mapping out project Roadmap to meet business goals for the upcoming year."
+            ]
+        },
+        {
+            "name": "PUBLISHERS CLEARING HOUSE",
+            "position": "Business Analyst / Scrum Master",
+            "url": "https://www.pch.com/",
+            "startDate": "2013-11-01",
+            "endDate": "2015-11-30",
+            "summary": "Description…",
+            "highlights": [
+                "Planned and helped deliver multiple cross site features as well as multiple new websites.",
+                "Worked with internal creative and business teams to design the look and function of Website features.",
+                "Followed up with the business team to work out the functionality of the Website features, including Admin configuration options and End User requirements.",
+                "Led discussions with 3rd party vendors to gain details on how to integrate their content on PCH.com sites.",
+                "Acted as Scrum Master on some projects, setting sprint goals, scheduling code freeze and release dates, etc."
+            ]
+        },
+        {
+            "name": "COMPUTER ASSOCIATES",
+            "position": "Director: ARCserve Software Development",
+            "url": "https://en.wikipedia.org/wiki/CA_Technologies",
+            "startDate": "2006-09-01",
+            "endDate": "2013-05-30",
+            "summary": "Description…",
+            "highlights": [
+                "Managed a team of 6 developers based at home office as well as dotted line reports based in Beijing, China and Hyderabad, India.",
+                "Worked closely with Product Management, Support managers and QA managers to evaluate customer enhancement requests for inclusion in our backlog for future releases.",
+                "Architect for multiple solutions that were designed to satisfy user requirements or to support new technologies. With the output being artifacts for the development process including design documents and work flow diagrams.",
+                "Oversaw the implementation of new features, delivering the design to developers and monitoring the progress through each stage of the development process.",
+                "Coordinated efforts with multiple teams during the development cycle. (i.e. Documentation, Build, QA, Setup, Localization and Support).",
+                "Created training literature as well as deliver training presentations to field and support technicians, in an effort to prepare them for implementation and support of the upcoming release.",
+                "Highlights from completed projects include: Linux/Unix Data Mover, Moving NDMP(NAS filer) backups onto ARCserve backup server as well as integration with Amazon S3 cloud as a backup destination."
+            ]
+        },
+        {
+            "name": "COMPUTER ASSOCIATES",
+            "position": "Senior Manager: ARCserve Device Development",
+            "url": "https://en.wikipedia.org/wiki/CA_Technologies",
+            "startDate": "2005-05-31",
+            "endDate": "2006-09-01",
+            "summary": "Description…",
+            "highlights": []
+        },
+        {
+            "name": "COMPUTER ASSOCIATES",
+            "position": "Senior Software Engineer",
+            "url": "https://en.wikipedia.org/wiki/CA_Technologies",
+            "startDate": "2003-05-01",
+            "endDate": "2005-04-30",
+            "summary": "Description…",
+            "highlights": []
+        },
+        {
+            "name": "COMPUTER ASSOCIATES",
+            "position": "Software Engineer",
+            "url": "https://en.wikipedia.org/wiki/CA_Technologies",
+            "startDate": "1999-12-01",
+            "endDate": "2003-05-31",
+            "summary": "Description…",
+            "highlights": []
+        },
+        {
+            "name": "COMPUTER ASSOCIATES",
+            "position": "Maintenance Software Engineer",
+            "url": "https://en.wikipedia.org/wiki/CA_Technologies",
+            "startDate": "1999-05-01",
+            "endDate": "1999-12-31",
+            "summary": "Description…",
+            "highlights": []
+        },
+        {
+            "name": "COMPUTER ASSOCIATES",
+            "position": "Senior Technical Support Representative",
+            "url": "https://en.wikipedia.org/wiki/CA_Technologies",
+            "startDate": "1997-04-01",
+            "endDate": "1999-04-30",
+            "summary": "Description…",
+            "highlights": []
+        },
+        {
+            "name": "COMPUTER ASSOCIATES",
+            "position": "Technical Support Representative",
+            "url": "https://en.wikipedia.org/wiki/CA_Technologies",
+            "startDate": "1996-02-01",
+            "endDate": "1997-03-31",
+            "summary": "Description…",
+            "highlights": []
+        }
+    ],
+    "education": [
+        {
+            "institution": "Iona College",
+            "url": "https://www.iona.edu/",
+            "area": "Computer Science",
+            "studyType": "Bachelor of Science",
+            "startDate": "1989-09-01",
+            "endDate": "1991-06-01"
+        },
+        {
+            "institution": "St. John's University",
+            "url": "https://www.stjohns.edu/",
+            "area": "Computer Science",
+            "studyType": "Bachelor of Science",
+            "startDate": "1987-09-01",
+            "endDate": "1989-06-01"
+        }
+    ],
+    "skills": [
+        {
+            "name": "Languages",
+            "level": "Expert",
+            "keywords": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Python",
+                "Typescript"
+            ]
+        },
+        {
+            "name": "Front-End",
+            "level": "Expert",
+            "keywords": [
+                "Svelte",
+                "React",
+                "Vue.js",
+                "Angular",
+                "SASS",
+                "Tailwind CSS"
+            ]
+        },
+        {
+            "name": "Back-End",
+            "level": "Advanced",
+            "keywords": [
+                "Node.js",
+                "Express",
+                "PHP",
+                "Laravel",
+                ".NET"
+            ]
+        },
+        {
+            "name": "Other Tools",
+            "level": "Advanced",
+            "keywords": [
+                "Vite",
+                "Webpack",
+                "Jest",
+                "Mocha",
+                "Chai",
+                "Figma",
+                "Photoshop",
+                "LucidChart"                
+            ]
+        },
+        {
+            "name": "Version Control",
+            "level": "Expert",
+            "keywords": [
+                "Git",
+                "GitHub",
+                "GitLab"
+            ]
+        },
+        {
+            "name": "DevOps",
+            "level": "Advanced",
+            "keywords": [
+                "Docker",
+                "CI/CD",
+                "GitHub Actions",
+                "Kubernetes"                
+            ]
+        },
+        {
+            "name": "Web Performance Optimization",
+            "level": "Advanced",
+            "keywords": [
+                "Lighthouse",
+                "Web Vitals",
+                "Caching",
+                "Lazy Loading"
+            ]
+        },
+        {
+            "name": "Web Accessibility",
+            "level": "Advanced",
+            "keywords": [                
+                "ARIA",
+                "WCAG",
+                "Screen Readers",
+                "Keyboard Navigation"
+            ]
+        },        
+        {
+            "name": "Testing",
+            "level": "Advanced",
+            "keywords": [
+                "Jest",
+                "Mocha",
+                "Chai"
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "name": "Project",
+            "startDate": "2019-01-01",
+            "endDate": "2021-01-01",
+            "description": "Description...",
+            "highlights": [
+                "Won award at AIHacks 2016"
+            ],
+            "url": "https://project.com/"
+        }
+    ]
+}

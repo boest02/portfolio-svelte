@@ -1,5 +1,6 @@
 <script lang="ts">
     import KeyValue from './KeyValue.svelte';
+    import DateRange from './DateRange.svelte';
     export let data = [];    
 </script>
 
@@ -10,9 +11,15 @@
     <div class="alignment-wrapper">
         {#each data as edu, index}
         <section>
-            {#each Object.keys(edu) as key}
-            <KeyValue key="{key}" value="{edu[key]}" />
-            {/each}
+            <KeyValue key="School" value='<a href="{edu.url}" target="_blank" >{edu.institution}</a>' />
+            <KeyValue key="Degree" value="{edu['studyType'] +  ' ~ ' + edu['area']}" />         
+            <dl class="key-value">
+                <dt>Dates</dt>
+                <dd>
+                    <DateRange start="{edu['startDate']}" end="{edu['endDate']}" />  
+                </dd>
+            </dl>
+            
         </section>
         {#if index === 0}
         <div class="vertical-rule"></div>
@@ -54,10 +61,15 @@
             section {
                 margin: 10px;
             }
+            
+            a {
+                float: right;
+                margin-right: 40px;
+            }
 
         }
 
-        @media only screen and (max-width:480px) {
+        @media only screen and (max-width:800px) {
             min-width: unset;
 
             .alignment-wrapper {

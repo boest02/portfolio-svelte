@@ -44,6 +44,7 @@ body {
 .main-content {
   margin: auto;
   width: 95%;
+  max-width: 1500px;
   backdrop-filter: blur(3px);
   
   .page-content {

@@ -1,61 +1,63 @@
 <script lang="ts">
+    import List from './List.svelte';
     export let data = [];
     console.log(data);
 </script>
 
 <section class="skills-wrapper block">
-    <h2>Skills</h2>
-    {#each Object.keys(data) as key}
-        <section>
-            <h3>{key}</h3>
-            <ul>
-                {#each data[key] as skill}
-                    <li>{skill}</li>
-                {/each}                
-            </ul>
-        </section>
+    <h2>Skills</h2>    
+    {#each data as skill}
+        <div class="skill">
+            <h3>{skill.name}</h3>
+            <p>Level: {skill.level}</p>
+            <div class="key-words">
+                <List list="{skill.keywords}" />  
+            </div>                  
+        </div>
     {/each}    
 </section>
 
 <style lang="scss">
     .skills-wrapper {
-        display: grid;
-        max-width: 500px;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 40px auto;
-        grid-template-areas: "title title"
-                             "list1 list2";
-        text-transform: capitalize;
-        border: 1px solid #000;
-        &>*{
-            border: 1px solid #000;
-        }        
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        position: relative;
+        padding-left: 60px;
+        
         h2 {
-            grid-area: title;            
-            width: 100%;
-            height: 100%;    
-            text-align: center;
-            padding-top: 5px;   
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            writing-mode: vertical-rl; 
+            text-orientation: upright;
+            text-transform: uppercase;
         }
-        section {
-            padding: 10px;
-            min-width: 150px;
-            h3 {
-                margin-bottom: 5px;
-                text-transform: capitalize;
-                font-weight: 700;
-                text-align: left;                   
-            }
-
-            ul {
-                margin: 10px auto;
-                list-style-type: '\2713';
-
-                li {
-                    padding-left: 15px;
-                    margin-left: 20px;
-                }
-            }
-        }
+       .skill {
+           padding: 20px 20px 30px;
+           width: 30%;
+           max-width: 350px;
+           min-width: 275px;
+           border: 1px solid #000;
+           position: relative;
+           
+           h3 {
+               font-weight: 600;
+               font-style: italic;
+           }
+           
+           p {
+               font-size: 85%;
+               position: absolute;
+               bottom: 10px;
+               right: 10px;
+           }
+           
+           .key-words {
+               margin-left: 30px;
+           }
+       }
     }
 </style>

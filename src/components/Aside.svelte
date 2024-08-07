@@ -7,8 +7,7 @@
 <style lang="scss">
     .aside-wrapper {
         width: 95%;
-        max-width: 1500px;
-        min-width: 925px;
+        min-width: 95%;
         margin: 20px auto;
         padding: 20px;
         border: 4px solid #000;
