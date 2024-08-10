@@ -14,7 +14,7 @@
                 <li>{basics.location.city}, {basics.location.region}</li>
             </ul>
         </div>
-    </section>    
+    </section>
 </article>
 
 <style lang="scss">
@@ -23,7 +23,7 @@
         justify-content: start;
         align-items: center;
         gap: 30px;
-                
+
         .my-photo {
             width: 125px;
             height: 150px;
@@ -55,43 +55,45 @@
                 }
             }
         }
-        
-        
+
+
         &.home-look {
-            margin-bottom: 25px;                                           
-            .my-photo{
-                border-radius: .4rem;;
+            margin-bottom: 25px;
+
+            .my-photo {
+                border-radius: .4rem;
+                ;
             }
-            
+
             section {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 gap: 10px;
-                
+
                 h1 {
                     text-decoration: underline;
                 }
-                
+
                 ul {
                     display: block;
                     border: 1px solid #000;
                     padding: 15px 30px;
                     box-shadow: 5px 5px 15px 2px rgba(0, 0, 0, 0.4);
+
                     li::after {
                         content: '';
                     }
                 }
+            }
+        }
+
+        @media only screen and (max-width:480px) {
+            &.home-look {
+                transform: scale(.75);
                 
-                @media only screen and (max-width:480px) {                                        
-                    h1 {
-                        font-size: 1rem;
-                    }
-                    
-                    ul {
-                        font-size: 80%;
-                        padding: 10px 15px 10px 20px;
-                    }
+                h1 {
+                    font-size: 1.2rem;
                 }
             }
         }
