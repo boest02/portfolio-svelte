@@ -5,6 +5,7 @@
     import Aside from "./Aside.svelte";
     import Skills from "./Skills.svelte";
     import Strengths from "./Strengths.svelte";
+    import Summary from "./Summary.svelte";
 
     let fetchJson = fetch('my_resume_2.json').then(res => res.json());
 </script>
@@ -19,6 +20,7 @@
         <h2>Loading...</h2>
     {:then resume}
         <Outline basics="{resume.basics}" />
+        <Summary summary="{resume.basics.summary}" />
         <Experience data={resume.work} />
         <Education data={resume.education} />
         <Aside>

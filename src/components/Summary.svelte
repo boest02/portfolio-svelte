@@ -1,10 +1,11 @@
 <script lang="ts">
     export let summary = '';
+    export let title = 'Summary';
 </script>
 
 <section class="summary-wrapper block">
-    <h2>Summary:</h2>
-    <p>{summary}</p>
+    <h2>{title}:</h2>
+    <p>{@html summary}</p>
 </section>
 
 <style>

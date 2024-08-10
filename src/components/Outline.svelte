@@ -1,9 +1,9 @@
 <script lang="ts">
-    import Summary from "./Summary.svelte";
     export let basics = {};
+    export let type = '';
 </script>
 
-<article class="outline-wrapper">
+<article class="outline-wrapper" class:home-look="{type === 'home' }">
     <img class="my-photo" src="{basics.image}" alt="me">
     <section>
         <h1>{basics.name}</h1>
@@ -16,7 +16,6 @@
         </div>
     </section>    
 </article>
-<Summary summary="{basics.summary}" />
 
 <style lang="scss">
     .outline-wrapper {
@@ -24,7 +23,7 @@
         justify-content: start;
         align-items: center;
         gap: 30px;
-        
+                
         .my-photo {
             width: 125px;
             height: 150px;
@@ -52,6 +51,46 @@
                     &::after {
                         padding: 0 10px;
                         content: '\203B';
+                    }
+                }
+            }
+        }
+        
+        
+        &.home-look {
+            margin-bottom: 25px;                                           
+            .my-photo{
+                border-radius: .4rem;;
+            }
+            
+            section {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                
+                h1 {
+                    text-decoration: underline;
+                }
+                
+                ul {
+                    display: block;
+                    border: 1px solid #000;
+                    padding: 15px 30px;
+                    box-shadow: 5px 5px 15px 2px rgba(0, 0, 0, 0.4);
+                    li::after {
+                        content: '';
+                    }
+                }
+                
+                @media only screen and (max-width:480px) {                                        
+                    h1 {
+                        font-size: 1rem;
+                    }
+                    
+                    ul {
+                        font-size: 80%;
+                        padding: 10px 15px 10px 20px;
                     }
                 }
             }
