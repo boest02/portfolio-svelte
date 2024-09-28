@@ -19,13 +19,11 @@
     {#await fetchJson}
         <h2>Loading...</h2>
     {:then resume}
-        <Outline basics="{resume.basics}" />
+        <Outline type="resume" basics="{resume.basics}" />
         <Summary summary="{resume.basics.summary}" />
+        <Skills data={resume.skills} />
         <Experience data={resume.work} />
         <Education data={resume.education} />
-        <Aside>
-            <Skills data={resume.skills} />
-        </Aside>
     {:catch error}
     error
     {/await}
@@ -46,7 +44,7 @@
             position: absolute;
             right: 10px;
             top: 15px;
-            font-style: italic;            
+            font-style: italic;
 
             &::before,
             &::after {

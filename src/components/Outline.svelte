@@ -3,8 +3,12 @@
     export let type = '';
 </script>
 
-<article class="outline-wrapper" class:home-look="{type === 'home' }">
-    <img class="my-photo" src="{basics.image}" alt="me">
+<article class="outline-wrapper"
+         class:resume-look="{type === 'resume' }"
+         class:home-look="{type === 'home' }">
+    {#if !(type === 'resume')}
+        <img class="my-photo" src="{basics.image}" alt="me">
+    {/if}
     <section>
         <h1>{basics.name}</h1>
         <div class="info-section">
@@ -88,10 +92,19 @@
             }
         }
 
+        &.resume-look {
+            display: grid;
+            place-content: center;
+
+            h1 {
+              text-align: center;
+            }
+        }
+
         @media only screen and (max-width:480px) {
             &.home-look {
                 transform: scale(.75);
-                
+
                 h1 {
                     font-size: 1.2rem;
                 }

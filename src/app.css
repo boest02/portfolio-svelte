@@ -3,6 +3,7 @@
   --site-font-color: #000;
   --nav-background-color: #520000;
   --nav-font-color: #fff;
+  --nav-height: 80px;
 
   background-color: var(--site-background-color);
   color: var(--site-font-color);
@@ -18,6 +19,10 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  @media only screen and (max-width:480px) {
+    --nav-height: 60px;
+  }
 }
 
 
@@ -46,7 +51,7 @@ body {
   width: 95%;
   max-width: 1500px;
   backdrop-filter: blur(3px);
-  
+
   .page-content {
     padding: 20px;
     margin: 20px auto;
@@ -54,18 +59,28 @@ body {
     box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
     opacity: .75;
     min-height: 300px;
-            
+
    .block {
       margin: 10px 0 20px;
-      
+
       @media only screen and (max-width:480px) {
-        margin: 10px;  
+        margin: 10px;
       }
-      
-      h2 {
+
+      & > h2 {
         font-weight: 600;
+        border-bottom: 2px solid gray;
+        margin: 10px 0;
       }
     }
+  }
+
+  @media only screen and (max-width:480px) {
+      width: 100%;
+
+      .page-content {
+        padding: 10px;
+      }
   }
 }
 

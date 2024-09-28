@@ -9,9 +9,11 @@
     import Profiles from "./Profiles.svelte";
 
     let fetchJson = fetch('my_resume_2.json').then(res => res.json());
-    
-    let summary = `<p>Hi, I am a full stack developer with over 25 years of experience in the web development industry. I have a strong background in front-end development, with expertise in HTML, CSS, and JavaScript. I have also worked on back-end development, including PHP, Python, and Node.js. I am proficient in using various frameworks such as Svelte, Vue.js, React and Angular. I am always looking for new challenges and opportunities to grow my skills and knowledge.</p> <p>In a previous life, I was a C developer working on Windows for a backup software, with my focus on moving data and controlling devices such as tape drives and tape libraries.  We worked with these through a SCSI interface and wrote code to send SCSI commands to tape drives to position to locations and then either read or write data.  We also used the interface to discover tape libraries and move tapes into and out of drives in the tape library.</p>`;
-    
+
+    let summary = `<p>Hello! I’m a seasoned front-end web developer with over 25 years of experience in the software industry. My journey in technology began with a strong foundation in C programming, where I worked on backup software for Windows, focusing on data movement and device control using SCSI interfaces. This early experience honed my problem-solving skills and attention to detail, which have been invaluable in my transition to web development.</p>
+    <p>Today, I specialize in front-end development, with deep expertise in HTML, CSS, and JavaScript. Over the years, I've mastered modern frameworks like Svelte, Vue.js, React, and Angular, allowing me to craft dynamic, responsive, and user-friendly web applications. My background also includes experience in back-end development, particularly with PHP, Python, and Node.js, giving me a well-rounded skill set that bridges both the client and server sides of web development.</p>
+    <p>I’m always eager to take on new challenges, constantly seeking opportunities to expand my skills and stay ahead of the curve in the ever-evolving world of technology.</p>`;
+
 </script>
 
 <svelte:head>
@@ -25,10 +27,10 @@
         <div class="head-section">
             <Outline basics="{resume.basics}" type="home" />
             <Profiles profiles={resume.basics.profiles} />
-        </div>        
-        <Summary {summary} title="About Me" />        
-        <Skills data={resume.skills} /> 
-        <Experience data={resume.work} />       
+        </div>
+        <Summary {summary} title="About Me" />
+        <Skills data={resume.skills} />
+        <Experience data={resume.work} includeNonHighlights="true"/>
     {:catch error}
     error
     {/await}
@@ -37,22 +39,22 @@
 <style lang="scss">
     .home-wrapper {
         margin-top: 40px;
-        
+
         & > :global([class*="wrapper "]) {
-            margin-bottom: 40px;
+            margin: 25px 40px;
         }
-        
+
         .head-section {
             display: flex;
             flex-wrap: wrap;
             align-items: center;
             justify-content: center;
             gap: 20px;
-            
+
             :global(.outline-wrapper) {
                 flex-basis: 450px;
             }
-            
+
             :global(.profiles-wrapper) {
                 flex-basis: 50%;
             }
