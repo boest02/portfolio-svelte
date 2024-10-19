@@ -24,9 +24,9 @@
     }
     .skills-layout {
         display: flex;
-        justify-content: space-between;
         flex-direction: row;
         flex-wrap: wrap;
+        gap: 15px;
         margin: 10px;
 
         @media only screen and (max-width:600px) {
@@ -38,6 +38,7 @@
             flex-direction: column;
             position: relative;
             margin-bottom: 10px;
+            width: 18%;
 
             h3 {
                 font-weight: 600;

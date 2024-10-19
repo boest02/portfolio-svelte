@@ -6,7 +6,7 @@
         "email": "boest02@gmail.com",
         "phone": "516-220-4640",
         "url": "https://steveb-portfolio.netlify.app/",
-        "summary": "Software development professional with over 25 years of experience across the full development lifecycle. Specializing in building accessible, responsive web applications, leveraging expertise in HTML, CSS, and modern JavaScript frameworks to deliver dynamic, user-friendly solutions that prioritize both user experience and business goals.",
+        "summary": "Dynamic software development professional with over 25 years of experience across the full development lifecycle. Specializing in creating accessible and responsive web applications, I leverage deep expertise in HTML, CSS, and modern JavaScript frameworks to deliver innovative, user-centric solutions. Committed to optimizing user experience while aligning with strategic business objectives, I have successfully led complex redesigns, enhanced user engagement, and implemented best practices in accessibility and performance. A proven collaborator and mentor, I thrive in cross-functional teams to drive project success and foster growth.",
         "location": {
             "city": "Floral Park",
             "countryCode": "US",
@@ -42,13 +42,13 @@
             "endDate": "",
             "summary": "Description…",
             "highlights": [
-                "Spearheaded the development of a configurable system for reusable, themed user experiences.",
-                "Engineered reusable web components and a responsive universal navigation system to enhance UX.",
-                "Conceptualized and integrated dynamic hero sections, carousels, and info tips for increased engagement.",
-                "Orchestrated the seamless integration of ad placements, third-party components, and CMS functionality.",
-                "Championed accessibility compliance, optimizing design and functionality for all users.",
-                "Collaborated with cross-functional teams via Figma and synchronized development with business objectives.",
-                "Mentored junior developers and revitalized stalled projects to drive successful outcomes."
+                "Led the comprehensive redesign of the PCH Weekly Prize website, achieving a 20% increase in organic traffic and enhancing user engagement.",
+                "Spearheaded the development of a configurable system for reusable, themed user experiences, resulting in improved user retention and satisfaction.",
+                "Engineered a responsive site navigation system for all PCH properties, ensuring consistency and usability across platforms, ultimately enhancing the user journey.",
+                "Designed a reusable info tip tool for dynamic deployment across our sites, providing users with additional insights about PCH products and services on both mobile and desktop devices.",
+                "Orchestrated seamless integration of ad placements, third-party components, and CMS functionality, streamlining content management processes.",
+                "Championed accessibility compliance, optimizing design and functionality to ensure an inclusive experience for all users.",
+                "Mentored junior developers and revitalized stalled projects, fostering team growth and delivering successful outcomes on key initiatives."
             ]
         },
         {
@@ -79,9 +79,7 @@
                 "Captured high-level requirements from stakeholders, translating them into detailed user stories for efficient feature delivery.",
                 "Facilitated integration discussions with legacy systems based on requirements, ensuring seamless system interoperability.",
                 "Formulated and executed project plans for solution delivery, collaborating closely with database, development, and QA teams.",
-                "Created mockups and PowerPoint presentations to effectively communicate proposed solutions to the business.",
-                "Groomed and refined stories to align with sprint timelines while maintaining business value.",
-                "Contributed to the project roadmap planning to align with the company’s annual goals."
+                "Created mockups and PowerPoint presentations to effectively communicate proposed solutions to the business."
             ]
         },
         {
@@ -188,32 +186,42 @@
     ],
     "skills": [
         {
-            "name": "Languages",
+            "name": "Front-End Technologies",
             "level": "Expert",
             "keywords": [
-                "HTML",
-                "CSS",
+                "HTML5",
+                "CSS3",
                 "JavaScript",
-                "Python"
+                "Laravel Blade",
+                "Typescript"
             ]
         },
         {
-            "name": "Front-End",
+            "name": "CSS Frameworks & Preprocessors",
             "level": "Expert",
             "keywords": [
-                "Svelte",
-                "Vue.js",
                 "SASS",
+                "LESS",
                 "Tailwind CSS"
             ]
         },
         {
-            "name": "Back-End",
+            "name": "Methodologies & Best Practices",
             "level": "Advanced",
             "keywords": [
-                "Node.js",
-                "PHP",
-                "Laravel"
+                "Agile",
+                "Scrum",
+                "Responsive Design",
+                "Accessibility (a11y)"
+            ]
+        },
+        {
+            "name": "Frameworks & Libraries",
+            "level": "Advanced",
+            "keywords": [
+                "Svelte",
+                "Vue.js",
+                "Lit"
             ]
         },
         {
@@ -221,7 +229,9 @@
             "level": "Advanced",
             "keywords": [
                 "Vite",
-                "Webpack"
+                "Webpack",
+                "Rollup",
+                "ESLint"
             ]
         },
         {
@@ -234,20 +244,23 @@
             ]
         },
         {
-            "name": "DevOps",
-            "level": "Advanced",
-            "keywords": [
-                "Docker",
-                "CI/CD"
-            ]
-        },
-        {
             "name": "Testing",
             "level": "Advanced",
             "keywords": [
                 "Jest",
                 "Mocha",
-                "Chai"
+                "Chai",
+                "Vitest"
+            ]
+        },
+        {
+            "name": "Other Tools",
+            "level": "Advanced",
+            "keywords": [
+                "Storybook",
+                "Figma",
+                "Lucidchart",
+                "Docker"
             ]
         }
     ],

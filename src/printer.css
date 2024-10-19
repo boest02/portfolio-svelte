@@ -20,7 +20,7 @@
             padding: 0;
 
             .page-content {
-                padding: 20px 40px !important;
+                padding: 20px 15px !important;
                 margin: 0 auto;
                 box-shadow: unset;
                 opacity: 1;
@@ -29,8 +29,16 @@
                     display: none;
                 }
 
+                li {
+                    font-size: 90%;
+                }
+
                 .company-link {
                     display: none;
+                }
+
+                .skills-wrapper {
+                    font-size: 80%;
                 }
             }
         }
