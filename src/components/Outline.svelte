@@ -7,7 +7,7 @@
          class:resume-look="{type === 'resume' }"
          class:home-look="{type === 'home' }">
     {#if !(type === 'resume')}
-        <img class="my-photo" src="{basics.image}" alt="me">
+        <img class="my-photo" src="/src/images/Me.JPG" alt="me">
     {/if}
     <section>
         <h1>{basics.name}</h1>
