@@ -13,9 +13,9 @@
         <h1>{basics.name}</h1>
         <div class="info-section">
             <ul>
-                <li><a href="mailto:{basics.email}">{basics.email}</a></li>
-                <li>{basics.phone}</li>
                 <li>{basics.location.city}, {basics.location.region}</li>
+                <li>{basics.phone}</li>
+                <li><a href="mailto:{basics.email}">{basics.email}</a></li>
             </ul>
         </div>
     </section>
@@ -29,86 +29,40 @@
         gap: 30px;
 
         .my-photo {
-            width: 125px;
-            height: 150px;
-            border-radius: 45%;
+            width: 120px;
+            height: 125px;
             object-fit: cover;
+            object-position: center 65%;
+            border-radius: 45%;
             box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
         }
 
         section {
+            min-width: 350px;
+            margin-inline: 0 10px;
+            margin-block: 0 10px;
             h1 {
                 font-size: 1.5rem;
                 font-weight: 700;
+                font-family: 'Courier New', Courier, monospace;
             }
 
             ul {
                 list-style: none;
                 display: flex;
-                flex-wrap: wrap;
+                flex-direction: column;
 
                 li {
                     a {
                         color: blue;
                     }
-
-                    &::after {
-                        padding: 0 10px;
-                        content: '\203B';
-                    }
                 }
             }
         }
 
-
-        &.home-look {
-            margin-bottom: 25px;
-
-            .my-photo {
-                border-radius: .4rem;
-                ;
-            }
-
-            section {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 10px;
-
-                h1 {
-                    text-decoration: underline;
-                }
-
-                ul {
-                    display: block;
-                    border: 1px solid #000;
-                    padding: 15px 30px;
-                    box-shadow: 5px 5px 15px 2px rgba(0, 0, 0, 0.4);
-
-                    li::after {
-                        content: '';
-                    }
-                }
-            }
-        }
-
-        &.resume-look {
-            display: grid;
-            place-content: center;
-
-            h1 {
-              text-align: center;
-            }
-        }
 
         @media only screen and (max-width:480px) {
-            &.home-look {
-                transform: scale(.75);
 
-                h1 {
-                    font-size: 1.2rem;
-                }
-            }
         }
     }
 </style>
