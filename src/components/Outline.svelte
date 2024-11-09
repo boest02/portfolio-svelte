@@ -7,7 +7,7 @@
          class:resume-look="{type === 'resume' }"
          class:home-look="{type === 'home' }">
     {#if !(type === 'resume')}
-        <img class="my-photo" src="/src/images/Me.JPG" alt="me">
+        <div class="my-photo"></div>
     {/if}
     <section>
         <h1>{basics.name}</h1>
@@ -31,10 +31,11 @@
         .my-photo {
             width: 120px;
             height: 125px;
-            object-fit: cover;
-            object-position: center 65%;
             border-radius: 45%;
             box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+            background-image: url(/src/images/Me.JPG);
+            background-size: cover;
+            background-position: 0% 35%;
         }
 
         section {
