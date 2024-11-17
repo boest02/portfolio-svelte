@@ -1,73 +1,179 @@
 <script>
-    import iFrame from "./IFrame.svelte";
-    import Tabs from "./Tabs.svelte";
+    import Sites from "./Sites.svelte";
+    import ProgressBubbles from "./ProgressBubbles.svelte";
+    import Choices from "./Choices.svelte";
 
-    // List of tab items with labels, values and assigned components
-    let items = [
+
+    let bubbles = [
         {
-            label: "PCH Rewards",
-            description: "This is a site that we worked on to highlight PCH's weekly grand prizes and we built this using Laravel components with a JS and SCSS to crete JS and CSS bundles",
-            value: 1,
-            component: iFrame,
-            url: "https://rewards.pch.com/weekly-grand-prize"
+            name: 'Design',
+            icon: '&#9956;'
         },
         {
-            label: "PCH Com",
-            description: "This is a new entrance into the PCH.com site that is the main site, but the site was on a system that gated it to new, unknown users so this page was create on a site we had rebuilt and we use a redirect to make it look like it is the PCH.com site",
-            value: 2,
-            component: iFrame,
-            url: "https://www.pch.com/"
+            name: 'Build',
+            icon: '1'
         },
         {
-            label: "MPO Registration",
-            description: "This is sample of a registration page that is built on the internal system that we created to support registration in a form view or as a stepped registration, this system is used to build user experiences for PCH, usually to try to onboard new users, but to also provide new ways for our users to engage with PCH",
-            value: 3,
-            component: iFrame,
-            url: "https://mpo.pch.com/register/weekly-grand-prize"
+            name: 'Deploy',
+            icon: '2'
         },
         {
-            label: "MPO Prizewheel",
-            description: "This is one of those stepped user experiences that we built to allow users to spin the wheel for a chance to win a prize, this is an experience built on that internal system that allows for users to get a stepped experience and this one is also fed by another system that allows the experience to be sponsored by other 3rd party companies",
-            value: 4,
-            component: iFrame,
-            url: "https://mpo.pch.com/path/SurpriseWheel?emh=a2dad277bc104f3cad38ce219bbbf4d1&e=a2dad277-bc10-4f3c-ad38-ce219bbbf4d1"
+            name: 'Finish',
+            icon: '&#9745;'
         }
     ];
+
+    let completed = 2;
+
+    const completeLast = () => {
+        completed = 3;
+    }
+
+    document.body.setAttribute("data-page-name", "portfolio");
+
 </script>
 
 <svelte:head>
     <title>Portfolio - Stephen Boettcher</title>
 </svelte:head>
 
-<div class="portfolio-wrapper">
-    <form id="formName" method="get">
-        <label>
-            3
-            <input style="display: none;" type="checkbox" name="cBox" value="3" onchange="this.form.submit()">
-        </label>
-        <label>
-            4
-            <input style="display: none;" type="checkbox" name="cBox" value="4" onchange="this.form.submit()">
-        </label>
-        <label>
-            5
-            <input style="display: none;" type="checkbox" name="cBox" value="5" onchange="this.form.submit()">
-        </label>
-    </form>
-    <h1>Portfolio</h1>
-    <Tabs {items} />
-</div>
+<article class="portfolio-wrapper">
+    <h2>Portfolio</h2>
+    <details open class="stuff">
+        <summary class="header">
+            <h3>Sequential Task Tracking Component</h3>
+        </summary>
+        <div class="details-content">
+            <p>This is a svelte component that can take an array of tasks along with the count of completed tasks and
+                render these tracking bubbles to possibly display to a user where they are in their journey on your
+                site... The button shows how it can be updated in page to complete the next task. </p>
+            <button class="finish-button" on:click="{completeLast}">Complete Bubbles</button>
+        </div>
+
+        <ProgressBubbles {bubbles} {completed} />
+    </details>
+    <section class="pch-sites">
+        <details class="stuff">
+            <summary class="header">
+                <h3>Publishers Clearing House Sites</h3>
+            </summary>
+            <div class="details-content">
+                <p>These are some of the sites at PCH that I worked directly on in either building from scratch or
+                    adding
+                    new features to.</p>
+                <Sites />
+            </div>
+        </details>
+    </section>
+</article>
 
 <style lang="scss">
+    :global([data-page-name="portfolio"]) {
+        --page-background-image: url(/src/images/portfolio-background.jpg);
+    }
+
+    :global([data-page-name="portfolio"] main) {
+        background: rgba(50, 50, 211, 0.25);
+        border-radius: 20px;
+    }
+
+    :global(details::marker) {
+        content: ' +';
+        color: #fff;
+        font-size: 1.2em;
+    }
+
     .portfolio-wrapper {
         margin-top: 40px;
+        padding: 20px;
+        min-height: 70vh;
 
-        h1 {
+        h2 {
             margin: 20px 0;
             position: absolute;
-            top: -40px;
+            top: -50px;
             right: 10px;
             font-style: italic;
+        }
+
+        p {
+            color: #fff;
+        }
+
+        .stuff {
+            position: relative;
+
+            .header {
+                margin: 20px 10px;
+
+                h3 {
+                    position: absolute;
+                    top: 0px;
+                    left: 40px;
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                    font-family: 'Courier New', Courier, monospace;
+                }
+
+                &::marker {
+                    content: ' +';
+                    color: #fff;
+                    font-size: 1.5em;
+                    font-weight: 700;
+                }
+            }
+
+            &[open] {
+                border: .5px dashed #fff;
+                border-radius: 10px;
+                margin-bottom: 40px;
+                padding-bottom: 20px;
+
+                .header {
+                    h3 {
+                        top: 20px;
+                    }
+
+                    &::marker {
+                        content: ' -';
+                    }
+                }
+
+                .details-content {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    width: 90%;
+                    margin: 10px auto;
+
+                    p {
+                        font-size: 1rem;
+                        font-weight: 500;
+                        font-style: italic;
+                    }
+                }
+
+            }
+
+            .finish-button {
+                width: fit-content;
+                padding-inline: 10px;
+                height: 40px;
+                margin-top: 10px;
+                font-size: 1rem;
+                font-weight: 500;
+                border-radius: 5px;
+                border: 1px solid black;
+                background-color: white;
+                color: #000;
+
+                &:hover {
+                    background-color: #000;
+                    color: #fff;
+                    font-style: italic;
+                    font-weight: 700;
+                }
+            }
         }
     }
 </style>

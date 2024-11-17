@@ -8,6 +8,8 @@
     import Summary from "./Summary.svelte";
 
     let fetchJson = fetch('my_resume_2.json').then(res => res.json());
+
+    document.body.setAttribute("data-page-name", "resume");
 </script>
 
 <svelte:head>

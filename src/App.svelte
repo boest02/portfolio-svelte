@@ -30,7 +30,7 @@
       "name": "Resume"
     }
   ];
-  
+
 </script>
 
 
@@ -44,5 +44,7 @@
 </Router>
 
 <style>
-
+  :global(:root) {
+    --page-background-image: url(/src/images/page-background.jpg);
+  }
 </style>

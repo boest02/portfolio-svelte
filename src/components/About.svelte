@@ -1,5 +1,7 @@
 <script>
     // your script goes here
+
+    document.body.setAttribute("data-page-name", "about");
 </script>
 
 <svelte:head>
