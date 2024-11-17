@@ -41,10 +41,10 @@
     <h2>Portfolio</h2>
     <details open class="stuff">
         <summary class="header">
-            <h3>Sequential Task Tracking Component</h3>
+            <h3>Sequential Progress Tracking Component</h3>
         </summary>
         <div class="details-content">
-            <p>This is a svelte component that can take an array of tasks along with the count of completed tasks and
+            <p>This is a svelte component that can take an array of tasks along with the count of completed tasks/progress and
                 render these tracking bubbles to possibly display to a user where they are in their journey on your
                 site... The button shows how it can be updated in page to complete the next task. </p>
             <button class="finish-button" on:click="{completeLast}">Complete Bubbles</button>
