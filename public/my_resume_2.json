@@ -17,19 +17,25 @@
                 "network": "GitHub",
                 "username": "boest02",
                 "url": "https://github.com/boest02",
-                "icon": " https://github.githubassets.com/favicons/favicon.png"
-            },
-            {
-                "network": "CodePen",
-                "username": "boest02",
-                "url": "https://codepen.io/boest02",
-                "icon": "https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico"
+                "icon": "https://icones.pro/wp-content/uploads/2021/06/symbole-github-orange.png"
             },
             {
                 "network": "GitLab",
                 "username": "@boest02",
                 "url": "https://gitlab.com/boest02",
                 "icon": "https://gitlab.com/assets/favicon-72a2cad5025aa931d6ea56c3201d1f18e68a8cd39788c7c80d5b2b82aa5143ef.png"
+            },
+            {
+                "network": "CodePen",
+                "username": "boest02",
+                "url": "https://codepen.io/boest02",
+                "icon": "https://cdn.iconscout.com/icon/free/png-256/free-codepen-icon-download-in-svg-png-gif-file-formats--behance-logo-delicious-social-media-technology-development-pack-user-interface-icons-6700108.png?f=webp&w=256"
+            },
+            {
+                "network": "JSFiddle",
+                "username": "boest02",
+                "url": "https://jsfiddle.net/u/boest02/fiddles/",
+                "icon": "https://pbs.twimg.com/profile_images/1832018871382872064/wxvfa5pU_400x400.jpg"
             }
         ]
     },

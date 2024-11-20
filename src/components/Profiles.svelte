@@ -20,9 +20,9 @@
 <style lang="scss">
     .profiles-wrapper section {
         display: flex;
-        flex-direction: column;
-        align-items: start;
-        gap: 10px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
 
         .profile {
             display: flex;
@@ -33,6 +33,9 @@
             img {
                 width: 30px;
                 height: 30px;
+                background-color: #1e1e1e;
+                border-radius: 5px;
+                padding: 2px;
             }
         }
     }

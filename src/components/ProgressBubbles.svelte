@@ -79,6 +79,7 @@
 
                 &.completed {
                     background-color: var(--ball-completed-color, green);
+                    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
                 }
 
                 &.completed:not(.first-bubble){
@@ -111,6 +112,10 @@
                 height: var(--progress-bar-height);
                 animation: 2s ease-in progress-forward;
                 background: var(--progress-bar-completed-color, green);
+            }
+
+            &.completed {
+                box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
             }
 
             &.completed::before {

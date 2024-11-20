@@ -74,6 +74,7 @@
 
     :global([data-page-name="portfolio"] main) {
         background: rgba(50, 50, 211, 0.25);
+        box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
         border-radius: 20px;
     }
 
@@ -165,6 +166,7 @@
                 border-radius: 5px;
                 border: 1px solid black;
                 background-color: white;
+                box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
                 color: #000;
 
                 &:hover {
