@@ -19,13 +19,6 @@
             url: "https://www.pch.com?emh=9253b3c1784ce6dcca92f3f7973802cbc7cab47c502d7e2a908ff1dd0c48c49f&e=2dd99a78-50ee-45d4-858a-41c8869a580a"
         },
         {
-            label: "MPO Registration",
-            description: "This is sample of a registration page that is built on the internal system that we created to support registration in a form view or as a stepped registration, this system is used to build user experiences for PCH, usually to try to onboard new users, but to also provide new ways for our users to engage with PCH",
-            value: 3,
-            component: iFrame,
-            url: "https://mpo.pch.com/register/weekly-grand-prize"
-        },
-        {
             label: "MPO Prizewheel",
             description: "This is one of those stepped user experiences that we built to allow users to spin the wheel for a chance to win a prize, this is an experience built on that internal system that allows for users to get a stepped experience and this one is also fed by another system that allows the experience to be sponsored by other 3rd party companies",
             value: 4,

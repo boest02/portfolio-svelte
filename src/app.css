@@ -1,7 +1,8 @@
 :root {
   --site-background-color: #fff;
   --site-font-color: #000;
-  --nav-background-color: rgba(50, 50, 211);;
+  --nav-background-color: rgba(50, 50, 211);
+  ;
   --nav-font-color: #fff;
   --nav-height: 80px;
 
@@ -39,7 +40,8 @@
 
 body {
   line-height: 1.2;
-  background-image: linear-gradient(45deg, rgba(255, 255, 255, .2) 10%, rgba(255, 255, 255, 1) 100%), var(--page-background-image);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, .2) 10%, rgba(255, 255, 255, 1) 100%),
+    var(--page-background-image);
   background-size: cover;
   background-position: 100%;
   background-attachment: fixed;
@@ -62,14 +64,14 @@ body {
     opacity: .75;
     min-height: 300px;
 
-   .block {
+    .block {
       margin: 10px 0 20px;
 
       @media only screen and (max-width:480px) {
         margin: 10px;
       }
 
-      & > h2 {
+      &>h2 {
         font-weight: 600;
         border-bottom: 2px solid gray;
         margin: 10px 0;
@@ -78,16 +80,93 @@ body {
   }
 
   @media only screen and (max-width:480px) {
-      width: 100%;
+    width: 100%;
 
-      .page-content {
-        padding: 10px;
-      }
+    .page-content {
+      padding: 10px;
+    }
   }
 }
 
 #app {
   margin: 0 auto;
+}
+
+
+#info-tip-backdrop {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 1;
+  z-index: 10000;
+  cursor: pointer;
+
+  &.show-positioned {
+    display: block;
+  }
+}
+
+#info-tip-dialog {
+  display: none;
+  opacity: 0;
+  margin: auto;
+  padding: 15px;
+  position: absolute;
+  top: var(--top-corner-offset);
+  left: var(--left-corner-offset);
+  height: fit-content;
+  width: fit-content;
+  min-height: 150px;
+  min-width: 342px;
+  border-radius: 8px;
+  border: 1px solid #fff;
+  background: #fff;
+  box-shadow: 0px 4px 20px 0px rgba(191, 191, 191, 0.25);
+  transition: opacity .8s;
+  z-index: 10001;
+
+  @media screen and (max-width: 640px) {
+    position: fixed;
+    inset: 0;
+  }
+
+  &.show-positioned {
+    display: block;
+    opacity: 1;
+  }
+
+  .content-area {
+    margin: 16px 15px 5px 5px;
+
+    /* inner content classes */
+    .image-bullets {
+      display: grid;
+      grid-template-columns: 40px auto;
+      gap: 15px;
+      color: #000;
+      font-size: 0.875rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      cursor: default;
+      font-family: Inter;
+
+      img {
+        height: 35px;
+        width: 35px;
+        margin-top: 2px;
+        justify-self: center;
+      }
+
+      p {
+        margin: 0;
+      }
+    }
+  }
 }
 
 @media (prefers-color-scheme: light) {

@@ -6,7 +6,7 @@
         "email": "boest02@gmail.com",
         "phone": "516-220-4640",
         "url": "https://steveb-portfolio.netlify.app/",
-        "summary": "Dynamic software development professional with over 25 years of experience across the full development lifecycle. Specializing in creating accessible and responsive web applications, I leverage deep expertise in HTML, CSS, and modern JavaScript frameworks to deliver innovative, user-centric solutions. Committed to optimizing user experience while aligning with strategic business objectives, I have successfully led complex redesigns, enhanced user engagement, and implemented best practices in accessibility and performance. A proven collaborator and mentor, I thrive in cross-functional teams to drive project success and foster growth.",
+        "summary": "<p>Let me introduce myself. I’m a dynamic software development professional with over 25 years of experience spanning the full development lifecycle. In my most recent roles, I’ve specialized in creating accessible, responsive, and user-centric web applications.</p><p>With self-taught expertise in HTML, CSS, and modern JavaScript frameworks, I deliver innovative solutions that optimize user experiences while aligning with strategic business goals. I’ve successfully led complex redesigns and built web applications from the ground up, always adhering to best practices in accessibility and performance.</p><p>As a proven collaborator and mentor, I thrive in cross-functional teams, driving project success and fostering growth among team members.</p>",
         "location": {
             "city": "Floral Park",
             "countryCode": "US",
@@ -14,10 +14,16 @@
         },
         "profiles": [
             {
+                "network": "LinkedIn",
+                "username": "boest02",
+                "url": "https://www.linkedin.com/in/stephen-boettcher-77051b7/",
+                "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7PAYCRc3WD7kGgYDf1ZyIBHCIPLOD4v1wpg&s"
+            },
+            {
                 "network": "GitHub",
                 "username": "boest02",
                 "url": "https://github.com/boest02",
-                "icon": "https://icones.pro/wp-content/uploads/2021/06/symbole-github-orange.png"
+                "icon": "https://cdn-icons-png.flaticon.com/512/25/25231.png"
             },
             {
                 "network": "GitLab",

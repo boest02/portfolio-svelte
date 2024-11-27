@@ -1,14 +1,14 @@
 <script>
-    import Outline from "./Outline.svelte";
-    import Experience from "./Experience.svelte";
-    import Education from "./Education.svelte";
-    import Aside from "./Aside.svelte";
-    import Skills from "./Skills.svelte";
-    import Strengths from "./Strengths.svelte";
-    import Summary from "./Summary.svelte";
-    import Profiles from "./Profiles.svelte";
+    import Outline from "../components/Outline.svelte";
+    import Experience from "../components/Experience.svelte";
+    import Education from "../components/Education.svelte";
+    import Aside from "../components/Aside.svelte";
+    import Skills from "../components/Skills.svelte";
+    import Strengths from "../components/Strengths.svelte";
+    import Summary from "../components/Summary.svelte";
+    import Profiles from "../components/Profiles.svelte";
 
-    let fetchJson = fetch('my_resume_2.json').then(res => res.json());
+    let fetchJson = fetch('my_resume_2.json').then(res => res.json()).then(jsn => { console.log("JSON:", jsn); return jsn; });
 
     let summary = `<p>Hello! I’m a seasoned front-end web developer with over 25 years of experience in the software industry. My journey in technology began with a strong foundation in C programming, where I worked on backup software for Windows, focusing on data movement and device control using SCSI interfaces. This early experience honed my problem-solving skills and attention to detail, which have been invaluable in my transition to web development.</p>
     <p>Today, I specialize in front-end development, with deep expertise in HTML, CSS, and JavaScript. Over the years, I've mastered modern frameworks like Svelte, Vue.js, React, and Angular, allowing me to craft dynamic, responsive, and user-friendly web applications. My background also includes experience in back-end development, particularly with PHP, Python, and Node.js, giving me a well-rounded skill set that bridges both the client and server sides of web development.</p>
@@ -30,7 +30,7 @@
             <Outline basics="{resume.basics}" type="home" />
             <Profiles profiles={resume.basics.profiles} />
         </div>
-        <Summary {summary} title="About Me" />
+        <Summary summary={resume.basics.summary} title="About Me" />
         <Skills data={resume.skills} />
         <Experience data={resume.work} includeNonHighlights="true"/>
     {:catch error}

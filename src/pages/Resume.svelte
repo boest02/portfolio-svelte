@@ -1,11 +1,11 @@
 <script>
-    import Outline from "./Outline.svelte";
-    import Experience from "./Experience.svelte";
-    import Education from "./Education.svelte";
-    import Aside from "./Aside.svelte";
-    import Skills from "./Skills.svelte";
-    import Strengths from "./Strengths.svelte";
-    import Summary from "./Summary.svelte";
+    import Outline from "../components/Outline.svelte";
+    import Experience from "../components/Experience.svelte";
+    import Education from "../components/Education.svelte";
+    import Aside from "../components/Aside.svelte";
+    import Skills from "../components/Skills.svelte";
+    import Strengths from "../components/Strengths.svelte";
+    import Summary from "../components/Summary.svelte";
 
     let fetchJson = fetch('my_resume_2.json').then(res => res.json());
 

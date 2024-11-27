@@ -33,7 +33,8 @@
             img {
                 width: 30px;
                 height: 30px;
-                background-color: #1e1e1e;
+                background-color: #c3c0c0;
+                border: .5px solid #000;
                 border-radius: 5px;
                 padding: 2px;
             }

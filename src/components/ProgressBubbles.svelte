@@ -2,8 +2,6 @@
     import { onMount, afterUpdate } from 'svelte';
     export let bubbles = [];
     export let completed = 2;
-    export let endLabel = true;
-    export let bubbleName = 'Bubble';
 
     const count = bubbles.length;
 

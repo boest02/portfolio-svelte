@@ -47,12 +47,6 @@
 
             .alignment-wrapper {
                 flex-direction: column;
-
-                .vertical-rule {
-                    margin: 10px auto;
-                    height: 5px;
-                    width: 90%;
-                }
             }
         }
     }
