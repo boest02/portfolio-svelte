@@ -19,20 +19,20 @@
 </script>
 
 <svelte:head>
-	<title>Home - Stephen Boettcher</title>
+    <title>Home - Stephen Boettcher</title>
 </svelte:head>
 
 <div class="home-wrapper page-content">
     {#await fetchJson}
-        <h2>Loading...</h2>
+    <h2>Loading...</h2>
     {:then resume}
-        <div class="head-section">
-            <Outline basics="{resume.basics}" type="home" />
-            <Profiles profiles={resume.basics.profiles} />
-        </div>
-        <Summary summary={resume.basics.summary} title="About Me" />
-        <Skills data={resume.skills} />
-        <Experience data={resume.work} includeNonHighlights="true"/>
+    <div class="head-section">
+        <Outline basics="{resume.basics}" type="home" />
+        <Profiles profiles={resume.basics.profiles} />
+    </div>
+    <Summary summary={resume.basics.summary} title="About Me" />
+    <Skills data={resume.skills} />
+    <Experience data={resume.work} includeNonHighlights="true" />
     {:catch error}
     error
     {/await}
@@ -42,7 +42,7 @@
     .home-wrapper {
         margin-top: 40px;
 
-        & > :global([class*="wrapper "]) {
+        &> :global([class*="wrapper "]) {
             margin: 25px 40px;
         }
 
@@ -59,6 +59,16 @@
 
             :global(.profiles-wrapper) {
                 flex-basis: 50%;
+            }
+        }
+    }
+
+    @media only screen and (max-width:480px) {
+        .home-wrapper {
+            margin-top: 20px;
+
+            &> :global([class*="wrapper "]) {
+                margin: 15px;
             }
         }
     }

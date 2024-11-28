@@ -34,41 +34,41 @@
 <section class="experience-wrapper block">
     <h2>Experience:</h2>
     {#each Object.keys(experienceList) as key}
-        <section>
-            {#if consolidate}
-                <h2>
-                    {key}
-                    <a class="company-link" href="{experienceList[key][0].url}" target="_blank">link</a>
-                </h2>
-            {/if}
+    <section>
+        {#if consolidate}
+        <h2>
+            {key}
+            <a class="company-link" href="{experienceList[key][0].url}" target="_blank">link</a>
+        </h2>
+        {/if}
 
-            {#each experienceList[key] as exp}
-                {#if !consolidate}
-                    <h2>
-                        {key}
-                        <a class="company-link" href="{experienceList[key][0].url}" target="_blank">link</a>
-                    </h2>
-                {/if}
-            <Heading title="{exp.position}" start="{exp.startDate}" end="{exp.endDate}" />
-            <div class="highlights-wrapper">
-                <List list="{exp.highlights}" />
-            </div>
-            {/each}
-        </section>
+        {#each experienceList[key] as exp}
+        {#if !consolidate}
+        <h2>
+            {key}
+            <a class="company-link" href="{experienceList[key][0].url}" target="_blank">link</a>
+        </h2>
+        {/if}
+        <Heading title="{exp.position}" start="{exp.startDate}" end="{exp.endDate}" />
+        <div class="highlights-wrapper">
+            <List list="{exp.highlights}" />
+        </div>
+        {/each}
+    </section>
     {/each}
 
     {#if includeNonHighlights}
-        {#each Object.keys(nonHighlightsList) as key}
-            <section class="non-highlights-wrapper">
-                <h2>
-                    {key}
-                </h2>
+    {#each Object.keys(nonHighlightsList) as key}
+    <section class="non-highlights-wrapper">
+        <h2>
+            {key}
+        </h2>
 
-                {#each nonHighlightsList[key] as exp}
-                    <Heading title="{exp.position}" start="{exp.startDate}" end="{exp.endDate}" />
-                {/each}
-            </section>
+        {#each nonHighlightsList[key] as exp}
+        <Heading title="{exp.position}" start="{exp.startDate}" end="{exp.endDate}" />
         {/each}
+    </section>
+    {/each}
     {/if}
 </section>
 
@@ -93,6 +93,7 @@
                 margin: 5px 45px 10px;
             }
         }
+
         .non-highlights-wrapper {
             h2::after {
                 content: "- Previous Roles -";
@@ -104,8 +105,23 @@
                 vertical-align: top;
 
             }
+
             :global(.heading-wrapper) {
                 margin: 5px 20px;
+            }
+        }
+
+        @media only screen and (max-width:480px) {
+            section {
+                margin: 5px;
+
+                .company-link {
+                    display: none;
+                }
+
+                .highlights-wrapper {
+                    margin: 5px auto 10px;
+                }
             }
         }
     }

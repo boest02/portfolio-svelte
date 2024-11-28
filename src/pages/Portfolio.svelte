@@ -47,7 +47,8 @@
                 <h3>Sequential Progress Tracking Component</h3>
             </summary>
             <div class="details-content">
-                <p>This is a svelte component that can take an array of tasks along with the count of completed tasks/progress and
+                <p>This is a svelte component that can take an array of tasks along with the count of completed
+                    tasks/progress and
                     render these tracking bubbles to possibly display to a user where they are in their journey on your
                     site... The button shows how it can be updated in page to complete the next task. </p>
                 <button class="finish-button" on:click="{completeLast}">Complete Bubbles</button>
@@ -62,19 +63,26 @@
                 <h3>Custom Tooltips</h3>
             </summary>
             <div class="details-content">
-                <ToolTip logo="https://cdn-icons-png.flaticon.com/512/4412/4412363.png" position="left" header="Paragraph Info to Expand on...">
+                <ToolTip logo="https://cdn-icons-png.flaticon.com/512/4412/4412363.png" position="left"
+                    header="Paragraph Info to Expand on...">
                     <div slot="element" style="border: 1px solid #fff; border-radius: 10px; padding: 10px;">
-                        <p>This is a paragraph that I can add a help icon to and on click will be able to show further info on the content in this paragraph</p>
+                        <p>This is a paragraph that I can add a help icon to and on click will be able to show further
+                            info on the content in this paragraph</p>
                     </div>
                     <div slot="tip-content">
                         <h3>Some Title</h3>
-                        <p style="max-width: 500px;">Further content to expand on the paragraph can be added here to show the user on click.</p>
+                        <p style="max-width: 500px;">Further content to expand on the paragraph can be added here to
+                            show the user on click.</p>
                     </div>
                 </ToolTip>
                 <div style="padding: 20px;"></div>
-                <ToolTip logo="https://previews.123rf.com/images/faysalfarhan/faysalfarhan1711/faysalfarhan171125330/89835584-info-ge%C3%AFsoleerd-op-glazen-blauwe-ronde-knop-abstract-illustratie.jpg" position="right" header="Image Further Info">
+                <ToolTip
+                    logo="https://previews.123rf.com/images/faysalfarhan/faysalfarhan1711/faysalfarhan171125330/89835584-info-ge%C3%AFsoleerd-op-glazen-blauwe-ronde-knop-abstract-illustratie.jpg"
+                    position="right" header="Image Further Info">
                     <div slot="element">
-                        <img width="350" src="https://img.freepik.com/premium-photo/cute-puppy-white-background-vector-illustration-cartoon-dog_1057-17943.jpg" alt="dog image">
+                        <img class="info-test-image"
+                            src="https://img.freepik.com/premium-photo/cute-puppy-white-background-vector-illustration-cartoon-dog_1057-17943.jpg"
+                            alt="dog image">
                     </div>
                     <div slot="tip-content">
                         <h3>Some List of items</h3>
@@ -190,6 +198,13 @@
                         font-weight: 500;
                         font-style: italic;
                     }
+
+                    .info-test-image {
+                        width: 350px;
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: 10px;
+                    }
                 }
 
             }
@@ -212,6 +227,47 @@
                     color: #fff;
                     font-style: italic;
                     font-weight: 700;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width:480px) {
+        .portfolio-wrapper {
+            width: 98%;
+            margin: auto;
+
+            .stuff {
+
+                .header {
+                    h3 {
+                        font-size: 1.2rem;
+                    }
+                }
+
+                &[open] {
+
+                    .header {
+                        h3 {}
+                    }
+
+                    .details-content {
+                        margin: 30px auto;
+                        width: 95%;
+
+                        p {
+                            font-size: .8rem;
+                        }
+
+                        .info-test-image {
+                            width: 250px;
+                        }
+
+                    }
+
+                    .finish-button {
+                        font-size: .8rem;
+                    }
                 }
             }
         }

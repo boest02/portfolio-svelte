@@ -29,10 +29,6 @@
         gap: 15px;
         margin: 10px;
 
-        @media only screen and (max-width:600px) {
-            padding-left: 0;
-        }
-
         .skill-types {
             display: flex;
             flex-direction: column;
@@ -48,6 +44,14 @@
             .key-words {
                 font-size: 85%;
                 padding-left: 20px;
+            }
+        }
+
+        @media only screen and (max-width:480px) {
+            flex-direction: column;
+
+            .skill-types {
+                width: 98%;
             }
         }
     }

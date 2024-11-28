@@ -21,12 +21,10 @@
         justify-content: center;
 
         .iframe-description {
-            margin: 15px 0 25px;
-            width: 95%;
+            margin: 15px auto 25px;
         }
 
         iframe {
-            width: 95%;
             height: 800px;
         }
     }

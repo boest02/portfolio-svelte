@@ -96,4 +96,10 @@
             cursor: pointer;
         }
     }
+
+    @media only screen and (max-width:480px) {
+        .info-anchor {
+            width: 90%;
+        }
+    }
 </style>

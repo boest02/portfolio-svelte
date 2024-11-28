@@ -126,6 +126,12 @@
         }
     }
 
+    @media only screen and (max-width:480px) {
+        .bubbles-wrapper {
+            transform: scale(.8);
+        }
+    }
+
     @keyframes progress-forward {
         0% {
             width: 10%;

@@ -3,11 +3,9 @@
     export let type = '';
 </script>
 
-<article class="outline-wrapper"
-         class:resume-look="{type === 'resume' }"
-         class:home-look="{type === 'home' }">
+<article class="outline-wrapper" class:resume-look="{type === 'resume' }" class:home-look="{type === 'home' }">
     {#if !(type === 'resume')}
-        <div class="my-photo"></div>
+    <div class="my-photo"></div>
     {/if}
     <section>
         <h1>{basics.name}</h1>
@@ -42,6 +40,7 @@
             min-width: 350px;
             margin-inline: 0 10px;
             margin-block: 0 10px;
+
             h1 {
                 font-size: 1.5rem;
                 font-weight: 700;
@@ -64,6 +63,14 @@
 
         @media only screen and (max-width:480px) {
 
+            .my-photo {
+                display: none;
+            }
+
+            section {
+                min-width: none;
+                width: 98%;
+            }
         }
     }
 </style>

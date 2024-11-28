@@ -26,7 +26,7 @@
 <style lang="scss">
     .box {
         margin-bottom: 10px;
-        padding: 40px;
+        padding: 5px;
         border: 3px solid var(--nav-background-color);
         border-radius: 0 0 .5rem .5rem;
         border-top: 0;
