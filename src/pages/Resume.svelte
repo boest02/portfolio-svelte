@@ -22,7 +22,7 @@
         <h2>Loading...</h2>
     {:then resume}
         <Outline type="resume" basics="{resume.basics}" />
-        <Summary summary="{resume.basics.summary}" />
+        <Summary summary="{resume.basics.res_summary}" />
         <Skills data={resume.skills} />
         <Experience data={resume.work} />
         <Education data={resume.education} />

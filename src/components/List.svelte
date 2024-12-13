@@ -10,6 +10,6 @@
 
 <style lang="scss">
     .list-wrapper {
-        margin: 10px 45px 20px;
+        margin: 10px 30px 20px;
     }
 </style>

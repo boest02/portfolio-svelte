@@ -6,6 +6,7 @@
         "email": "boest02@gmail.com",
         "phone": "516-220-4640",
         "url": "https://steveb-portfolio.netlify.app/",
+        "res_summary": "Dynamic software development professional with over 25 years of experience across the full development lifecycle. Specializing in creating accessible and responsive web applications, I leverage deep expertise in HTML, CSS, and modern JavaScript frameworks to deliver innovative, user-centric solutions. Committed to optimizing user experience while aligning with strategic business objectives, I have successfully led complex redesigns, enhanced user engagement, and implemented best practices in accessibility and performance. A proven collaborator and mentor, I thrive in cross-functional teams to drive project success and foster growth.",
         "summary": "<p>Let me introduce myself. I’m a dynamic software development professional with over 25 years of experience spanning the full development lifecycle. In my most recent roles, I’ve specialized in creating accessible, responsive, and user-centric web applications.</p><p>With self-taught expertise in HTML, CSS, and modern JavaScript frameworks, I deliver innovative solutions that optimize user experiences while aligning with strategic business goals. I’ve successfully led complex redesigns and built web applications from the ground up, always adhering to best practices in accessibility and performance.</p><p>As a proven collaborator and mentor, I thrive in cross-functional teams, driving project success and fostering growth among team members.</p>",
         "location": {
             "city": "Floral Park",
@@ -198,33 +199,15 @@
     ],
     "skills": [
         {
-            "name": "Front-End Technologies",
+            "name": "Front-End Tech",
             "level": "Expert",
             "keywords": [
                 "HTML5",
                 "CSS3",
                 "JavaScript",
-                "Laravel Blade",
-                "Typescript"
-            ]
-        },
-        {
-            "name": "CSS Frameworks & Preprocessors",
-            "level": "Expert",
-            "keywords": [
+                "Typescript",
                 "SASS",
-                "LESS",
                 "Tailwind CSS"
-            ]
-        },
-        {
-            "name": "Methodologies & Best Practices",
-            "level": "Advanced",
-            "keywords": [
-                "Agile",
-                "Scrum",
-                "Responsive Design",
-                "Accessibility (a11y)"
             ]
         },
         {
@@ -232,47 +215,40 @@
             "level": "Advanced",
             "keywords": [
                 "Svelte",
+                "React",
                 "Vue.js",
                 "Lit"
             ]
         },
         {
-            "name": "Build Tools",
+            "name": "Methodologies & Practices",
             "level": "Advanced",
             "keywords": [
-                "Vite",
-                "Webpack",
-                "Rollup",
-                "ESLint"
+                "Agile Development (Scrum)",
+                "Responsive Web Design (RWD)",
+                "Web Accessibility (a11y)",
+                "Cross-Browser Compatibility",
+                "Performance Optimization"
             ]
         },
         {
-            "name": "Version Control",
-            "level": "Expert",
-            "keywords": [
-                "Git",
-                "GitHub",
-                "GitLab"
-            ]
-        },
-        {
-            "name": "Testing",
+            "name": "Testing Frameworks & Tools",
             "level": "Advanced",
             "keywords": [
                 "Jest",
-                "Mocha",
-                "Chai",
-                "Vitest"
+                "Mocha / Chai",
+                "Vitest",
+                "Storybook"
             ]
         },
         {
             "name": "Other Tools",
             "level": "Advanced",
             "keywords": [
-                "Storybook",
-                "Figma",
-                "Lucidchart",
-                "Docker"
+                "Build Tools: Vite, Webpack, Rollup",
+                "Version Control: Git, GitHub, GitLab",
+                "Dev Tools: ESLint, Docker",
+                "Design Tools: Figma, Photoshop"
             ]
         }
     ],

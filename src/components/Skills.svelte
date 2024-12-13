@@ -23,18 +23,16 @@
         font-weight: 700;
     }
     .skills-layout {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 15px;
-        margin: 10px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto auto;
+        grid-auto-flow: column;
+        margin: 0 10px;
 
         .skill-types {
             display: flex;
             flex-direction: column;
             position: relative;
-            margin-bottom: 10px;
-            width: 18%;
 
             h3 {
                 font-weight: 600;
@@ -43,12 +41,13 @@
 
             .key-words {
                 font-size: 85%;
-                padding-left: 20px;
             }
         }
 
-        @media only screen and (max-width:480px) {
-            flex-direction: column;
+        @media (max-width:480px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-auto-flow: unset;
 
             .skill-types {
                 width: 98%;

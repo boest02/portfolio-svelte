@@ -63,10 +63,11 @@
                 <h3>Custom Tooltips</h3>
             </summary>
             <div class="details-content">
+                <p style="margin: 0px 10px 20px;">Click one of the icons to see more info tooltip that can be used to expand on items on your page that need further info to train a user...</p>
                 <ToolTip logo="https://cdn-icons-png.flaticon.com/512/4412/4412363.png" position="left"
                     header="Paragraph Info to Expand on...">
                     <div slot="element" style="border: 1px solid #fff; border-radius: 10px; padding: 10px;">
-                        <p>This is a paragraph that I can add a help icon to and on click will be able to show further
+                        <p style="padding: 5px; font-weight: 600; font-family: 'Courier New', Courier, monospace; font-style: italic;">This is a paragraph that I can add a help icon to and on click will be able to show further
                             info on the content in this paragraph</p>
                     </div>
                     <div slot="tip-content">

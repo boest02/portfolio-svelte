@@ -20,10 +20,14 @@
             padding: 0;
 
             .page-content {
-                padding: 20px 15px !important;
+                padding: 0 !important;
                 margin: 0 auto;
                 box-shadow: unset;
                 opacity: 1;
+
+                .block {
+                    margin: 5px;
+                }
 
                 &>h1 {
                     display: none;
@@ -39,6 +43,18 @@
 
                 .skills-wrapper {
                     font-size: 80%;
+                }
+
+                .list-wrapper {
+                    margin: 10px 20px;
+                }
+
+                .experience-wrapper {
+                    margin: 0;
+
+                    .list-wrapper {
+                        margin: 0;
+                    }
                 }
             }
         }
