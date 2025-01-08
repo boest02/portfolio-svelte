@@ -6,7 +6,7 @@ const _DATA_VAR_SIDE = "infoAnchorSide";
 const _INFO_TIP_BACKDROP = "info-tip-backdrop";
 const _INFO_TIP_DIALOG = "info-tip-dialog";
 const _INFO_ANCHOR = ".info-anchor";
-const _UNI_NAV_HEIGHT = 60;
+const _UNI_NAV_HEIGHT = 80;
 const _MIN_SCROLL_DISTANCE = 200;
 
 // create a logger code
@@ -131,6 +131,7 @@ export default class ToolTip {
             position.x =  Math.max(0, clickPosition.top + window.scrollY + clickPosition.height);
         }
 
+        logger("position", clickPosition);
         // set left or right of click depending on data attribute side
         position.y = this.ySide === 'right' ? clickPosition.left + clickPosition.width + 10 : clickPosition.left - this.dialogBox.offsetWidth;
 

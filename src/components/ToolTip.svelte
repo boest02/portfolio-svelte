@@ -90,6 +90,7 @@
             font-size: 20px;
             font-weight: 800;
             text-transform: capitalize;
+            margin-inline: 0 5px;
         }
 
         .close-icon {

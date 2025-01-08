@@ -111,8 +111,6 @@
         </details>
     </section>
 </article>
-<div id="info-tip-backdrop"></div>
-<section id="info-tip-dialog"></section>
 
 <style lang="scss">
     :global([data-page-name="portfolio"]) {
