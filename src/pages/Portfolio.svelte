@@ -63,37 +63,61 @@
                 <h3>Custom Tooltips</h3>
             </summary>
             <div class="details-content">
-                <p style="margin: 0px 10px 20px;">Click one of the icons to see more info tooltip that can be used to expand on items on your page that need further info to train a user...</p>
+                <p style="margin: 0px 10px 20px;">Click one of the icons to see more info tooltip that can be used to
+                    expand on items on your page that need further info to train a user...</p>
                 <ToolTip logo="https://cdn-icons-png.flaticon.com/512/4412/4412363.png" position="left"
                     header="Paragraph Info to Expand on...">
                     <div slot="element" style="border: 1px solid #fff; border-radius: 10px; padding: 10px;">
-                        <p style="padding: 5px; font-weight: 600; font-family: 'Courier New', Courier, monospace; font-style: italic;">This is a paragraph that I can add a help icon to and on click will be able to show further
+                        <p
+                            style="padding: 5px; font-weight: 600; font-family: 'Courier New', Courier, monospace; font-style: italic;">
+                            This is a paragraph that I can add a help icon to and on click will be able to show further
                             info on the content in this paragraph</p>
                     </div>
                     <div slot="tip-content">
-                        <h3>Some Title</h3>
-                        <p style="max-width: 500px;">Further content to expand on the paragraph can be added here to
-                            show the user on click.</p>
+                        <h3>Custom Tooltip</h3>
+                        <p style="max-width: 500px; margin: 10px auto;">Add any info you want with whatever markup is needed to expand on the element in the page that you want to add more context too...  You can provide an icon image to be used as the clickable tooltip and as the icon in this pop-up...</p>
+                        <p style="max-width: 500px;margin: 15px auto; padding: 5px; border-radius: 10px; outline: .5px solid goldenrod;">Note: This will be anchored to the tooltip icon on Desktop or appear as a centered modal on Mobile screens...</p>
                     </div>
                 </ToolTip>
                 <div style="padding: 20px;"></div>
-                <ToolTip
-                    logo="https://previews.123rf.com/images/faysalfarhan/faysalfarhan1711/faysalfarhan171125330/89835584-info-ge%C3%AFsoleerd-op-glazen-blauwe-ronde-knop-abstract-illustratie.jpg"
-                    position="right" header="Image Further Info">
-                    <div slot="element">
-                        <img class="info-test-image"
-                            src="https://img.freepik.com/premium-photo/cute-puppy-white-background-vector-illustration-cartoon-dog_1057-17943.jpg"
-                            alt="dog image">
-                    </div>
-                    <div slot="tip-content">
-                        <h3>Some List of items</h3>
-                        <ul style="margin: 10px 20px;">
-                            <li>About the picture</li>
-                            <li>About the picture</li>
-                            <li>About the picture</li>
-                        </ul>
-                    </div>
-                </ToolTip>
+                <div class="flex-wrapper">
+                    <ToolTip
+                        logo="https://previews.123rf.com/images/faysalfarhan/faysalfarhan1711/faysalfarhan171125330/89835584-info-ge%C3%AFsoleerd-op-glazen-blauwe-ronde-knop-abstract-illustratie.jpg"
+                        position="right" header="Image Further Info">
+                        <div slot="element">
+                            <img class="info-test-image"
+                                src="https://img.freepik.com/premium-photo/cute-puppy-white-background-vector-illustration-cartoon-dog_1057-17943.jpg"
+                                alt="dog image">
+                        </div>
+                        <div slot="tip-content">
+                            <div style="width: max(20vw, 100px); margin: 0px auto;">
+                                <p style="margin: 5px auto">This info tip can have any markup in it and it will position to the icon.. <span style="font-weight: 700;color: red;">Above</span> or <span style="font-weight: 700; color: green;">Below</span> the click area depending on how the screen is scrolled...</p>
+                                <p style="margin: 5px auto">It will appear on the <span style="font-weight: 700;">Left</span> or <span style="font-weight: 700;">Right</span> of the click area based on configuration</p>
+                            </div>
+                        </div>
+                    </ToolTip>
+                    <ToolTip
+                        logo="https://p1.hiclipart.com/preview/73/341/273/dev-c-plus-plus-icons-dev6-png-clipart.jpg"
+                        position="right" header="Image Further Info">
+                        <div slot="element">
+                            <div style="border: 3px solid magenta; border-radius: 10px; padding: 10px;">
+                                <img class="info-test-image"
+                                    src="https://static-00.iconduck.com/assets.00/web-developer-illustration-1004x1024-wcqgbag3.png"
+                                    alt="developer image">
+                                <h2>Web Developer</h2>
+                            </div>
+                        </div>
+                        <div slot="tip-content">
+                            <h3>Info about this dev picture</h3>
+                            <p>This will show on click of the icon and will close in three ways:</p>
+                            <ol style="margin: 10px 30px;">
+                                <li>Click 'X' to close</li>
+                                <li>Click behind to close</li>
+                                <li>Scroll page away from click area</li>
+                            </ol>
+                        </div>
+                    </ToolTip>
+                </div>
             </div>
         </details>
     </section>
@@ -133,6 +157,15 @@
         margin-top: 40px;
         padding: 20px;
         min-height: 70vh;
+
+        .flex-wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
 
         &>h2 {
             margin: 20px 0;

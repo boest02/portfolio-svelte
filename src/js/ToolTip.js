@@ -127,13 +127,13 @@ export default class ToolTip {
             logger("above", (clickPosition.top + window.scrollY) - this.dialogBox.offsetHeight);
             position.x = (clickPosition.top + window.scrollY) - this.dialogBox.offsetHeight;
         } else {
-            logger("below", Math.max(0, clickPosition.top + window.scrollY + clickPosition.height));
+            logger("below", Math.max(0, clickPosition.top + window.scrollY + clickPosition.height), clickPosition.height);
             position.x =  Math.max(0, clickPosition.top + window.scrollY + clickPosition.height);
         }
 
         logger("position", clickPosition);
         // set left or right of click depending on data attribute side
-        position.y = this.ySide === 'right' ? clickPosition.left + clickPosition.width + 10 : clickPosition.left - this.dialogBox.offsetWidth;
+        position.y = this.ySide === 'right' ? clickPosition.left + clickPosition.width + 10 : clickPosition.left - (this.dialogBox.offsetWidth + 10);
 
         return position;
      }
@@ -151,7 +151,7 @@ export default class ToolTip {
      * @public
      */
     repositionDialog = () => {
-        let clickPosition = this.currentElement.querySelector("img").getBoundingClientRect();
+        let clickPosition = this.currentElement.querySelector(".info-icon").getBoundingClientRect();
         let position = this.getPositionRelativeToClick(clickPosition);
 
         // set css custom properties to position dialog for desktop
@@ -165,7 +165,7 @@ export default class ToolTip {
      */
     positionDialog() {
         let infoElement = this.currentElement.querySelector(".info-tip");
-        let clickPosition = this.currentElement.querySelector("img").getBoundingClientRect();
+        let clickPosition = this.currentElement.querySelector(".info-icon").getBoundingClientRect();
 
         // set here to get this into the flow of the document so when we ech for it's height we get correct height
         this.dialogBox.style.display = "block";

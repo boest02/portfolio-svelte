@@ -23,12 +23,8 @@
 <div class="info-anchor">
     <div class="element-wrapper">
         <slot name="element"></slot>
-        <img loading="lazy"
-             data-info-anchor-title="{header}"
-             data-info-anchor-side="{position}"
-             class="info-icon"
-             src="{logo}"
-             alt="info icon" />
+        <img loading="lazy" data-info-anchor-title="{header}" data-info-anchor-side="{position}" class="info-icon"
+            src="{logo}" alt="info icon" />
     </div>
     <div class="info-tip">
         <div class="header">
@@ -49,12 +45,13 @@
             width: fit-content;
 
             .info-icon {
-                width: 25px;
-                height: 25px;
+                width: 40px;
+                height: 40px;
+                padding: 5px;
                 cursor: pointer;
                 position: absolute;
                 top: -25px;
-                right: -25px;
+                right: -35px;
                 border-radius: 50%;
             }
         }
@@ -96,6 +93,10 @@
         .close-icon {
             cursor: pointer;
         }
+    }
+
+    .content-area {
+        width: fit-content;
     }
 
     @media only screen and (max-width:480px) {

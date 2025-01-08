@@ -113,7 +113,7 @@ body {
 #info-tip-dialog {
   display: none;
   opacity: 0;
-  margin: auto;
+  margin-inline: 5px 15px;
   padding: 15px;
   position: absolute;
   top: var(--top-corner-offset);
