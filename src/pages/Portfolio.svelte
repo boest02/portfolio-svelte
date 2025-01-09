@@ -63,8 +63,7 @@
                 <h3>Custom Tooltips</h3>
             </summary>
             <div class="details-content">
-                <p style="margin: 0px 10px 20px;">Click one of the icons to see more info tooltip that can be used to
-                    expand on items on your page that need further info to train a user...</p>
+                <p style="margin: 0px 10px 20px;">Click one of the tooltip icons to see more info about the element associated with the tooltip. Can be used to add further info for users...</p>
                 <ToolTip logo="https://cdn-icons-png.flaticon.com/512/4412/4412363.png" position="left"
                     header="Paragraph Info to Expand on...">
                     <div slot="element" style="border: 1px solid #fff; border-radius: 10px; padding: 10px;">
@@ -82,7 +81,7 @@
                 <div style="padding: 20px;"></div>
                 <div class="flex-wrapper">
                     <ToolTip
-                        logo="https://previews.123rf.com/images/faysalfarhan/faysalfarhan1711/faysalfarhan171125330/89835584-info-ge%C3%AFsoleerd-op-glazen-blauwe-ronde-knop-abstract-illustratie.jpg"
+                        logo="https://e7.pngegg.com/pngimages/197/447/png-clipart-paw-dog-computer-icons-dog-animals-logo-thumbnail.png"
                         position="right" header="Image Further Info">
                         <div slot="element">
                             <img class="info-test-image"
@@ -98,7 +97,7 @@
                     </ToolTip>
                     <ToolTip
                         logo="https://p1.hiclipart.com/preview/73/341/273/dev-c-plus-plus-icons-dev6-png-clipart.jpg"
-                        position="right" header="Image Further Info">
+                        position="left" header="Image Further Info">
                         <div slot="element">
                             <div style="border: 3px solid magenta; border-radius: 10px; padding: 10px;">
                                 <img class="info-test-image"
