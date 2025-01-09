@@ -1,9 +1,10 @@
 <script lang="ts">
   import { Router, Link, Route } from "svelte-routing";
   import Home from "./pages/Home.svelte";
-  import About from "./pages/About.svelte";
+  import Career from "./pages/Career.svelte";
   import Portfolio from "./pages/Portfolio.svelte";
   import Resume from "./pages/Resume.svelte";
+  import Blog from "./pages/Blog.svelte";
   import Navigation from "./components/Navigation.svelte";
 
   export let url = "";
@@ -15,9 +16,9 @@
       "name": "Home"
     },
     {
-      "path": '/about',
-      "component": About,
-      "name": "About"
+      "path": '/career',
+      "component": Career,
+      "name": "Career"
     },
     {
       "path": '/portfolio',
@@ -28,6 +29,11 @@
       "path": '/resume',
       "component": Resume,
       "name": "Resume"
+    },
+    {
+      "path": '/blog',
+      "component": Blog,
+      "name": "Blog"
     }
   ];
 

@@ -1,6 +1,5 @@
 <script>
     import Outline from "../components/Outline.svelte";
-    import Experience from "../components/Experience.svelte";
     import Education from "../components/Education.svelte";
     import Aside from "../components/Aside.svelte";
     import Skills from "../components/Skills.svelte";
@@ -32,7 +31,6 @@
     </div>
     <Summary summary={resume.basics.summary} title="About Me" />
     <Skills data={resume.skills} />
-    <Experience data={resume.work} includeNonHighlights="true" />
     {:catch error}
     error
     {/await}
@@ -41,6 +39,7 @@
 <style lang="scss">
     .home-wrapper {
         margin-top: 40px;
+        animation: 3s 1 forwards fade-in, 1s 1 forwards slide-in;
 
         &> :global([class*="wrapper "]) {
             margin: 25px 40px;
@@ -70,6 +69,26 @@
             &> :global([class*="wrapper "]) {
                 margin: 15px;
             }
+        }
+    }
+
+    @keyframes slide-in {
+        from {
+            transform: translateY(20%);
+        }
+
+        to {
+            transform: translateY(0%);
+        }
+    }
+
+    @keyframes fade-in {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
         }
     }
 </style>
