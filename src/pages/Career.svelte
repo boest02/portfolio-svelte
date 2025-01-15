@@ -1,7 +1,11 @@
 <script>
+    import { getContext } from 'svelte';
     import Experience from "../components/Experience.svelte";
 
-    let fetchJson = fetch('my_resume_2.json').then(res => res.json()).then(jsn => { console.log("JSON:", jsn); return jsn; });
+    const resumeType = getContext("resumeType");
+    const resumeFiles = getContext("resumeFiles");
+
+    let fetchJson = fetch(resumeFiles[resumeType]).then(res => res.json()).then(jsn => { console.log("JSON:", jsn); return jsn; });
 
     document.body.setAttribute("data-page-name", "career");
 </script>

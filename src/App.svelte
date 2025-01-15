@@ -1,5 +1,6 @@
 <script lang="ts">
   import { Router, Link, Route } from "svelte-routing";
+  import { setContext } from 'svelte';
   import Home from "./pages/Home.svelte";
   import Career from "./pages/Career.svelte";
   import Portfolio from "./pages/Portfolio.svelte";
@@ -8,6 +9,19 @@
   import Navigation from "./components/Navigation.svelte";
 
   export let url = "";
+
+  const urlParams = new URLSearchParams(window.location.search);
+  const resType = urlParams.get('type') || "fe_dev";
+
+  setContext("resumeType", resType);
+
+  let resumeFiles = {
+    fe_dev: "resume_dev.json",
+    full_stack: "resume_full.json",
+    tpm: "resume_tpm.json"
+  };
+
+  setContext("resumeFiles", resumeFiles);
 
   const links = [
     {
@@ -44,7 +58,9 @@
   <Navigation links={links} />
   <main class="main-content">
     {#each links as link}
-      <Route path="{link.path}" component="{link.component}" />
+    <Route path="{link.path}">
+      <svelte:component this={link.component} />
+    </Route>
     {/each}
   </main>
 </Router>

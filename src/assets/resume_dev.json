@@ -7,6 +7,11 @@
         "phone": "516-220-4640",
         "url": "https://steveb-portfolio.netlify.app/",
         "res_summary": "Dynamic software development professional with over 10 years of Front end development experience. Specializing in creating accessible and responsive web applications, I leverage deep expertise in HTML, CSS, and modern JavaScript frameworks to deliver innovative, user-centric solutions. Committed to optimizing user experience while aligning with strategic business objectives, I have successfully led complex redesigns, enhanced user engagement, and implemented best practices in accessibility and performance. A proven collaborator and mentor, I thrive in cross-functional teams to drive project success and foster growth.",
+        "home_summary": [
+            "Hello! I’m a seasoned front-end web developer with over 25 years of experience in the software industry. My journey in technology began with a strong foundation in C programming, where I worked on backup software for Windows, focusing on data movement and device control using SCSI interfaces. This early experience honed my problem-solving skills and attention to detail, which have been invaluable in my transition to web development.",
+            "Today, I specialize in front-end development, with deep expertise in HTML, CSS, and JavaScript. Over the years, I've mastered modern frameworks like Svelte, Vue.js, React, and Angular, allowing me to craft dynamic, responsive, and user-friendly web applications. My background also includes experience in back-end development, particularly with PHP, Python, and Node.js, giving me a well-rounded skill set that bridges both the client and server sides of web development.",
+            "I’m always eager to take on new challenges, constantly seeking opportunities to expand my skills and stay ahead of the curve in the ever-evolving world of technology."
+        ],
         "summary": "",
         "location": {
             "city": "Floral Park",
@@ -117,8 +122,7 @@
             "startDate": "2006-09-01",
             "endDate": "2013-05-30",
             "summary": "Description…",
-            "highlights": [
-            ]
+            "highlights": []
         },
         {
             "name": "COMPUTER ASSOCIATES",
@@ -217,6 +221,16 @@
             ]
         },
         {
+            "name": "Other Tools",
+            "level": "Advanced",
+            "keywords": [
+                "Build Tools: Vite, Webpack, Rollup",
+                "Version Control: Git, GitHub, GitLab",
+                "Dev Tools: ESLint, Docker",
+                "Design Tools: Figma, Photoshop"
+            ]
+        },
+        {
             "name": "Methodologies & Practices",
             "level": "Advanced",
             "keywords": [
@@ -235,16 +249,6 @@
                 "Mocha / Chai",
                 "Vitest",
                 "Storybook"
-            ]
-        },
-        {
-            "name": "Other Tools",
-            "level": "Advanced",
-            "keywords": [
-                "Build Tools: Vite, Webpack, Rollup",
-                "Version Control: Git, GitHub, GitLab",
-                "Dev Tools: ESLint, Docker",
-                "Design Tools: Figma, Photoshop"
             ]
         }
     ],

@@ -4,8 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "cp src/assets/* public/ && vite",
-    "build": "vite build && cp src/assets/* dist/",
+    "dev": "npm run copy && vite",
+    "copy": "cp -v -f src/assets/* public/",
+    "build": "vite build && cp -v -f src/assets/* dist/",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json && tsc -p tsconfig.node.json"
   },

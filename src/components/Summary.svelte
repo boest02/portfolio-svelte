@@ -1,16 +1,43 @@
 <script lang="ts">
     export let summary = '';
     export let title = 'Summary';
+    export let homeLook = false;
 </script>
 
-<section class="summary-wrapper block">
-    <h2>{title}:</h2>
-    <p>{@html summary}</p>
+<section class="summary-wrapper block" class:home-look="{homeLook}">
+    <h2 class="title">{title}</h2>
+    {#if Array.isArray(summary)}
+        {#each summary as item}
+            <p>{item}</p>
+        {/each}
+    {:else}
+        <p>{summary}</p>
+    {/if}
 </section>
 
-<style>
-    .summary-wrapper p {
-        text-indent: 20px;
-        margin: 5px 10px;
+<style lang="scss">
+    .summary-wrapper {
+        p {
+            text-indent: 20px;
+            margin: 5px 10px;
+            width: 95%;
+        }
+
+        &.home-look {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h2.title {
+                font-size: 1.2rem;
+                font-weight: 600;
+                margin-bottom: 10px;
+                border: unset;
+            }
+
+            p {
+                width: 98%;
+            }
+        }
     }
 </style>

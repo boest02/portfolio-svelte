@@ -1,4 +1,5 @@
 <script>
+    import { getContext } from 'svelte';
     import Outline from "../components/Outline.svelte";
     import Experience from "../components/Experience.svelte";
     import Education from "../components/Education.svelte";
@@ -7,9 +8,13 @@
     import Strengths from "../components/Strengths.svelte";
     import Summary from "../components/Summary.svelte";
 
-    let fetchJson = fetch('my_resume_2.json').then(res => res.json());
+    const resumeType = getContext("resumeType");
+    const resumeFiles = getContext("resumeFiles");
+
+    let fetchJson = fetch(resumeFiles[resumeType]).then(res => res.json());
 
     document.body.setAttribute("data-page-name", "resume");
+
 </script>
 
 <svelte:head>
@@ -23,7 +28,7 @@
     {:then resume}
         <Outline type="resume" basics="{resume.basics}" />
         <Summary summary="{resume.basics.res_summary}" />
-        <Skills data={resume.skills} />
+        <Skills data={resume.skills} type="alternate" />
         <Experience data={resume.work} />
         <Education data={resume.education} />
     {:catch error}

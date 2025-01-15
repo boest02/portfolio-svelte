@@ -1,19 +1,25 @@
 <script lang="ts">
-    import List from './List.svelte';
+    import Bullets from './Bullets.svelte';
+    import Lists from './Lists.svelte';
     export let data = [];
+    export let type = 'bullets';
     console.log(data);
 </script>
 
 <section class="skills-wrapper block">
     <h2>Skills:</h2>
-    <div class="skills-layout">
+    <div class="skills-layout" class:alternate="{type === 'alternate'}">
         {#each data as skill}
-            <div class="skill-types">
-                <h3>{skill.name}</h3>
-                <div class="key-words">
-                    <List list="{skill.keywords}" />
-                </div>
+        <div class="skill-types">
+            <h3>{skill.name}</h3>
+            {#if type === 'alternate'}
+            <Lists list="{skill.keywords}" />
+            {:else}
+            <div class="key-words">
+                <Bullets list="{skill.keywords}" />
             </div>
+            {/if}
+        </div>
         {/each}
     </div>
 </section>
@@ -22,6 +28,7 @@
     h2 {
         font-weight: 700;
     }
+
     .skills-layout {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -44,8 +51,29 @@
             }
         }
 
-        @media (max-width:480px) {
-            grid-template-columns: 1fr;
+        &.alternate {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto;
+            grid-auto-flow: unset;
+            gap: 10px;
+
+            .skill-types {
+                display: inline;
+
+                h3 {
+                    display: inline;
+                    margin: 0 5px 1px 0;
+                    letter-spacing: .5px;
+
+                    &::after {
+                        content: " : ";
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 700px) {
+            grid-template-columns: 1fr !important;
             grid-template-rows: auto;
             grid-auto-flow: unset;
 

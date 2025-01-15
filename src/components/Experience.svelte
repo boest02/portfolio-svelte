@@ -1,6 +1,6 @@
 <script lang="ts">
     import Heading from './Heading.svelte';
-    import List from './List.svelte';
+    import Bullets from './Bullets.svelte';
     export let data = [];
     export let consolidate = false;
     export let includeNonHighlights = false;
@@ -51,7 +51,7 @@
         {/if}
         <Heading title="{exp.position}" start="{exp.startDate}" end="{exp.endDate}" />
         <div class="highlights-wrapper">
-            <List list="{exp.highlights}" />
+            <Bullets list="{exp.highlights}" />
         </div>
         {/each}
     </section>

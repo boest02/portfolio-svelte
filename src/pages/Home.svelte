@@ -1,4 +1,5 @@
 <script>
+    import { getContext } from 'svelte';
     import Outline from "../components/Outline.svelte";
     import Education from "../components/Education.svelte";
     import Aside from "../components/Aside.svelte";
@@ -7,11 +8,12 @@
     import Summary from "../components/Summary.svelte";
     import Profiles from "../components/Profiles.svelte";
 
-    let fetchJson = fetch('my_resume_2.json').then(res => res.json()).then(jsn => { console.log("JSON:", jsn); return jsn; });
+    const resumeType = getContext("resumeType");
+    const resumeFiles = getContext("resumeFiles");
 
-    let summary = `<p>Hello! I’m a seasoned front-end web developer with over 25 years of experience in the software industry. My journey in technology began with a strong foundation in C programming, where I worked on backup software for Windows, focusing on data movement and device control using SCSI interfaces. This early experience honed my problem-solving skills and attention to detail, which have been invaluable in my transition to web development.</p>
-    <p>Today, I specialize in front-end development, with deep expertise in HTML, CSS, and JavaScript. Over the years, I've mastered modern frameworks like Svelte, Vue.js, React, and Angular, allowing me to craft dynamic, responsive, and user-friendly web applications. My background also includes experience in back-end development, particularly with PHP, Python, and Node.js, giving me a well-rounded skill set that bridges both the client and server sides of web development.</p>
-    <p>I’m always eager to take on new challenges, constantly seeking opportunities to expand my skills and stay ahead of the curve in the ever-evolving world of technology.</p>`;
+    console.log("Home", resumeFiles);
+
+    let fetchJson = fetch(resumeFiles[resumeType]).then(res => res.json()).then(jsn => { console.log("JSON:", jsn); return jsn; });
 
     document.body.setAttribute("data-page-name", "home");
 
@@ -23,16 +25,18 @@
 
 <div class="home-wrapper page-content">
     {#await fetchJson}
-    <h2>Loading...</h2>
+        <h2>Loading...</h2>
     {:then resume}
-    <div class="head-section">
-        <Outline basics="{resume.basics}" type="home" />
-        <Profiles profiles={resume.basics.profiles} />
-    </div>
-    <Summary summary={resume.basics.summary} title="About Me" />
-    <Skills data={resume.skills} />
+        <div class="head-section">
+            <Outline basics="{resume.basics}" type="home" />
+            <Profiles profiles={resume.basics.profiles} />
+        </div>
+        <Summary summary={resume.basics.home_summary} title="About Me" homeLook="true" />
+        {#if resume.skills.length}
+            <Skills data={resume.skills} />
+        {/if}
     {:catch error}
-    error
+        {error}
     {/await}
 </div>
 
