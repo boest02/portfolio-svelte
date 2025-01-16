@@ -7,6 +7,7 @@
     import Strengths from "../components/Strengths.svelte";
     import Summary from "../components/Summary.svelte";
     import Profiles from "../components/Profiles.svelte";
+    import Projects from "../components/Projects.svelte";
 
     const resumeType = getContext("resumeType");
     const resumeFiles = getContext("resumeFiles");
@@ -32,9 +33,10 @@
             <Outline basics="{resume.basics}" type="home" />
             <Profiles profiles={resume.basics.profiles} />
         </div>
-        <Summary summary={resume.basics.home_summary} title="About Me" homeLook="true" />
-        {#if resume.skills.length}
-            <Skills data={resume.skills} />
+        <Summary summary={resume.basics.home_summary} title="About Me -" homeLook="true" />
+
+        {#if resume.projects.length}
+            <Projects data={resume.projects} />
         {/if}
     {:catch error}
         {error}

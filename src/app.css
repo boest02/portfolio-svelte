@@ -48,6 +48,7 @@ body {
   background-attachment: fixed;
   backdrop-filter: blur;
   height: 100%;
+  padding-bottom: 100px;
   min-height: 100vh;
 }
 

@@ -8,7 +8,8 @@
         "url": "https://steveb-portfolio.netlify.app/",
         "res_summary": "Dynamic software development professional with over 10 years of Front end development experience. Specializing in creating accessible and responsive web applications, I leverage deep expertise in HTML, CSS, and modern JavaScript frameworks to deliver innovative, user-centric solutions. Committed to optimizing user experience while aligning with strategic business objectives, I have successfully led complex redesigns, enhanced user engagement, and implemented best practices in accessibility and performance. A proven collaborator and mentor, I thrive in cross-functional teams to drive project success and foster growth.",
         "home_summary": [
-            "Hello! I’m a seasoned front-end web developer with over 25 years of experience in the software industry. My journey in technology began with a strong foundation in C programming, where I worked on backup software for Windows, focusing on data movement and device control using SCSI interfaces. This early experience honed my problem-solving skills and attention to detail, which have been invaluable in my transition to web development.",
+            "Welcome, this is my attempt at a Portfolio site and it's ever changing as I continue to work on it.  It's built with Svelte and Tailwind CSS and is hosted on Netlify.",
+            "I’m a seasoned front-end web developer with over 25 years of experience in the software industry. My journey in technology began with a strong foundation in C programming, where I worked on backup software for Windows, focusing on data movement and device control using SCSI interfaces. This early experience honed my problem-solving skills and attention to detail, which have been invaluable in my transition to web development.",
             "Today, I specialize in front-end development, with deep expertise in HTML, CSS, and JavaScript. Over the years, I've mastered modern frameworks like Svelte, Vue.js, React, and Angular, allowing me to craft dynamic, responsive, and user-friendly web applications. My background also includes experience in back-end development, particularly with PHP, Python, and Node.js, giving me a well-rounded skill set that bridges both the client and server sides of web development.",
             "I’m always eager to take on new challenges, constantly seeking opportunities to expand my skills and stay ahead of the curve in the ever-evolving world of technology."
         ],
@@ -242,12 +243,47 @@
     ],
     "projects": [
         {
-            "name": "Project",
-            "startDate": "2019-01-01",
-            "endDate": "2021-01-01",
-            "description": "Description...",
+            "name": "Stepped Registration",
+            "type": "Work Project",
+            "tech": ["Svelte", "Laravel", "PHP", "JavaScript", "CSS"],
+            "images": [
+                "/images/screenshots/mpo-elevate-reg-form.png",
+                "/images/screenshots/mpo-reg-page.png",
+                "/images/screenshots/mpo-reg-page-mobile.png"
+            ],
+            "description": "Developed an innovative registration system that reimagined the traditional form-filling experience as a conversational journey. This Single Page Application utilized a component-based architecture to guide users through a natural, step-by-step account creation process. The system transformed standard data collection into an engaging, dialogue-like interaction that enhanced user experience while gathering necessary registration information.",
             "highlights": [
-                "Won award at AIHacks 2016"
+                "Architected a versatile component library initially focused on user registration that evolved into a comprehensive system for creating diverse stepped user experiences across multiple applications",
+                "Engineered a robust backend integration system that dynamically generates page layouts and component configurations through structured JSON data, enabling flexible content management",
+                "Transformed static JSON configurations into a dynamic system supporting personalized user experiences based on user segments, significantly improving engagement and conversion rates"
+            ],
+            "url": "https://project.com/"
+        },
+        {
+            "name": "PCH Weekly Grand Prize Website",
+            "type": "Work Project",
+            "tech": ["Svelte", "Laravel", "PHP", "JavaScript", "CSS"],
+            "images": [
+                "/images/screenshots/rewards.pch.com_weekly-grand-prize.png"
+            ],
+            "description": "Working off of Figma designs and specs from our business team, I was tasked with creating a new website for the PCH Weekly Grand Prize. This was a new site that would be used to promote the PCH Weekly Grand Prize to all users, even if they had not registered with our site. The users would see the weekly prizes that were retrieved from our internal Prize Tracking System and allow them to enter into the drawing.  If a user that was not registered with our site entered the drawing, they would be re-directed to our registration site to create an account.  This site was built using the same components as the Stepped Registration system, but with a different configuration. Upon registration, the user would be redirected back to the PCH Weekly Grand Prize site and given an entry for the prize they had selected.",
+            "highlights": [
+                "This was built using Laravel components and mostly vanilla Javascript and CSS.  The site was built to be responsive and to be able to be used on desktop and mobile devices.",
+                "This was built to meet strict SEO requirements and be ADA compliant."
+            ],
+            "url": "https://project.com/"
+        },
+        {
+            "name": "Realtime Ad Module System",
+            "type": "Work Project",
+            "tech": ["Svelte", "Laravel", "PHP", "JavaScript", "CSS"],
+            "images": [
+
+            ],
+            "description": "We were asked to create a system that could serve the user a specific ad on page without a page reload. These ads could be 3rd part or internal ads, with the details coming from an internal ad server (Kevel).  The ads coudl range from internal ads that were jsut markup and images or could be dynamic ads like Rokt or AdsPostx, etc.  So we created a system that could query the ad server and display in an iframe the appropriate ad for the user.",
+            "highlights": [
+                "Created an iframe service that could monitor the ad/markup within the iframe and message out to the page the height of the iframe so the page could adjust its layout to accommodate the ad.",
+                "Created a JS library could update the ad server with stats on when the ad was displayed to the user and when the user clicked on the ad."
             ],
             "url": "https://project.com/"
         }

@@ -29,8 +29,10 @@
             align-items: center;
 
             h2.title {
-                font-size: 1.2rem;
-                font-weight: 600;
+                font-size: 125%;
+                font-weight: bold;
+                color: rgb(28, 141, 164);
+                align-self: flex-start;
                 margin-bottom: 10px;
                 border: unset;
             }
