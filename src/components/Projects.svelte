@@ -163,10 +163,11 @@
                 margin: 10px;
                 .tech-item {
                     font-size: 85%;
-                    background-color: rgb(24, 34, 96);
-                    color: rgb(9, 199, 237);
-                    padding: 5px 10px;
-                    border-radius: 15px;
+                    background-color: rgb(28, 141, 164);
+                    color: #fff;
+                    padding: 7px 15px;
+                    border-radius: 25px;
+                    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2), -1px -1px 4px rgba(255, 255, 255, 0.3);
                 }
             }
 
