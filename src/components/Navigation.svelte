@@ -28,7 +28,7 @@
 
 <nav class="nav-bar" class:sticky={sticky}>
     <div class="inner-wrapper">
-        <button class="hamburger" on:click={clickNav} class:open={navOpen}>
+        <button class="hamburger" aria-label="Toggle navigation menu" on:click={clickNav} class:open={navOpen}>
             <div></div>
             <div></div>
             <div></div>
