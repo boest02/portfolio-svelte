@@ -2,14 +2,21 @@
     export let list = [];
 </script>
 
-<ul class="bullets-wrapper">
+<div class="bullets-wrapper">
     {#each list as item}
-    <li>{item}</li>
+    <div class="list-item">{item}</div>
     {/each}
-</ul>
+</div>
 
 <style lang="scss">
     .bullets-wrapper {
-        margin: 10px 30px 20px;
+        display: flex;
+        flex-direction: column;
+        margin: 10px 20px 20px;
+
+        .list-item {
+            display: list-item;
+            margin-bottom: 5px;
+        }
     }
 </style>

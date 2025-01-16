@@ -60,13 +60,13 @@
             "endDate": "",
             "summary": "Description…",
             "highlights": [
-                "Led the comprehensive redesign of the PCH Weekly Prize website, achieving a 20% increase in organic traffic and enhancing user engagement.",
-                "Spearheaded the development of a configurable system for reusable, themed user experiences, resulting in improved user retention and satisfaction.",
-                "Engineered a responsive site navigation system for all PCH properties, ensuring consistency and usability across platforms, ultimately enhancing the user journey.",
-                "Designed a reusable info tip tool for dynamic deployment across our sites, providing users with additional insights about PCH products and services on both mobile and desktop devices.",
-                "Orchestrated seamless integration of ad placements, third-party components, and CMS functionality, streamlining content management processes.",
-                "Championed accessibility compliance, optimizing design and functionality to ensure an inclusive experience for all users.",
-                "Mentored junior developers and revitalized stalled projects, fostering team growth and delivering successful outcomes on key initiatives."
+                "Directed the end-to-end redesign of the PCH Weekly Prize website, increasing organic traffic by 20% and significantly boosting user engagement through improved UX and performance.",
+                "Pioneered the development of a highly configurable system for reusable, themed user experiences, enhancing user retention and satisfaction while reducing development overhead.",
+                "Architected a responsive site navigation system utilized across all PCH properties, ensuring seamless usability and consistent user journeys across desktop and mobile platforms.",
+                "Developed a reusable, dynamic info tip tool deployed across multiple sites, enabling users to access key insights about PCH products and services, optimizing cross-device functionality.",
+                "Streamlined content workflows by orchestrating the integration of ad placements, third-party components, and CMS functionality, improving operational efficiency.",
+                "Advocated for and implemented accessibility best practices, ensuring compliance with standards and delivering an inclusive digital experience for diverse audiences.",
+                "Mentored junior developers and took ownership of stalled projects, revitalizing team morale, fostering technical growth, and delivering on high-priority initiatives."
             ]
         },
         {
@@ -77,42 +77,28 @@
             "endDate": "2019-07-30",
             "summary": "Description…",
             "highlights": [
-                "Developed a customizable communication module, enabling the business to deliver personalized messages to users.",
-                "Enhanced user engagement in a gaming environment through the introduction of innovative features.",
-                "Built a user-centric site, offering an interactive platform for users to play games and win prizes.",
-                "Architected a new website that repurposed external data, dynamically presenting articles based on admin-configured categories.",
-                "Collaborated with developers, QA, and creative teams in an agile environment to streamline project delivery.",
-                "Contributed to the estimation, implementation, and testing of stories, ensuring smooth feature integration into projects."
+                "Designed and developed a customizable communication module, empowering the business to deliver personalized user messages and enhancing customer engagement.",
+                "Introduced innovative features in a gaming environment, significantly improving user interaction and engagement metrics.",
+                "Built a user-focused platform that provided an interactive experience for playing games and winning prizes, aligning design with business objectives and user needs.",
+                "Engineered a dynamic website leveraging external data sources, enabling admin-configured article categories for flexible content presentation and improved site usability.",
+                "Collaborated with cross-functional teams, including developers, QA, and creatives, in an Agile environment to streamline workflows and ensure timely project delivery.",
+                "Played a key role in story estimation, implementation, and testing, ensuring seamless integration of new features into existing projects while maintaining high-quality standards."
             ]
         },
         {
             "name": "PUBLISHERS CLEARING HOUSE",
-            "position": "Senior Business Analyst",
+            "position": "Senior Business Analyst / Scrum Master",
             "url": "https://info.pch.com/",
-            "startDate": "2015-12-01",
+            "startDate": "2013-11-01",
             "endDate": "2018-07-30",
             "summary": "Description…",
             "highlights": [
-                "Designed and led the implementation of a Web-based Contest Tracking System, focusing on prize tracking, drawing systems, and winner fulfillment.",
-                "Captured high-level requirements from stakeholders, translating them into detailed user stories for efficient feature delivery.",
-                "Facilitated integration discussions with legacy systems based on requirements, ensuring seamless system interoperability.",
-                "Formulated and executed project plans for solution delivery, collaborating closely with database, development, and QA teams.",
-                "Created mockups and PowerPoint presentations to effectively communicate proposed solutions to the business."
-            ]
-        },
-        {
-            "name": "PUBLISHERS CLEARING HOUSE",
-            "position": "Business Analyst / Scrum Master",
-            "url": "https://info.pch.com/",
-            "startDate": "2013-11-01",
-            "endDate": "2015-11-30",
-            "summary": "Description…",
-            "highlights": [
-                "Planned and helped deliver multiple cross site features as well as multiple new websites.",
-                "Worked with internal creative and business teams to design the look and function of Website features.",
-                "Followed up with the business team to work out the functionality of the Website features, including Admin configuration options and End User requirements.",
-                "Led discussions with 3rd party vendors to gain details on how to integrate their content on PCH.com sites.",
-                "Acted as Scrum Master on multiple projects, setting sprint goals, scheduling code freeze and release dates, etc."
+                "Designed and led the implementation of a Web-based Contest Tracking System, including prize tracking, drawing systems, and winner fulfillment, improving operational efficiency.",
+                "Translated high-level stakeholder requirements into detailed user stories, enabling clear communication and efficient delivery of features.",
+                "Planned and delivered multiple cross-site features and new websites, collaborating with creative, business, and technical teams to ensure alignment with project goals.",
+                "Facilitated integration discussions with legacy systems and third-party vendors, ensuring seamless interoperability and successful content integration on PCH.com.",
+                "Served as Scrum Master on multiple projects, setting sprint goals, managing ceremonies, and overseeing release schedules to ensure timely and high-quality deliverables.",
+                "Developed project plans and mockups to communicate proposed solutions effectively, gaining stakeholder buy-in and driving successful execution."
             ]
         },
         {
@@ -224,6 +210,8 @@
             "name": "Other Tools",
             "level": "Advanced",
             "keywords": [
+                "Backend: Node.js, Express, PHP, Laravel",
+                "Databases: MySQL, PostgreSQL",
                 "Build Tools: Vite, Webpack, Rollup",
                 "Version Control: Git, GitHub, GitLab",
                 "Dev Tools: ESLint, Docker",

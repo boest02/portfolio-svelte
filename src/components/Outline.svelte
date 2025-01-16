@@ -31,7 +31,7 @@
             height: 125px;
             border-radius: 45%;
             box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
-            background-image: url(/src/images/myAvatar.png);
+            background-image: url(/src/images/me-2.png);
             background-size: cover;
             background-position: 0% 35%;
         }

@@ -47,10 +47,7 @@
 
                 .experience-wrapper {
                     margin: 0;
-
-                    .list-wrapper {
-                        margin: 0;
-                    }
+                    font-size:  95%;
                 }
             }
         }
