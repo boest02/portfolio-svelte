@@ -19,6 +19,7 @@
 
 <svelte:head>
     <title>Resume - Stephen Boettcher</title>
+    <meta name="description" content="Stephen Boettcher's resume">
 </svelte:head>
 
 <div class="resume-wrapper page-content">

@@ -4,6 +4,7 @@
 
 <svelte:head>
 	<title>Blog - Stephen Boettcher</title>
+    <meta name="description" content="Stephen Boettcher's blog">
 </svelte:head>
 
 <div class="blog-wrapper page-content">

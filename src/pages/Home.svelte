@@ -21,6 +21,7 @@
 
 <svelte:head>
     <title>Home - Stephen Boettcher</title>
+    <meta name="description" content="Stephen Boettcher's resume and portfolio">
 </svelte:head>
 
 <div class="home-wrapper page-content">

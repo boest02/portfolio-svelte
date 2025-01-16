@@ -37,6 +37,7 @@
 
 <svelte:head>
     <title>Portfolio - Stephen Boettcher</title>
+    <meta name="description" content="Stephen Boettcher's portfolio">
 </svelte:head>
 
 <article class="portfolio-wrapper">

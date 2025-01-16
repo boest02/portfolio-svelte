@@ -12,6 +12,7 @@
 
 <svelte:head>
 	<title>Career - Stephen Boettcher</title>
+    <meta name="description" content="Stephen Boettcher's career">
 </svelte:head>
 
 <div class="career-wrapper page-content">
