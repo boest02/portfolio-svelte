@@ -30,11 +30,6 @@
       "name": "Home"
     },
     {
-      "path": '/career',
-      "component": Career,
-      "name": "Career"
-    },
-    {
       "path": '/portfolio',
       "component": Portfolio,
       "name": "Portfolio"

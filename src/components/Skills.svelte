@@ -59,10 +59,11 @@
 
             .skill-types {
                 display: inline;
+                width: 95%;
 
                 h3 {
                     display: inline;
-                    margin: 0 5px 1px 0;
+                    margin: 0 5px 1px -10px;
                     letter-spacing: .5px;
 
                     &::after {

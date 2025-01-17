@@ -44,6 +44,7 @@
 </div>
 
 <style lang="scss">
+
     .home-wrapper {
         margin-top: 40px;
         animation: 3s 1 forwards fade-in, 1s 1 forwards slide-in;
@@ -58,6 +59,7 @@
             align-items: center;
             justify-content: center;
             gap: 20px;
+            padding-block: 30px 10px;
 
             :global(.outline-wrapper) {
                 flex-basis: 450px;

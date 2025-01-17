@@ -33,12 +33,6 @@
                 "icon": "https://cdn-icons-png.flaticon.com/512/25/25231.png"
             },
             {
-                "network": "GitLab",
-                "username": "@boest02",
-                "url": "https://gitlab.com/boest02",
-                "icon": "https://gitlab.com/assets/favicon-72a2cad5025aa931d6ea56c3201d1f18e68a8cd39788c7c80d5b2b82aa5143ef.png"
-            },
-            {
                 "network": "CodePen",
                 "username": "boest02",
                 "url": "https://codepen.io/boest02",
@@ -245,11 +239,28 @@
         {
             "name": "Stepped Registration",
             "type": "Work Project",
-            "tech": ["Svelte", "Typescript", "HTML5", "JavaScript", "SASS", "Mocha", "Chai"],
+            "tech": [
+                "Svelte",
+                "Typescript",
+                "HTML5",
+                "JavaScript",
+                "SASS",
+                "Mocha",
+                "Chai"
+            ],
             "images": [
-                "/images/screenshots/mpo-elevate-reg-form.png",
-                "/images/screenshots/mpo-reg-page.png",
-                "/images/screenshots/mpo-reg-page-mobile.png"
+                {
+                    "alt": "Registration Form lightbox",
+                    "url": "/images/screenshots/mpo-elevate-reg-form.png"
+                },
+                {
+                    "alt": "Desktop Registration page",
+                    "url": "/images/screenshots/mpo-reg-page.png"
+                },
+                {
+                    "alt": "Mobile Registration page (responsive)",
+                    "url": "/images/screenshots/mpo-reg-page-mobile.png"
+                }
             ],
             "description": "Developed an innovative registration system that reimagined the traditional form-filling experience as a conversational journey. This Single Page Application utilized a component-based architecture to guide users through a natural, step-by-step account creation process. The system transformed standard data collection into an engaging, dialogue-like interaction that enhanced user experience while gathering necessary registration information.",
             "highlights": [
@@ -263,9 +274,27 @@
         {
             "name": "PCH Weekly Grand Prize Website",
             "type": "Work Project",
-            "tech": ["Blade", "Laravel", "PHP", "HTML5", "JavaScript", "CSS"],
+            "tech": [
+                "Blade",
+                "Laravel",
+                "PHP",
+                "HTML5",
+                "JavaScript",
+                "CSS"
+            ],
             "images": [
-                "/images/screenshots/rewards.pch.com_weekly-grand-prize.png"
+                {
+                    "alt": "PCH Weekly Grand Prize page",
+                    "url": "/images/screenshots/rewards-pch-weekly-grand-prize.png"
+                },
+                {
+                    "alt": "PCH Weekly Grand Prize page (orig figma)",
+                    "url": "/images/screenshots/Weekly-Grand-Prize-Figma.png"
+                },
+                {
+                    "alt": "The Prize Page",
+                    "url": "/images/screenshots/rewards weekly-grand-prize_prize.png"
+                }
             ],
             "description": "Led the development of PCH's Weekly Grand Prize website, a strategic initiative to expand prize engagement to both registered and non-registered users. Implemented a dynamic prize showcase system that integrates with our internal Prize Tracking System to display current weekly offerings. Engineered a seamless user flow that intelligently handles both registered and anonymous users, directing new users through a streamlined registration process before returning them to claim their prize entry. Leveraged our existing component library to ensure consistency while optimizing for the unique requirements of prize promotion and user acquisition. The site successfully increased user engagement and registration rates while maintaining high performance and accessibility standards.",
             "highlights": [
@@ -280,15 +309,61 @@
         {
             "name": "Realtime Ad Module System",
             "type": "Work Project",
-            "tech": ["HTML5", "JavaScript", "CSS", "Blade", "Laravel", "PHP", "JavaScript", "CSS"],
+            "tech": [
+                "HTML5",
+                "JavaScript",
+                "SASS",
+                "Blade",
+                "Laravel",
+                "PHP",
+                "JavaScript",
+                "iframe"
+            ],
             "images": [
-
+                {
+                    "alt": "In-page placement with iframe",
+                    "url": "/images/screenshots/in-page-placement.png"
+                },
+                {
+                    "alt": "Lightbox with iframe",
+                    "url": "/images/screenshots/light-box-placement.png"
+                },
+                {
+                    "alt": "Lightbox with iframe adjusts to height",
+                    "url": "/images/screenshots/light-box-smaller-placement.png"
+                },
+                {
+                    "alt": "Iframe Service Diagram",
+                    "url": "/images/screenshots/iFrame Service Diagram.png"
+                }
             ],
             "description": "Developed a sophisticated real-time ad delivery system that seamlessly integrates both third-party and internal advertisements without requiring page reloads. The system interfaces with Kevel (our internal ad server) to dynamically serve targeted content ranging from simple markup and images to complex interactive ads from providers like Rokt and AdsPostx. Built a robust architecture that efficiently queries the ad server and renders appropriate content within secure iframes, ensuring optimal performance and user experience while maintaining site stability.",
             "highlights": [
                 "Engineered a responsive iframe service that dynamically monitors ad content dimensions and communicates with the parent page to seamlessly adjust layouts, preventing content jumps and ensuring smooth user experience",
                 "Developed a comprehensive JavaScript tracking library that captures and reports critical ad metrics including viewability, engagement time, and click-through rates to optimize ad performance and ROI",
                 "Implemented an intelligent caching system that pre-loads upcoming ads to minimize latency and provide instant content transitions between ad displays"
+            ],
+            "url": "https://project.com/"
+        },
+        {
+            "name": "GA Event Tracking Service",
+            "type": "Work Project",
+            "tech": [
+                "HTML5",
+                "JavaScript",
+                "NPM",
+                "Vite",
+                "Vitest",
+                "CI/CD"
+            ],
+            "images": [
+
+            ],
+            "description": "Developed a robust Google Analytics Event Tracking Service that simplifies click event monitoring across web applications. The service utilizes a data attribute-based system to automatically detect and track user interactions, transforming specified HTML elements into trackable components. It seamlessly captures and transmits event data to Google Analytics, requiring minimal setup while providing comprehensive tracking capabilities. Built with modern tooling including Vite and Vitest, the service is thoroughly tested and optimized for easy integration into any JavaScript project.",
+            "highlights": [
+                "Implemented an intelligent redirect delay system that ensures accurate event tracking by waiting for analytics data transmission before page navigation",
+                "Engineered a sophisticated first-click tracking mechanism to prevent duplicate event submissions and maintain data accuracy",
+                "Established an automated CI/CD pipeline for seamless package versioning and distribution through NPM, ensuring reliable and consistent updates"
             ],
             "url": "https://project.com/"
         }

@@ -5,8 +5,10 @@
 
 </script>
 
-{commaSeparatedList}
+<span class="list-item">{commaSeparatedList}</span>
 
 <style lang="scss">
-
+    .list-item {
+        font-size: 85%;
+    }
 </style>
