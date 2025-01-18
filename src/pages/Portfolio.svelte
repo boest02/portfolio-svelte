@@ -36,7 +36,8 @@
 </script>
 
 <svelte:head>
-    <title>Portfolio - Stephen Boettcher</title>
+    <title>Stephen Boettcher - Portfolio</title>
+    <link rel="canonical" href="https://steveb-portfolio.netlify.app/portfolio">
     <meta name="description" content="Stephen Boettcher's portfolio">
 </svelte:head>
 

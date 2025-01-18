@@ -48,7 +48,6 @@
 
 </script>
 
-
 <Router {url}>
   <Navigation links={links} />
   <main class="main-content">

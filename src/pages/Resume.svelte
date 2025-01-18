@@ -18,7 +18,8 @@
 </script>
 
 <svelte:head>
-    <title>Resume - Stephen Boettcher</title>
+    <title>Stephen Boettcher - Resume</title>
+    <link rel="canonical" href="https://steveb-portfolio.netlify.app/resume">
     <meta name="description" content="Stephen Boettcher's resume">
 </svelte:head>
 

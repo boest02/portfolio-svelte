@@ -3,7 +3,8 @@
 </script>
 
 <svelte:head>
-	<title>Blog - Stephen Boettcher</title>
+	<title>Stephen Boettcher - Blog</title>
+    <link rel="canonical" href="https://steveb-portfolio.netlify.app/blog">
     <meta name="description" content="Stephen Boettcher's blog">
 </svelte:head>
 
