@@ -104,7 +104,8 @@
             "summary": "Description…",
             "highlights": [
                 "Developed a “code peer review” process adopted by the broader team, improving code quality and consistency across projects.",
-                "Mentored team members through design and implementation phases, providing guidance on best practices and supporting defect resolution to enhance team performance."
+                "Mentored team members through design and implementation phases, providing guidance on best practices and supporting defect resolution to enhance team performance.",
+                "Led comprehensive training sessions for support and sales teams on ARCserve product updates, enhancing their ability to effectively communicate and troubleshoot new features."
             ]
         },
         {
@@ -182,7 +183,8 @@
                 "PHP",
                 "MySQL",
                 "Webpack",
-                "Git"
+                "Git",
+                "Docker"
             ]
         },
         {
