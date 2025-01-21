@@ -9,6 +9,10 @@
         display: none;
     }
 
+    a {
+        text-decoration: none;
+    }
+
     body {
         background-image: unset;
         margin: 0;
@@ -41,13 +45,17 @@
                     display: none;
                 }
 
-                .skills-wrapper {
-                    font-size: 85%;
+                .summary-wrapper, .skills-wrapper {
+                    font-size: 90%;
                 }
 
                 .experience-wrapper {
                     margin: 0;
                     font-size:  95%;
+
+                    .bullets-wrapper {
+                        margin-block: 0;
+                    }
                 }
             }
         }

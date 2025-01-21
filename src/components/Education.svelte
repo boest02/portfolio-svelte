@@ -8,11 +8,11 @@
     <h2>Education:</h2>
     <div class="alignment-wrapper">
         {#each data as edu, index}
-        <section>
-            <h2>{edu.institution}</h2>
-            <h4>{edu['studyType'] + ' ~ ' + edu['area']}</h4>
-            <div>{(new Date(edu['endDate'])).toLocaleString("en-us", { month: "long", year: "numeric" })}</div>
-        </section>
+            <section>
+                <h2>{edu.institution}</h2>
+                <h4>{edu['studyType'] + ' ~ ' + edu['area']}</h4>
+                <div>{(new Date(edu['endDate'])).toLocaleString("en-us", { month: "long", year: "numeric" })}</div>
+            </section>
         {/each}
     </div>
 </div>

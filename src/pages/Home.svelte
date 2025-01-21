@@ -32,7 +32,6 @@
     {:then resume}
         <div class="head-section">
             <Outline basics="{resume.basics}" type="home" />
-            <Profiles profiles={resume.basics.profiles} />
         </div>
         <Summary summary={resume.basics.home_summary} title="About Me -" homeLook="true" />
 
@@ -61,14 +60,8 @@
             justify-content: center;
             gap: 20px;
             padding-block: 30px 10px;
-
-            :global(.outline-wrapper) {
-                flex-basis: 450px;
-            }
-
-            :global(.profiles-wrapper) {
-                flex-basis: 50%;
-            }
+            width: 95%;
+            margin: 0 auto;
         }
     }
 

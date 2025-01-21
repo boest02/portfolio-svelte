@@ -32,7 +32,7 @@
         <Summary summary="{resume.basics.res_summary}" />
         <Skills data={resume.skills} type="alternate" />
         <Experience data={resume.work} />
-        <Education data={resume.education} />
+        <Education data={[resume.education[0]]} />
     {:catch error}
     error
     {/await}
@@ -41,7 +41,7 @@
 <style lang="scss">
     .resume-wrapper {
         position: relative;
-        padding: 50px;
+        padding: 50px 75px;
 
         @media only screen and (max-width:480px) {
             padding: 30px 10px;

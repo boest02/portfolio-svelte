@@ -10,9 +10,9 @@
         <h3>{title}</h3>
     </dt>
     <dd>
-        <DateRange {start} {end} />   
+        <DateRange {start} {end} />
     </dd>
-     
+
 </dl>
 
 <style lang="scss">
@@ -20,15 +20,22 @@
 
         display: flex;
         flex-direction: row;
+        align-items: baseline;
         gap: 10px;
-        margin: 10px 15px;
+        width: 100%;
 
         h3 {
             font-weight: 700;
+            font-size: 90%;
+        }
+
+        dt {
+            flex-basis: 100%;
         }
 
         dd {
             font-style: italic;
+            text-wrap: nowrap;
         }
 
         @media only screen and (max-width:480px) {

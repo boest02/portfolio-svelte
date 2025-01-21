@@ -2,74 +2,54 @@
     import Heading from './Heading.svelte';
     import Bullets from './Bullets.svelte';
     export let data = [];
-    export let consolidate = false;
-    export let includeNonHighlights = false;
-    console.log("work: ", data);
 
-    let experienceList = {};
-    let nonHighlightsList = {};
+    console.log("data: ", data);
 
-    const parseExperience = (exp) => {
-        data.forEach(exp => {
-            if (!exp.highlights.length) return;
-            experienceList[exp.name] === undefined && (experienceList[exp.name] = []);
-            experienceList[exp.name].push(exp);
+    const experienceList = data.slice(0, 3);
+    let pastExperience = {};
+
+    const consolidateByCompany = (jobs) => {
+        jobs.forEach(job => {
+            pastExperience[job.name] === undefined && (pastExperience[job.name] = []);
+            pastExperience[job.name].push(job);
         });
     };
 
-    const parseNonHighlights = (exp) => {
-        data.forEach(exp => {
-            if (exp.highlights.length) return;
-            nonHighlightsList[exp.name] === undefined && (nonHighlightsList[exp.name] = []);
-            nonHighlightsList[exp.name].push(exp);
-        });
-    };
+    consolidateByCompany(data.slice(3));
 
-    parseExperience(data);
-    parseNonHighlights(data);
     console.log("experienceList: ", experienceList);
-    console.log("nonHighlightsList: ", nonHighlightsList);
+    console.log("pastExperience: ", pastExperience);
 </script>
 
 <section class="experience-wrapper block">
     <h2>Experience:</h2>
-    {#each Object.keys(experienceList) as key}
-    <section>
-        {#if consolidate}
-        <h2>
-            {key}
-            <a class="company-link" href="{experienceList[key][0].url}" target="_blank">link</a>
-        </h2>
-        {/if}
+    {#each experienceList as job}
+        <section>
+            <h2>
+                <div>{job.name}</div>
+                <Heading title="{job.position}" start="{job.startDate}" end="{job.endDate}" />
+            </h2>
 
-        {#each experienceList[key] as exp}
-        {#if !consolidate}
-        <h2>
-            {key}
-            <a class="company-link" href="{experienceList[key][0].url}" target="_blank">link</a>
-        </h2>
-        {/if}
-        <Heading title="{exp.position}" start="{exp.startDate}" end="{exp.endDate}" />
-        <div class="highlights-wrapper">
-            <Bullets list="{exp.highlights}" />
-        </div>
-        {/each}
-    </section>
+            <div class="highlights-wrapper">
+                <Bullets list="{job.highlights}" />
+            </div>
+        </section>
     {/each}
 
-    {#if includeNonHighlights}
-    {#each Object.keys(nonHighlightsList) as key}
-    <section class="non-highlights-wrapper">
-        <h2>
-            {key}
-        </h2>
-
-        {#each nonHighlightsList[key] as exp}
-        <Heading title="{exp.position}" start="{exp.startDate}" end="{exp.endDate}" />
+    <h2>Past Experience:</h2>
+    <div class="past-experience-wrapper">
+        {#each Object.keys(pastExperience) as company}
+            <section>
+                <h2>{company}</h2>
+                {#each pastExperience[company] as job}
+                    <Heading title="{job.position}" start="{job.startDate}" end="{job.endDate}" />
+                    <div class="highlights-wrapper">
+                        <Bullets list="{job.highlights}" />
+                    </div>
+                {/each}
+            </section>
         {/each}
-    </section>
-    {/each}
-    {/if}
+    </div>
 </section>
 
 <style lang="scss">
@@ -80,7 +60,10 @@
             margin: 15px;
 
             h2 {
+                display: flex;
+                gap: 10px;
                 font-weight: 700;
+                text-wrap: nowrap;
             }
 
             .company-link {
@@ -94,20 +77,22 @@
             }
         }
 
-        .non-highlights-wrapper {
-            h2::after {
-                content: "- Previous Roles -";
-                margin-left: 10px;
-                margin-top: 5px;
-                font-size: 70%;
-                font-style: italic;
-                font-weight: 400;
-                vertical-align: top;
+        .past-experience-wrapper {
+            section {
+                margin: 0 15px;
 
-            }
+                :global(.heading-wrapper) {
+                    margin: 5px 20px;
+                }
 
-            :global(.heading-wrapper) {
-                margin: 5px 20px;
+                .highlights-wrapper {
+                    margin: 0 45px 5px;
+
+                    :global(.bullets-wrapper) {
+                        margin: 0 20px;
+                        font-size: 95%;
+                    }
+                }
             }
         }
 
@@ -120,7 +105,7 @@
                 }
 
                 .highlights-wrapper {
-                    margin: 5px auto 10px;
+                    margin: 5px auto;
                 }
             }
         }

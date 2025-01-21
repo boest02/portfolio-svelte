@@ -1,14 +1,16 @@
 {
     "basics": {
         "name": "Stephen L Boettcher",
-        "label": "Senior Frontend Developer",
+        "label": "Front-End Developer",
         "image": "/src/images/Me.JPG",
         "email": "boest02@gmail.com",
         "phone": "516-220-4640",
-        "url": "https://steveb-portfolio.netlify.app/",
-        "res_summary": "Dynamic software development professional with over 10 years of Front end development experience. Specializing in creating accessible and responsive web applications, I leverage deep expertise in HTML, CSS, and modern JavaScript frameworks to deliver innovative, user-centric solutions. Committed to optimizing user experience while aligning with strategic business objectives, I have successfully led complex redesigns, enhanced user engagement, and implemented best practices in accessibility and performance. A proven collaborator and mentor, I thrive in cross-functional teams to drive project success and foster growth.",
+        "portfolio_url": "sboettcher.com",
+        "linkedin_url": "linkedin.com/in/stephenboettcher",
+        "github_url": "github.com/boest02",
+        "res_summary": "Experienced Front-End Developer with 10+ years of expertise in architecting solutions and creating responsive, accessible, and scalable web applications. Proficient in modern JavaScript frameworks, including Svelte and React, with a strong focus on delivering innovative, high-performance solutions through clean, efficient code and adherence to industry best practices. Demonstrated success in driving technical excellence, optimizing user experiences, and aligning development initiatives with strategic business objectives. Skilled at leading cross-functional teams, mentoring developers, and designing solutions that bridge the gap between technical and business requirements.",
         "home_summary": [
-            "Welcome, this is my attempt at a Portfolio site and it's ever changing as I continue to work on it.  It's built with Svelte and Tailwind CSS and is hosted on Netlify.",
+            "Welcome, this is my attempt at a Portfolio site and it's ever changing as I continue to work on it.  It's built with Svelte, SASS and some Tailwind CSS and is hosted on Netlify.",
             "I’m a seasoned front-end web developer with over 25 years of experience in the software industry. My journey in technology began with a strong foundation in C programming, where I worked on backup software for Windows, focusing on data movement and device control using SCSI interfaces. This early experience honed my problem-solving skills and attention to detail, which have been invaluable in my transition to web development.",
             "Today, I specialize in front-end development, with deep expertise in HTML, CSS, and JavaScript. Over the years, I've mastered modern frameworks like Svelte, Vue.js, React, and Angular, allowing me to craft dynamic, responsive, and user-friendly web applications. My background also includes experience in back-end development, particularly with PHP, Python, and Node.js, giving me a well-rounded skill set that bridges both the client and server sides of web development.",
             "I’m always eager to take on new challenges, constantly seeking opportunities to expand my skills and stay ahead of the curve in the ever-evolving world of technology."
@@ -17,13 +19,14 @@
         "location": {
             "city": "Floral Park",
             "countryCode": "US",
-            "region": "New York"
+            "region": "New York",
+            "postalCode": "11001"
         },
         "profiles": [
             {
                 "network": "LinkedIn",
                 "username": "boest02",
-                "url": "https://www.linkedin.com/in/stephen-boettcher-77051b7/",
+                "url": "https://www.linkedin.com/in/stephenboettcher/",
                 "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7PAYCRc3WD7kGgYDf1ZyIBHCIPLOD4v1wpg&s"
             },
             {
@@ -55,13 +58,11 @@
             "endDate": "",
             "summary": "Description…",
             "highlights": [
-                "Directed the end-to-end redesign of the PCH Weekly Prize website, increasing organic traffic by 20% and significantly boosting user engagement through improved UX and performance.",
-                "Pioneered the development of a highly configurable system for reusable, themed user experiences, enhancing user retention and satisfaction while reducing development overhead.",
-                "Architected a responsive site navigation system utilized across all PCH properties, ensuring seamless usability and consistent user journeys across desktop and mobile platforms.",
-                "Developed a reusable, dynamic info tip tool deployed across multiple sites, enabling users to access key insights about PCH products and services, optimizing cross-device functionality.",
-                "Streamlined content workflows by orchestrating the integration of ad placements, third-party components, and CMS functionality, improving operational efficiency.",
-                "Advocated for and implemented accessibility best practices, ensuring compliance with standards and delivering an inclusive digital experience for diverse audiences.",
-                "Mentored junior developers and took ownership of stalled projects, revitalizing team morale, fostering technical growth, and delivering on high-priority initiatives."
+                "Spearheaded the complete redesign of the PCH Weekly Prize website, increasing organic traffic by 20% and enhancing user engagement through improved UX and performance optimization.",
+                "Engineered a responsive, portable site navigation system adopted across multiple PCH properties, ensuring seamless usability and consistent branding.",
+                "Developed a reusable dynamic web component for an info tooltip, deployed across multiple websites. Implemented by wrapping page elements to include styled markup, enhancing user understanding of key services.",
+                "Advocated for accessibility best practices, ensuring compliance with industry standards to deliver inclusive digital experiences.",
+                "Mentored junior and mid-level engineers through regular one-on-one sessions and by providing guidance on technical challenges."
             ]
         },
         {
@@ -72,12 +73,13 @@
             "endDate": "2019-07-30",
             "summary": "Description…",
             "highlights": [
-                "Designed and developed a customizable communication module, empowering the business to deliver personalized user messages and enhancing customer engagement.",
-                "Introduced innovative features in a gaming environment, significantly improving user interaction and engagement metrics.",
-                "Built a user-focused platform that provided an interactive experience for playing games and winning prizes, aligning design with business objectives and user needs.",
-                "Engineered a dynamic website leveraging external data sources, enabling admin-configured article categories for flexible content presentation and improved site usability.",
-                "Collaborated with cross-functional teams, including developers, QA, and creatives, in an Agile environment to streamline workflows and ensure timely project delivery.",
-                "Played a key role in story estimation, implementation, and testing, ensuring seamless integration of new features into existing projects while maintaining high-quality standards."
+                "Designed and launched a customizable communication module, empowering personalized user messaging and boosting customer engagement.",
+                "Created innovative gaming features that significantly improved user interaction metrics.",
+                "Designed and developed modular, reusable components to streamline development workflows and ensure consistent functionality and design across applications.",
+                "Optimized web performance, reducing page load times by 25% through code refactoring, asset optimization, and efficient use of caching mechanisms.",
+                "Implemented unit tests as part of the CI/CD pipeline, ensuring code quality and stability while streamlining the development process.",
+                "Collaborated with QA teams to establish end-to-end testing processes, ensuring defect-free feature rollouts.",
+                "Integrated third-party APIs to enhance application functionality, including real-time updates and dynamic content rendering."
             ]
         },
         {
@@ -88,12 +90,9 @@
             "endDate": "2018-07-30",
             "summary": "Description…",
             "highlights": [
-                "Designed and led the implementation of a Web-based Contest Tracking System, including prize tracking, drawing systems, and winner fulfillment, improving operational efficiency.",
-                "Translated high-level stakeholder requirements into detailed user stories, enabling clear communication and efficient delivery of features.",
-                "Planned and delivered multiple cross-site features and new websites, collaborating with creative, business, and technical teams to ensure alignment with project goals.",
-                "Facilitated integration discussions with legacy systems and third-party vendors, ensuring seamless interoperability and successful content integration on PCH.com.",
-                "Served as Scrum Master on multiple projects, setting sprint goals, managing ceremonies, and overseeing release schedules to ensure timely and high-quality deliverables.",
-                "Developed project plans and mockups to communicate proposed solutions effectively, gaining stakeholder buy-in and driving successful execution."
+                "Led the development of a web-based Contest Tracking System, streamlining prize tracking, drawing, and fulfillment processes.",
+                "Acted as Scrum Master, managing sprint goals, ceremonies, and release schedules to ensure high-quality deliverables.",
+                "Coordinated integrations with legacy systems and third-party vendors, ensuring seamless system interoperability."
             ]
         },
         {
@@ -103,7 +102,10 @@
             "startDate": "2006-09-01",
             "endDate": "2013-05-30",
             "summary": "Description…",
-            "highlights": []
+            "highlights": [
+                "Developed a “code peer review” process adopted by the broader team, improving code quality and consistency across projects.",
+                "Mentored team members through design and implementation phases, providing guidance on best practices and supporting defect resolution to enhance team performance."
+            ]
         },
         {
             "name": "COMPUTER ASSOCIATES",
@@ -112,7 +114,10 @@
             "startDate": "2005-05-31",
             "endDate": "2006-09-01",
             "summary": "Description…",
-            "highlights": []
+            "highlights": [
+                "Managed a team of six developers across the home office, with dotted-line oversight of remote teams in Beijing, China, and Hyderabad, India, ensuring global collaboration and productivity.",
+                "Designed and architected solutions to meet user requirements and support new technologies, creating detailed design documents and workflow diagrams to guide the development process."
+            ]
         },
         {
             "name": "COMPUTER ASSOCIATES",
@@ -121,54 +126,13 @@
             "startDate": "2003-05-01",
             "endDate": "2005-04-30",
             "summary": "Description…",
-            "highlights": []
-        },
-        {
-            "name": "COMPUTER ASSOCIATES",
-            "position": "Software Engineer",
-            "url": "https://en.wikipedia.org/wiki/CA_Technologies",
-            "startDate": "1999-12-01",
-            "endDate": "2003-05-31",
-            "summary": "Description…",
-            "highlights": []
-        },
-        {
-            "name": "COMPUTER ASSOCIATES",
-            "position": "Maintenance Software Engineer",
-            "url": "https://en.wikipedia.org/wiki/CA_Technologies",
-            "startDate": "1999-05-01",
-            "endDate": "1999-12-31",
-            "summary": "Description…",
-            "highlights": []
-        },
-        {
-            "name": "COMPUTER ASSOCIATES",
-            "position": "Senior Technical Support Representative",
-            "url": "https://en.wikipedia.org/wiki/CA_Technologies",
-            "startDate": "1997-04-01",
-            "endDate": "1999-04-30",
-            "summary": "Description…",
-            "highlights": []
-        },
-        {
-            "name": "COMPUTER ASSOCIATES",
-            "position": "Technical Support Representative",
-            "url": "https://en.wikipedia.org/wiki/CA_Technologies",
-            "startDate": "1996-02-01",
-            "endDate": "1997-03-31",
-            "summary": "Description…",
-            "highlights": []
+            "highlights": [
+                "Developed features for ARCserve backup software, enabling data transfer and device control via SCSI interfaces.",
+                "Utilized Win32 C programming with Visual Studio 6.0 to deliver robust, high-performance solutions."
+            ]
         }
     ],
     "education": [
-        {
-            "institution": "St. John's University",
-            "url": "https://www.stjohns.edu/",
-            "area": "Computer Science",
-            "studyType": "Bachelor of Science",
-            "startDate": "1987-09-01",
-            "endDate": "1989-06-01"
-        },
         {
             "institution": "Iona College",
             "url": "https://www.iona.edu/",
@@ -176,11 +140,19 @@
             "studyType": "Bachelor of Science",
             "startDate": "1989-09-01",
             "endDate": "1991-06-01"
+        },
+        {
+            "institution": "St. John's University",
+            "url": "https://www.stjohns.edu/",
+            "area": "Computer Science",
+            "studyType": "Bachelor of Science",
+            "startDate": "1987-09-01",
+            "endDate": "1989-06-01"
         }
     ],
     "skills": [
         {
-            "name": "Front-End Tech",
+            "name": "Front-End Technologies",
             "level": "Expert",
             "keywords": [
                 "HTML5",
@@ -205,33 +177,41 @@
             "name": "Other Tools",
             "level": "Advanced",
             "keywords": [
-                "Backend: Node.js, Express, PHP, Laravel",
-                "Databases: MySQL, PostgreSQL",
-                "Build Tools: Vite, Webpack, Rollup",
-                "Version Control: Git, GitHub, GitLab",
-                "Dev Tools: ESLint, Docker",
-                "Design Tools: Figma, Photoshop"
+                "Node.js",
+                "Express",
+                "PHP",
+                "MySQL",
+                "Webpack",
+                "Git"
             ]
         },
         {
-            "name": "Methodologies & Practices",
+            "name": "Design Tools",
             "level": "Advanced",
             "keywords": [
-                "Agile Development (Scrum)",
-                "Responsive Web Design (RWD)",
-                "Web Accessibility (a11y)",
-                "Cross-Browser Compatibility",
-                "Performance Optimization"
+                "Figma",
+                "Photoshop"
             ]
         },
         {
-            "name": "Testing Frameworks & Tools",
+            "name": "Testing Tools",
             "level": "Advanced",
             "keywords": [
                 "Jest",
-                "Mocha / Chai",
+                "Mocha",
+                "Chai",
                 "Vitest",
                 "Storybook"
+            ]
+        },
+        {
+            "name": "Methodologies",
+            "level": "Advanced",
+            "keywords": [
+                "Agile(Scrum)",
+                "Web Accessibility(a11y)",
+                "Responsive Web Design",
+                "Performance Optimization"
             ]
         }
     ],
