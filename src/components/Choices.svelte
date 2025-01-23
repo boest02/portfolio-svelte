@@ -5,18 +5,18 @@
         question: string;
         placeholder: string;
         answer: string;
-      };
+    };
 
-    export let choices: Choices = [];
+    export let choices: Choices[] = [];
 
-    const handleOnSubmit = (evt) => {
+    const handleOnSubmit = (evt: SubmitEvent) => {
       evt.preventDefault();
       console.log("Handle the Submit... ", evt);
 
       // Using FormData to get form data
-      const formData = new FormData(evt.srcElement);
+      const formData = new FormData(evt.target as HTMLFormElement);
       choices.forEach(choice => {
-        choice.answer = formData.get(choice.name);
+        choice.answer = formData.get(choice.name) as string;
       });
       choices = choices;
       console.log(choices);

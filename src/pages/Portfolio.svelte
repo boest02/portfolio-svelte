@@ -88,7 +88,7 @@
                         <div slot="element">
                             <img class="info-test-image"
                                 src="https://img.freepik.com/premium-photo/cute-puppy-white-background-vector-illustration-cartoon-dog_1057-17943.jpg"
-                                alt="dog image">
+                                alt="dog playing">
                         </div>
                         <div slot="tip-content">
                             <div style="width: max(20vw, 100px); margin: 0px auto;">
@@ -104,7 +104,7 @@
                             <div style="border: 3px solid magenta; border-radius: 10px; padding: 10px;">
                                 <img class="info-test-image"
                                     src="https://static-00.iconduck.com/assets.00/web-developer-illustration-1004x1024-wcqgbag3.png"
-                                    alt="developer image">
+                                    alt="developer">
                                 <h2>Web Developer</h2>
                             </div>
                         </div>
@@ -271,7 +271,6 @@
             margin: auto;
 
             .stuff {
-
                 .header {
                     h3 {
                         font-size: 1.2rem;
@@ -279,11 +278,6 @@
                 }
 
                 &[open] {
-
-                    .header {
-                        h3 {}
-                    }
-
                     .details-content {
                         margin: 30px auto;
                         width: 95%;

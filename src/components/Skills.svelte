@@ -1,6 +1,6 @@
 <script lang="ts">
     import Lists from './Lists.svelte';
-    export let data = [];
+    export let data: { name: string; keywords: string[] }[] = [];
     console.log(data);
 </script>
 

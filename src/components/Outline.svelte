@@ -1,6 +1,8 @@
 <script lang="ts">
-    export let basics = {};
-    export let type = '';
+    import { type resume } from "../ts/resume";
+
+    export let basics: resume["basics"];
+    export let type: string;
 </script>
 
 <article class="outline-wrapper" class:resume-look="{type === 'resume' }" class:home-look="{type === 'home' }">
@@ -98,12 +100,6 @@
 
                 li {
                     font-size: 95%;
-
-                    span {
-                        font-weight: 700;
-                        font-style: italic;
-                    }
-
                     a {
                         color: #000;
 

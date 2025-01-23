@@ -1,6 +1,6 @@
 <script lang="ts">
     import { onMount, afterUpdate } from 'svelte';
-    export let bubbles = [];
+    export let bubbles: { name: string; icon: string }[] = [];
     export let completed = 2;
 
     const count = bubbles.length;
@@ -9,13 +9,13 @@
 
 
     onMount(() => {
-        let activeProgress = document.querySelector('.active');
-        activeProgress?.addEventListener('animationend', () => activeProgress.nextElementSibling.querySelector('.ball').classList.add('completed'));
+        let activeProgress: Element | null = document.querySelector('.active');
+        activeProgress?.addEventListener('animationend', () => activeProgress?.nextElementSibling?.querySelector('.ball')?.classList.add('completed'));
     });
 
     afterUpdate(() => {
-        let activeProgress = document.querySelector('.active');
-        activeProgress?.addEventListener('animationend', () => activeProgress.nextElementSibling.querySelector('.ball').classList.add('completed'));
+        let activeProgress: Element | null = document.querySelector('.active');
+        activeProgress?.addEventListener('animationend', () => activeProgress?.nextElementSibling?.querySelector('.ball')?.classList.add('completed'));
     });
 </script>
 

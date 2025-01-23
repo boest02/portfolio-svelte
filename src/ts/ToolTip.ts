@@ -1,4 +1,3 @@
-
 const _WIN = window;
 const _DATA_ATTR_NAME = "data-info-anchor-title";
 const _DATA_VAR_NAME = "infoAnchorTitle";
@@ -12,6 +11,13 @@ const _MIN_SCROLL_DISTANCE = 200;
 // create a logger code
 const logger = window.console.log.bind(window.console, 'ToolTip: %s');
 
+interface ClickPosition {
+    top: number;
+    left: number;
+    width: number;
+    height: number;
+}
+
 /**
  *
  * Class checking for clicks on InfoPopUp links and sending getting their position.
@@ -20,16 +26,24 @@ const logger = window.console.log.bind(window.console, 'ToolTip: %s');
  *
  */
 export default class ToolTip {
+    private dialogBox: HTMLElement | null = null;
+    private dialogBackdrop: HTMLElement | null = null;
+    private currentElement: HTMLElement | null = null;
+    private startingScrollY: number = 0;
+    private scrollY: number = 0;
+    private ySide: string = 'left'; // default value
 
     /**
      * Create InfoPopUp.
      */
     constructor() {
+        // Use a Symbol to create a unique property key
+        const toolTipLoadedKey = Symbol.for('toolTipLoaded');
 
-        if(_WIN?.toolTipLoaded) {
+        if ((window as any)[toolTipLoadedKey]) {
             return;
         } else {
-            _WIN.toolTipLoaded = true;
+            (window as any)[toolTipLoadedKey] = true;
         }
 
         // get the dialog and backdrop, disable if they are not on page
@@ -61,15 +75,20 @@ export default class ToolTip {
      * @public
      */
     startListening() {
+        if (!this.dialogBox || !this.dialogBackdrop) return;
+
         // close on clicks backdrop or dialog X ...
-        this.dialogBackdrop.addEventListener( "click", this.closeAll );
-        this.dialogBox.querySelector(".close-icon") && this.dialogBox.querySelector(".close-icon").addEventListener( "click", this.closeAll );
+        this.dialogBackdrop.addEventListener("click", this.closeAll);
+        const closeIcon = this.dialogBox.querySelector(".close-icon");
+        if (closeIcon) {
+            closeIcon.addEventListener("click", this.closeAll);
+        }
 
         // listen for window resize to reset position
-        _WIN.addEventListener( "resize", this.repositionDialog ); // resize window
+        _WIN.addEventListener("resize", this.repositionDialog);
 
         // listen for scroll and close if scroll too far
-        _WIN.addEventListener( "scroll", this.checkScroll ); // scroll window
+        _WIN.addEventListener("scroll", this.checkScroll);
     }
 
     /**
@@ -77,10 +96,16 @@ export default class ToolTip {
      * @public
      */
     stopListening() {
-        _WIN.removeEventListener( "resize", this.repositionDialog); // remove resize window
-        _WIN.removeEventListener( "scroll", this.repositionDialog); // remove scroll window
-        this.dialogBackdrop.removeEventListener( "click", this.closeAll); // remove click backdrop
-        this.dialogBox.querySelector(".close-icon") && this.dialogBox.querySelector(".close-icon").removeEventListener( "click", this.closeAll); //remove click dialog
+        if (!this.dialogBox || !this.dialogBackdrop) return;
+
+        _WIN.removeEventListener("resize", this.repositionDialog);
+        _WIN.removeEventListener("scroll", this.repositionDialog);
+        this.dialogBackdrop.removeEventListener("click", this.closeAll);
+
+        const closeIcon = this.dialogBox.querySelector(".close-icon");
+        if (closeIcon) {
+            closeIcon.removeEventListener("click", this.closeAll);
+        }
     }
 
     /**
@@ -98,6 +123,8 @@ export default class ToolTip {
      * @public
      */
     closeAll = () => {
+        if (!this.dialogBox || !this.dialogBackdrop) return;
+
         logger("close");
         this.dialogBox.classList.remove("show-positioned");
         this.dialogBackdrop.classList.remove("show-positioned");
@@ -109,6 +136,8 @@ export default class ToolTip {
      * @public
      */
     checkScroll = () => {
+        if (!this.dialogBox) return;
+
         let minScrollDistance = this.dialogBox.offsetHeight > _MIN_SCROLL_DISTANCE ? this.dialogBox.offsetHeight : _MIN_SCROLL_DISTANCE;
         // if scrolling, close when scroll too far
         Math.abs(window.scrollY - this.startingScrollY) > minScrollDistance && this.closeAll();
@@ -118,8 +147,10 @@ export default class ToolTip {
      * Get the position for the dialog
      * @public
      */
-     getPositionRelativeToClick(clickPosition) {
-        let position = {};
+     getPositionRelativeToClick(clickPosition: ClickPosition) {
+        if (!this.dialogBox) return { x: 0, y: 0 };
+
+        let position = { x: 0, y: 0 };
         let offsetAboveClick = Math.max(0, clickPosition.top - this.dialogBox.offsetHeight);
 
         // adjusted for uninav height
@@ -128,12 +159,13 @@ export default class ToolTip {
             position.x = (clickPosition.top + window.scrollY) - this.dialogBox.offsetHeight;
         } else {
             logger("below", Math.max(0, clickPosition.top + window.scrollY + clickPosition.height), clickPosition.height);
-            position.x =  Math.max(0, clickPosition.top + window.scrollY + clickPosition.height);
+            position.x = Math.max(0, clickPosition.top + window.scrollY + clickPosition.height);
         }
 
-        logger("position", clickPosition);
         // set left or right of click depending on data attribute side
-        position.y = this.ySide === 'right' ? clickPosition.left + clickPosition.width + 10 : clickPosition.left - (this.dialogBox.offsetWidth + 10);
+        position.y = this.ySide === 'right'
+            ? clickPosition.left + clickPosition.width + 10
+            : clickPosition.left - (this.dialogBox.offsetWidth + 10);
 
         return position;
      }
@@ -142,8 +174,10 @@ export default class ToolTip {
      * Set the dialog position
      * @public
      */
-     setPosition(x, y) {
-        this.dialogBox.style = `--top-corner-offset: ${x}px; --left-corner-offset: ${y}px;`;
+     setPosition(x: number, y: number) {
+        if (!this.dialogBox) return;
+        this.dialogBox.style.setProperty('--top-corner-offset', `${x}px`);
+        this.dialogBox.style.setProperty('--left-corner-offset', `${y}px`);
      }
 
     /**
@@ -151,10 +185,13 @@ export default class ToolTip {
      * @public
      */
     repositionDialog = () => {
-        let clickPosition = this.currentElement.querySelector(".info-icon").getBoundingClientRect();
-        let position = this.getPositionRelativeToClick(clickPosition);
+        if (!this.currentElement) return;
 
-        // set css custom properties to position dialog for desktop
+        const infoIcon = this.currentElement.querySelector(".info-icon");
+        if (!infoIcon) return;
+
+        let clickPosition = infoIcon.getBoundingClientRect();
+        let position = this.getPositionRelativeToClick(clickPosition);
         this.setPosition(position.x, position.y);
     };
 
@@ -164,24 +201,27 @@ export default class ToolTip {
      * @public
      */
     positionDialog() {
-        let infoElement = this.currentElement.querySelector(".info-tip");
-        let clickPosition = this.currentElement.querySelector(".info-icon").getBoundingClientRect();
+        if (!this.currentElement || !this.dialogBox) return;
 
-        // set here to get this into the flow of the document so when we ech for it's height we get correct height
+        const infoElement = this.currentElement.querySelector(".info-tip");
+        const infoIcon = this.currentElement.querySelector(".info-icon");
+        if (!infoElement || !infoIcon) return;
+
+        // set here to get this into the flow of the document so when we get its height we get correct height
         this.dialogBox.style.display = "block";
 
         // use the click locations innerHtml to fill the dialog
         this.dialogBox.innerHTML = infoElement.innerHTML;
 
         // get position and position the dialog
-        let position = this.getPositionRelativeToClick(clickPosition);
+        let position = this.getPositionRelativeToClick(infoIcon.getBoundingClientRect());
         this.setPosition(position.x, position.y);
 
         // show the dialog and backdrop
         this.dialogBox.classList.add("show-positioned");
-        this.dialogBackdrop.classList.add("show-positioned");
+        this.dialogBackdrop!.classList.add("show-positioned");
 
-        // start listensers for close conditions and repositioning
+        // start listeners for close conditions and repositioning
         this.startListening();
     }
 
@@ -189,14 +229,15 @@ export default class ToolTip {
      * Check if click is an info pop up link
      * @private
      */
-    eventHandler = (ev) => {
-        if( ev.target.dataset[_DATA_VAR_NAME] ) {
-            logger("clicked an info popup link", ev.target.dataset[_DATA_VAR_NAME]);
+    eventHandler = (ev: MouseEvent) => {
+        const target = ev.target as HTMLElement;
+        if (target.dataset[_DATA_VAR_NAME]) {
+            logger("clicked an info popup link", target.dataset[_DATA_VAR_NAME]);
             // if yes, set the current element and scroll position
-            console.log("clicked an info popup link", {target: ev.target, closest: ev.target.closest(_INFO_ANCHOR)});
-            this.currentElement = ev.target.closest(_INFO_ANCHOR);
+            console.log("clicked an info popup link", {target, closest: target.closest(_INFO_ANCHOR)});
+            this.currentElement = target.closest(_INFO_ANCHOR);
             this.startingScrollY = window.scrollY;
-            this.ySide = ev.target.dataset[_DATA_VAR_SIDE];
+            this.ySide = target.dataset[_DATA_VAR_SIDE] || 'left';
             this.positionDialog();
         }
     };

@@ -1,6 +1,6 @@
 <script lang="ts">
     import KeyValue from './KeyValue.svelte';
-    export let data = [];
+    export let data: { name: string; description: string }[] = [];
     console.log(data);
 </script>
 
@@ -10,7 +10,7 @@
         <section>
             <KeyValue key="{strength['name']}" value="{strength['description']}" row="{true}" />
         </section>
-    {/each}    
+    {/each}
 </section>
 
 <style lang="scss">
@@ -24,7 +24,7 @@
             text-transform: uppercase;
         }
         section {
-            margin: 10px;            
+            margin: 10px;
         }
     }
 </style>

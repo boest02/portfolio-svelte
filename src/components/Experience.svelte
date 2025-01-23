@@ -1,14 +1,14 @@
 <script lang="ts">
     import Heading from './Heading.svelte';
     import Bullets from './Bullets.svelte';
-    export let data = [];
+    export let data: any[] = [];
 
     console.log("data: ", data);
 
     const experienceList = data.slice(0, 3);
-    let pastExperience = {};
+    let pastExperience: { [key: string]: any[] } = {};
 
-    const consolidateByCompany = (jobs) => {
+    const consolidateByCompany = (jobs: any[]) => {
         jobs.forEach(job => {
             pastExperience[job.name] === undefined && (pastExperience[job.name] = []);
             pastExperience[job.name].push(job);
@@ -66,12 +66,6 @@
                 text-wrap: nowrap;
             }
 
-            .company-link {
-                font-style: italic;
-                font-size: 80%;
-                vertical-align: super;
-            }
-
             .highlights-wrapper {
                 margin: 5px 45px 10px;
             }
@@ -99,10 +93,6 @@
         @media only screen and (max-width:480px) {
             section {
                 margin: 5px;
-
-                .company-link {
-                    display: none;
-                }
 
                 .highlights-wrapper {
                     margin: 5px auto;

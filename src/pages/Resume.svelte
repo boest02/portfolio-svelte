@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import { getContext } from 'svelte';
     import Outline from "../components/Outline.svelte";
     import Experience from "../components/Experience.svelte";
@@ -7,9 +7,10 @@
     import Skills from "../components/Skills.svelte";
     import Strengths from "../components/Strengths.svelte";
     import Summary from "../components/Summary.svelte";
+    import { type resume } from "../ts/resume";
 
-    const resumeType = getContext("resumeType");
-    const resumeFiles = getContext("resumeFiles");
+    const resumeType: string    = getContext("resumeType");
+    const resumeFiles: { [key: string]: string } = getContext("resumeFiles");
 
     let fetchJson = fetch(resumeFiles[resumeType]).then(res => res.json());
 
@@ -30,7 +31,7 @@
     {:then resume}
         <Outline type="resume" basics="{resume.basics}" />
         <Summary summary="{resume.basics.res_summary}" />
-        <Skills data={resume.skills} type="alternate" />
+        <Skills data={resume.skills} />
         <Experience data={resume.work} />
         <Education data={[resume.education[0]]} />
     {:catch error}

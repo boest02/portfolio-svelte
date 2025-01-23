@@ -220,7 +220,7 @@
     "projects": [
         {
             "name": "Stepped Registration",
-            "type": "Work Project",
+            "type": "Work Project: Website",
             "tech": [
                 "Svelte",
                 "Typescript",
@@ -255,7 +255,7 @@
         },
         {
             "name": "PCH Weekly Grand Prize Website",
-            "type": "Work Project",
+            "type": "Work Project: Website",
             "tech": [
                 "Blade",
                 "Laravel",
@@ -290,7 +290,7 @@
         },
         {
             "name": "Realtime Ad Module System",
-            "type": "Work Project",
+            "type": "Work Project: Component",
             "tech": [
                 "HTML5",
                 "JavaScript",
@@ -329,7 +329,7 @@
         },
         {
             "name": "GA Event Tracking Service",
-            "type": "Work Project",
+            "type": "Work Project: Component",
             "tech": [
                 "HTML5",
                 "JavaScript",
@@ -346,6 +346,49 @@
                 "Implemented an intelligent redirect delay system that ensures accurate event tracking by waiting for analytics data transmission before page navigation",
                 "Engineered a sophisticated first-click tracking mechanism to prevent duplicate event submissions and maintain data accuracy",
                 "Established an automated CI/CD pipeline for seamless package versioning and distribution through NPM, ensuring reliable and consistent updates"
+            ],
+            "url": "https://project.com/"
+        },
+        {
+            "name": "Email Validation Tool",
+            "type": "Work Project: Internal Tool",
+            "tech": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Regex"
+            ],
+            "images": [
+
+            ],
+            "description": "Developed an internal tool for the email team to validate email HTML by running it through a series of automated tests. The tool utilized regex patterns to identify positive or negative matches, ensuring email content adhered to required standards. This solution significantly increased the email team's productivity and reduced the risk of sending out broken or non-compliant emails.",
+            "highlights": [
+                "Allowed users to paste in or upload HTML and run it through the tests.",
+                "Added the ability for the Email team to add their own tests to the tool as needed."
+            ],
+            "url": "https://project.com/"
+        },
+        {
+            "name": "Teachers App",
+            "type": "Side Project: Website",
+            "tech": [
+                "Blade",
+                "Laravel",
+                "PHP",
+                "HTML5",
+                "JavaScript",
+                "CSS",
+                "MySQL"
+            ],
+            "images": [
+
+            ],
+            "description": "Developed a comprehensive teacher's application for assisting in doing student evaluations.  The application allows teachers to create and manage student profiles and evaluations.  It also the teacher to create a bank of student evaluation comments that can be used and personalized for each evaluation.",
+            "highlights": [
+                "Created a student registration portion of the app to add students to the system.",
+                "Created a student evaluation portion of the app to allow teachers to create evaluations for students.",
+                "Created a bank of student evaluation comments that can be used and personalized for each evaluation.",
+                "Added support for drag and drop of banked comments into a student evaluation"
             ],
             "url": "https://project.com/"
         }

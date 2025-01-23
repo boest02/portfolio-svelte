@@ -1,7 +1,12 @@
 <script lang="ts">
     import { Link } from "svelte-routing";
 
-    export let links = [];
+    type Link = {
+        name: string,
+        path: string
+    }
+
+    export let links: Link[] = [];
     export let sticky = false;
 
     console.log("sticky:", sticky);
@@ -19,7 +24,7 @@
         optOpen = !optOpen;
     }
 
-    const trap = (e) => {
+    const trap = (e: Event) => {
         e.stopPropagation();
     }
 
@@ -28,18 +33,18 @@
 
 <nav class="nav-bar" class:sticky={sticky}>
     <div class="inner-wrapper">
-        <button class="hamburger" aria-label="Toggle navigation menu" on:click={clickNav} class:open={navOpen}>
+        <button class="hamburger" tabindex="0" aria-label="Toggle navigation menu" on:click={clickNav} class:open={navOpen}>
             <div></div>
             <div></div>
             <div></div>
         </button>
-        <div class="links" on:click={clickNav}>
+        <div class="links" tabindex="0" on:click={clickNav} on:keydown={clickNav} aria-label="Page Links" role="menu">
             {#each links as link}
             <Link to={link.path}>{link.name}</Link>
             {/each}
         </div>
-        <div class="options-shelf" class:open={optOpen} on:click={clickOpt}>
-            <div class="items" on:click={trap}>
+        <div class="options-shelf" tabindex="0" class:open={optOpen} on:click={clickOpt} on:keydown={clickOpt} aria-label="Options" role="menu">
+            <div class="items" tabindex="0" on:click={trap} on:keydown={trap} aria-label="Page Links" role="menuitem">
                 <label for="sticky">Anchor</label>
                 <input type="checkbox" name="sticky" id="sticky-option" bind:checked={sticky} />
             </div>

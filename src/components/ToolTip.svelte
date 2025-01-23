@@ -1,19 +1,15 @@
 <script context="module">
-    import ToolTip from "../js/ToolTip.js"
     import help_outline from "../images/help_outline.svg"
     import close_icon from "../images/close-icon.svg"
-
-    console.log('pop up loaded');
-
 </script>
 
 <script lang="ts">
+    import ToolTip from "../ts/ToolTip.ts"
     import { onMount } from 'svelte';
 
     export let header = "Header Text";
     export let position = "right";
     export let logo = help_outline;
-
 
     onMount(() => {
         let toolTip = new ToolTip();

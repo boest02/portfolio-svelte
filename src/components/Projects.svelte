@@ -5,7 +5,7 @@
     import Bullets from './Bullets.svelte';
     import Lists from './Lists.svelte';
 
-    export let data = [];
+    export let data: any[] = [];
     export let type = 'bullets';
     let more = false;
 
@@ -16,9 +16,9 @@
         padding: '.5rem',
     };
 
-    data = data.map(project => ({ ...project, more: false }));
+    data = data.map(project => ({ ...project, more: false })).sort((a, b) => a.name.localeCompare(b.name));
 
-    const teaserText = (text) => {
+    const teaserText = (text: string) => {
         return text.length > 100 ? text.substring(0, 100) + '...' : text;
     }
 </script>
@@ -32,7 +32,9 @@
                 <div class="type">{project.type}</div>
                 {#if !project.more}
                     <div class="description">{teaserText(project.description)}</div>
-                    <div class="more button" role="button" aria-label="More" on:click={() => project.more = !project.more}>More</div>
+                    <button type="button" class="more button" aria-label="More"
+                        on:click={() => project.more = !project.more}
+                        on:keydown={e => e.key === 'Enter' && (project.more = !project.more)}>More</button>
                 {:else}
                     <div class="description"
                          in:slide="{{axis: 'y', duration: 400}}"
@@ -54,10 +56,13 @@
                                         <SplideSlide>
                                             <div class="carousel-slide">
                                                 <div class="image-title">{image.alt}</div>
-                                                <img src={image.url}
-                                                     alt={image.alt}
-                                                     title={"Click to open " + image.alt}
-                                                     on:click={() => window.open(image.url, '_blank')}/>
+                                                <button type="button" class="image-button"
+                                                    on:click={() => window.open(image.url, '_blank')}
+                                                    on:keydown={e => e.key === 'Enter' && window.open(image.url, '_blank')}>
+                                                    <img src={image.url}
+                                                         alt={image.alt}
+                                                         title={"Click to open " + image.alt} />
+                                                </button>
                                             </div>
                                         </SplideSlide>
                                     {/each}
@@ -65,7 +70,9 @@
                             </div>
                         </div>
                     {/if}
-                    <div class="less button" role="button" aria-label="Less" on:click={() => project.more = !project.more}>Less</div>
+                    <button type="button" class="less button" aria-label="Less"
+                        on:click={() => project.more = !project.more}
+                        on:keydown={e => e.key === 'Enter' && (project.more = !project.more)}>Less</button>
                 {/if}
                 <div class="tech-wrapper">
                     {#each project.tech as tech}
@@ -206,6 +213,7 @@
                 font-size: 85%;
                 font-weight: bold;
                 color: rgb(28, 141, 164);
+                background: none;
                 cursor: pointer;
                 align-self: flex-end;
                 margin: 20px;
@@ -215,8 +223,9 @@
                 border: 1px solid rgb(28, 141, 164);
                 border-radius: 10px;
                 padding: 5px 10px;
+                min-width: 75px;
                 box-shadow: 2px 0 15px rgba(0, 0, 0, 0.15);
-                transition: all 0.3s, color 0.3s;
+                transition: background-color 0.3s, color 0.3s;
 
                 &:hover {
                     background-color: rgb(9, 199, 237);
@@ -253,5 +262,12 @@
 
             @media (max-width: 700px) {}
         }
+    }
+
+    .image-button {
+        background: none;
+        border: none;
+        padding: 0;
+        cursor: pointer;
     }
 </style>

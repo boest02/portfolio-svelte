@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import { getContext } from 'svelte';
     import Outline from "../components/Outline.svelte";
     import Education from "../components/Education.svelte";
@@ -8,9 +8,14 @@
     import Summary from "../components/Summary.svelte";
     import Profiles from "../components/Profiles.svelte";
     import Projects from "../components/Projects.svelte";
+    import { type resume } from "../ts/resume";
 
-    const resumeType = getContext("resumeType");
-    const resumeFiles = getContext("resumeFiles");
+    interface ResumeFiles {
+        [key: string]: string;
+    }
+
+    const resumeType = getContext<string>("resumeType");
+    const resumeFiles = getContext<ResumeFiles>("resumeFiles");
 
     console.log("Home", resumeFiles);
 
@@ -33,7 +38,7 @@
         <div class="head-section">
             <Outline basics="{resume.basics}" type="home" />
         </div>
-        <Summary summary={resume.basics.home_summary} title="About Me -" homeLook="true" />
+        <Summary summary={resume.basics.home_summary} title="About Me -" homeLook={true} />
 
         {#if resume.projects.length}
             <Projects data={resume.projects} />

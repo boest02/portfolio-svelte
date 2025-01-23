@@ -1,7 +1,7 @@
 <script lang="ts">
     import KeyValue from './KeyValue.svelte';
     import DateRange from './DateRange.svelte';
-    export let data = [];
+    export let data: { institution: string; studyType: string; area: string; endDate: string }[] = [];
 </script>
 
 <div class="education-wrapper block">

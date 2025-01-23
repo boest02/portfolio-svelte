@@ -1,5 +1,5 @@
 <script lang="ts">
-    export let list = [];
+    export let list: string[] = [];
 </script>
 
 <div class="bullets-wrapper">
