@@ -94,6 +94,11 @@
             section {
                 margin: 5px;
 
+                h2 {
+                    flex-direction: column;
+                    gap: 0;
+                }
+
                 .highlights-wrapper {
                     margin: 5px auto;
                 }

@@ -43,7 +43,18 @@
         }
 
         @media (max-width: 700px) {
+            ul {
+                li {
+                    .bullet-wrapper {
+                        flex-direction: column;
+                        align-items: unset;
 
+                        :global(span) {
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
         }
     }
 </style>

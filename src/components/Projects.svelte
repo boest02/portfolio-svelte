@@ -259,8 +259,38 @@
                     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2), -1px -1px 4px rgba(255, 255, 255, 0.3);
                 }
             }
+        }
 
-            @media (max-width: 700px) {}
+        @media (max-width: 700px) {
+            .project {
+                padding-bottom: 60px;
+                .name {
+                    font-size: 100%;
+                    margin: 30px 10px 0;
+                }
+
+                .carousel-wrapper {
+                    width: 95%;
+                    margin: 10px auto;
+                    padding-block: 10px;
+
+                    img {
+                        max-width: 90%;
+                    }
+                }
+
+                .button {
+                    margin-block: 0;
+                    bottom: 20px;
+                }
+                .tech-wrapper {
+
+                    .tech-item {
+                        font-size: 75%;
+                        padding: 7px 15px;
+                    }
+                }
+            }
         }
     }
 

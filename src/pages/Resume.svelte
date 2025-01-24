@@ -46,6 +46,7 @@
 
         @media only screen and (max-width:480px) {
             padding: 30px 10px;
+            margin: 10px;
         }
 
         h1 {

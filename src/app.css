@@ -134,7 +134,8 @@ body {
   @media screen and (max-width: 640px) {
     position: fixed;
     inset: 0;
-    width: 95%;
+    width: 90%;
+    margin: auto;
   }
 
   &.show-positioned {

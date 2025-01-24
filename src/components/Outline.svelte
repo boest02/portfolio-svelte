@@ -119,8 +119,11 @@
             }
 
             section {
+                flex-direction: column;
+                gap: 10px;
                 min-width: none;
-                width: 98%;
+                width: 95%;
+                margin: 10px auto;
             }
         }
     }

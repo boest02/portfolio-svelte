@@ -266,9 +266,18 @@
     }
 
     @media only screen and (max-width:480px) {
+
+        :global([data-page-name="portfolio"] main) {
+            width: 95%;
+            margin: 20px auto;
+        }
         .portfolio-wrapper {
-            width: 98%;
+            width: 95%;
             margin: auto;
+
+            &>h2 {
+                display: none;
+            }
 
             .stuff {
                 .header {
