@@ -1,7 +1,13 @@
 <script lang="ts">
     import KeyValue from './KeyValue.svelte';
     import DateRange from './DateRange.svelte';
-    export let data: { institution: string; studyType: string; area: string; endDate: string }[] = [];
+    export let data: {
+        institution: string;
+        studyType: string;
+        area: string;
+        endDate: string;
+        location: string;
+    }[] = [];
 </script>
 
 <div class="education-wrapper block">
@@ -9,9 +15,8 @@
     <div class="alignment-wrapper">
         {#each data as edu, index}
             <section>
-                <h2>{edu.institution}</h2>
-                <h4>{edu['studyType'] + ' ~ ' + edu['area']}</h4>
-                <div>{(new Date(edu['endDate'])).toLocaleString("en-us", { month: "long", year: "numeric" })}</div>
+                <h2>{edu.institution}, <span>{edu.location}</span></h2>
+                <h4>Completed {edu['studyType'] + '; Major ' + edu['area']}</h4>
             </section>
         {/each}
     </div>
@@ -19,25 +24,22 @@
 
 <style lang="scss">
     .education-wrapper {
-        border-radius: 10px;
-        width: 95%;
-        max-width: 1500px;
-        min-width: 925px;
-        margin: 10px auto;
 
         .alignment-wrapper {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
+            margin-inline-start: 10px;
             padding-bottom: 15px;
 
             section {
                 display: flex;
-                gap: 20px;
+                flex-direction: column;
+                gap: 10px;
 
                 h2 {
                     font-weight: 700;
-                    margin: 2px 10px;
+
+                    span {
+                        font-weight: 400;
+                    }
                 }
             }
         }
