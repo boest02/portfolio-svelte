@@ -192,7 +192,7 @@
                     left: 40px;
                     font-size: 1.5rem;
                     font-weight: 700;
-                    font-family: 'Courier New', Courier, monospace;
+                    font-family: Arial, Helvetica, sans-serif;
                 }
 
                 &::marker {

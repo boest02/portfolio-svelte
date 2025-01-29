@@ -26,7 +26,7 @@
     {#each experienceList as job}
         <section>
             <h2>
-                <div>{job.name}</div>
+                <div>{job.name} - </div>
                 <Heading title="{job.position}" start="{job.startDate}" end="{job.endDate}" />
             </h2>
 
@@ -67,7 +67,7 @@
             }
 
             .highlights-wrapper {
-                margin: 5px 45px 10px;
+                margin: 5px 10px;
             }
         }
 

@@ -7,5 +7,12 @@ export default defineConfig({
   plugins: [
     svelte(),
     json(),
-    ],
+  ],
+  css: {
+    preprocessorOptions: {
+      scss: {
+        api: 'modern-compiler' // or "modern"
+      }
+    }
+  }
 })

@@ -79,7 +79,7 @@
         }
 
         h3 {
-            font-family: poppins, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
             font-size: 20px;
             font-weight: 800;
             text-transform: capitalize;

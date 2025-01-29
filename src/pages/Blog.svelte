@@ -30,7 +30,7 @@
 
         h3 {
             font-size: 24px;
-            font-family: 'Courier New', Courier, monospace;
+            font-family: Arial, Helvetica, sans-serif;
             font-style: italic;
         }
 
