@@ -4,8 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "npm run copy && vite",
+    "dev": "npm run copy && npm run copy-blog && vite",
     "copy": "cp -v -f src/assets/* public/",
+    "copy-blog": "mkdir -p public/blog && cp -v -f blog/* public/blog/",
     "build": "vite build && cp -v -f src/assets/* dist/",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json && tsc -p tsconfig.node.json"
@@ -23,6 +24,7 @@
     "vite": "^5.3.1"
   },
   "dependencies": {
-    "@splidejs/svelte-splide": "^0.2.9"
+    "@splidejs/svelte-splide": "^0.2.9",
+    "svelte-markdown": "^0.4.1"
   }
 }

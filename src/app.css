@@ -1,7 +1,7 @@
 :root {
   --site-background-color: #fff;
   --site-font-color: #000;
-  --nav-background-color: rgba(50, 50, 211);
+  --nav-background-color: rgb(67 106 181);
   ;
   --nav-font-color: #fff;
   --nav-height: 80px;
@@ -27,14 +27,11 @@
   }
 }
 
-
-
 * {
   margin: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
   box-sizing: border-box;
 }
@@ -69,10 +66,6 @@ body {
     .block {
       margin: 10px 0 20px;
 
-      @media only screen and (max-width:480px) {
-        margin: 10px;
-      }
-
       &>h2 {
         font-weight: 600;
         border-bottom: 2px solid gray;
@@ -86,6 +79,10 @@ body {
 
     .page-content {
       padding: 10px;
+
+      .block {
+        margin: 10px auto;
+      }
     }
   }
 }
