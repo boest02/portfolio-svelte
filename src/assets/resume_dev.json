@@ -220,6 +220,26 @@
     ],
     "projects": [
         {
+            "name": "Fake-le Game",
+            "type": "Learning: React Project",
+            "tech": [
+                "React",
+                "Typescript",
+                "HTML5",
+                "JavaScript",
+                "SASS"
+            ],
+            "images": [
+
+            ],
+            "description": "This was a learning project I took an after seeing a video on a simulated React interview where they asked the interviewee to create a version of the popular game Wordle, built as a Ract app.  I created a React/Typescript project and built the game you can try <a target='_blank'  href='https://fake-le.netlify.app/'>here</a>. ",
+            "highlights": [
+                "Used an API that I found to get the words at https://random-word-api.herokuapp.com/word",
+                "Implemented features from the game as I went, still some items I'm looking to add."
+            ],
+            "url": "https://github.com/boest02/fake-le"
+        },
+        {
             "name": "Stepped Registration",
             "type": "Work Project: Website",
             "tech": [
@@ -252,7 +272,7 @@
                 "Transformed static JSON configurations into a dynamic system supporting personalized user experiences based on user segments, significantly improving engagement and conversion rates",
                 "Developed fully tested, reusable components with comprehensive unit tests using Mocha and Chai, ensuring reliability and maintainability across the system"
             ],
-            "url": "https://project.com/"
+            "url": ""
         },
         {
             "name": "PCH Weekly Grand Prize Website",
@@ -287,7 +307,7 @@
                 "Developed custom JavaScript modules for prize entry validation and user flow management without relying on heavy frameworks, resulting in faster page load times",
                 "Introduced a modular CSS architecture using BEM methodology and CSS custom properties to maintain consistent styling while enabling easy theme customization"
             ],
-            "url": "https://project.com/"
+            "url": ""
         },
         {
             "name": "Realtime Ad Module System",
@@ -326,7 +346,7 @@
                 "Developed a comprehensive JavaScript tracking library that captures and reports critical ad metrics including viewability, engagement time, and click-through rates to optimize ad performance and ROI",
                 "Implemented an intelligent caching system that pre-loads upcoming ads to minimize latency and provide instant content transitions between ad displays"
             ],
-            "url": "https://project.com/"
+            "url": ""
         },
         {
             "name": "GA Event Tracking Service",
@@ -348,7 +368,7 @@
                 "Engineered a sophisticated first-click tracking mechanism to prevent duplicate event submissions and maintain data accuracy",
                 "Established an automated CI/CD pipeline for seamless package versioning and distribution through NPM, ensuring reliable and consistent updates"
             ],
-            "url": "https://project.com/"
+            "url": ""
         },
         {
             "name": "Email Validation Tool",
@@ -367,7 +387,7 @@
                 "Allowed users to paste in or upload HTML and run it through the tests.",
                 "Added the ability for the Email team to add their own tests to the tool as needed."
             ],
-            "url": "https://project.com/"
+            "url": ""
         },
         {
             "name": "Teachers App",
@@ -391,7 +411,7 @@
                 "Created a bank of student evaluation comments that can be used and personalized for each evaluation.",
                 "Added support for drag and drop of banked comments into a student evaluation"
             ],
-            "url": "https://project.com/"
+            "url": ""
         }
     ]
 }

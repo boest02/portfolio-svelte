@@ -39,7 +39,7 @@
                     <div class="description"
                          in:slide="{{axis: 'y', duration: 400}}"
                          out:slide="{{axis: 'y', duration: 400, delay: 150}}">
-                        {project.description}
+                        {@html project.description}
                     </div>
                     <div class="bullets-wrapper"
                          in:slide="{{axis: 'y', duration: 400}}"
@@ -47,6 +47,13 @@
                         <div class="bullets-title">Highlights:</div>
                         <Bullets list={project.highlights} />
                     </div>
+
+                    {#if project?.url}
+                        <div class="project-link">
+                            <a target="_blank" href="{project.url}">Git Hub link...</a>
+                        </div>
+                    {/if}
+
                     {#if project.images.length}
                         <div class="carousel-section">
                             <div class="carousel-title">Project Images:</div>
@@ -107,7 +114,7 @@
             margin: 10px;
             border: 1px solid gray;
             border-radius: 10px;
-            padding: 10px;
+            padding: 20px;
             position: relative;
             box-shadow: 2px 0 15px rgba(0, 0, 0, 0.15);
             .name {
@@ -120,8 +127,18 @@
                 font-weight: bold;
                 color: rgb(28, 141, 164);
                 position: absolute;
-                top: 10px;
-                right: 20px;
+                top: 20px;
+                right: 25px;
+            }
+
+            .project-link {
+                a, a:visited {
+                    margin: 10px;
+                    font-weight: 600;
+                    font-size: .8rem;
+                    font-style: italic;
+                    color: rgb(28, 141, 164);
+                }
             }
 
             .description {
