@@ -113,6 +113,7 @@
 
 
         @media only screen and (max-width:480px) {
+            width: 95%;
 
             .my-photo {
                 display: none;
@@ -124,6 +125,11 @@
                 min-width: none;
                 width: 95%;
                 margin: 10px auto;
+
+                .info-section {
+                    width: 95%;
+                    min-width: none;
+                }
             }
         }
     }
