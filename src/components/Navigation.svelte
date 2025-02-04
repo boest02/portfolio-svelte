@@ -43,12 +43,6 @@
             <Link to={link.path}>{link.name}</Link>
             {/each}
         </div>
-        <div class="options-shelf" tabindex="0" class:open={optOpen} on:click={clickOpt} on:keydown={clickOpt} aria-label="Options" role="menu">
-            <div class="items" tabindex="0" on:click={trap} on:keydown={trap} aria-label="Page Links" role="menuitem">
-                <label for="sticky">Anchor</label>
-                <input type="checkbox" name="sticky" id="sticky-option" bind:checked={sticky} />
-            </div>
-        </div>
     </div>
 </nav>
 
@@ -92,64 +86,6 @@
                 }
             }
 
-            .options-shelf {
-                border: .3px solid lightblue;
-                border-radius: 5px 0 0 5px;
-                width: 30px;
-                height: calc(var(--nav-bar-height) - 4px);
-                justify-self: end;
-                position: absolute;
-                right: 0;
-                top: 2px;
-                bottom: 2px;
-                background: inherit;
-
-                &::before {
-                    content: 'options';
-                    position: absolute;
-                    rotate: -90deg;
-                    font-size: 12px;
-                    top: 0;
-                    left: 5px;
-                    bottom: 0;
-                }
-
-                .items {
-                    display: none;
-
-                    label {
-                        font-size: 60%;
-                    }
-                }
-
-                &:hover {
-                    cursor: pointer;
-                    margin-right: 5px;
-
-                    &::before {
-                        font-weight: bold;
-                    }
-                }
-
-                &.open {
-                    width: 100px;
-
-                    &:hover {
-                        margin-right: -5px;
-                    }
-
-                    .items {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        border: .5px solid lightblue;
-                        margin-left: 20px;
-                        height: 100%;
-                    }
-
-                }
-            }
         }
     }
 
