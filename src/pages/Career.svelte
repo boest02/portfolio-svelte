@@ -12,7 +12,7 @@
 
 <svelte:head>
 	<title>Stephen Boettcher - Career</title>
-    <link rel="canonical" href="https://steveb-portfolio.netlify.app/career">
+    <link rel="canonical" href="https://sboettcher.com/career">
     <meta name="description" content="Stephen Boettcher's career">
 </svelte:head>
 

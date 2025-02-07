@@ -37,7 +37,7 @@
 
 <svelte:head>
     <title>Stephen Boettcher - Portfolio</title>
-    <link rel="canonical" href="https://steveb-portfolio.netlify.app/portfolio">
+    <link rel="canonical" href="https://sboettcher.com/portfolio">
     <meta name="description" content="Stephen Boettcher's portfolio">
 </svelte:head>
 

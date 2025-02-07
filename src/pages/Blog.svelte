@@ -29,7 +29,7 @@
 
 <svelte:head>
   <title>Stephen Boettcher - Blog</title>
-  <link rel="canonical" href="https://steveb-portfolio.netlify.app/blog" />
+  <link rel="canonical" href="https://sboettcher.com/blog" />
   <meta name="description" content="Stephen Boettcher's blog" />
 </svelte:head>
 

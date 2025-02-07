@@ -275,8 +275,35 @@
             "url": ""
         },
         {
+            "name": "Universal Navigation (8 sites)",
+            "type": "Work Project: Component",
+            "start": "03-2024",
+            "end": "05-2024",
+            "tech": [
+                "HTML5",
+                "JavaScript",
+                "CSS",
+                "NPM Package",
+                "Blade",
+                "Laravel",
+                "Composer Package",
+                "PHP"
+            ],
+            "images": [
+
+            ],
+            "description": "Led the re-design of PCH's Universal Navigation bar that is used on 8 of the websites in the PCH umbrella. The navigation bar has multiple interactive areas so there was significant HTML markup, CSS styling and event driven Javascript.  We were given designs in Figma and we had multiple meetings to walkthrough how users will integrate and how web admins might configure, leading to us creating and sizing stories for the dev work needed to build it.",
+            "highlights": [
+                "We built a test site where we could stand up the Uninav on it's own to develop it and work on the different configurations to see how they rendered and functioned",
+                "Once it was functional and deployable we integrated it with one site at a time, addressing any conflicts or issues that we observed running it on that site"
+            ],
+            "url": ""
+        },
+        {
             "name": "PCH Weekly Grand Prize Website",
             "type": "Work Project: Website",
+            "start": "08-2023",
+            "end": "03-2024",
             "tech": [
                 "Blade",
                 "Laravel",
