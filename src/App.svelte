@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Router, Link, Route } from "svelte-routing";
+  import { Router, Route, navigate } from "svelte-routing";
   import { setContext } from 'svelte';
   import Home from "./pages/Home.svelte";
   import Career from "./pages/Career.svelte";
@@ -12,6 +12,8 @@
 
   const urlParams = new URLSearchParams(window.location.search);
   const resType = urlParams.get('type') || "fe_dev";
+  const page = urlParams.get('page') || "";
+
 
   setContext("resumeType", resType);
 
@@ -45,6 +47,10 @@
       "name": "Blog"
     }
   ];
+
+  // direct route with page=<page name>
+  console.log(`\\${page}`);
+  if(page) navigate(`\\${page}`);
 
 </script>
 
