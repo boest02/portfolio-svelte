@@ -1,15 +1,15 @@
 <script lang="ts">
     import { Link } from "svelte-routing";
 
+    export let links: Link[] = [];
+    export let exclude: string[] = [];
+
+    console.log("excludeList: ", exclude);
+
     type Link = {
         name: string,
         path: string
     }
-
-    export let links: Link[] = [];
-    export let sticky = false;
-
-    console.log("sticky:", sticky);
 
     let navOpen = false;
     let optOpen = false;
@@ -31,7 +31,7 @@
 </script>
 
 
-<nav class="nav-bar" class:sticky={sticky}>
+<nav class="nav-bar">
     <div class="inner-wrapper">
         <button class="hamburger" tabindex="0" aria-label="Toggle navigation menu" on:click={clickNav} class:open={navOpen}>
             <div></div>
@@ -40,7 +40,9 @@
         </button>
         <div class="links" tabindex="0" on:click={clickNav} on:keydown={clickNav} aria-label="Page Links" role="menu">
             {#each links as link}
-            <Link to={link.path}>{link.name}</Link>
+                {#if !exclude.includes(link.name)}
+                    <Link to={link.path}>{link.name}</Link>
+                {/if}
             {/each}
         </div>
     </div>
@@ -48,12 +50,6 @@
 
 <style lang="scss">
     .nav-bar {
-        &.sticky {
-            position: sticky;
-            top: 0;
-            z-index: 10;
-        }
-
         .inner-wrapper {
             display: flex;
             align-items: center;

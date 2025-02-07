@@ -17,14 +17,17 @@
     },
   ];
 
-  let blogPost = getBlogPost("/blog/000001.md").then((post) => post);
-
-  document.body.setAttribute("data-page-name", "blog");
+  let blogPost = {};
+  let currentPost = blogPosts[0].fileName;
 
   const loadBlogPost = async (fileName: string) => {
-    console.log(`/blog/${fileName}.md`);
+    currentPost = fileName;
     blogPost = getBlogPost(`/blog/${fileName}.md`).then((post) => post);
   };
+
+  loadBlogPost(currentPost);
+
+  document.body.setAttribute("data-page-name", "blog");
 </script>
 
 <svelte:head>
@@ -40,6 +43,9 @@
       {#await blogPost}
         <h2>Loading...</h2>
       {:then blogPost}
+        <a href={`/post?post=${currentPost}`}
+           target="_blank"
+           title="open in a new tab">&#10149;</a>
         <BlogPost data={blogPost} />
       {/await}
     </div>
@@ -97,6 +103,24 @@
     }
     .blog-post {
       padding: 20px;
+      position: relative;
+
+      & > a {
+        color: #000;
+        font-size: 1.5rem;
+        text-decoration: none;
+        outline: .5px solid #000;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        padding-inline: 2px;
+        position: absolute;
+        right: 10px;
+
+        &:hover {
+          background: gray;
+          color: #fff;
+        }
+      }
     }
     .blog-post-list {
       padding: 0 20px;
@@ -161,7 +185,6 @@
           .blog-post-link {
             width: 100%;
           }
-
         }
       }
     }
