@@ -150,8 +150,7 @@
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
         padding-inline: 2px;
         position: absolute;
-        // right: 120px;
-        top: -20px;
+        right: 100px;
         height: 35px;
         width: fit-content;
         padding-inline: 10px;
@@ -161,7 +160,7 @@
 
         &:global(.show) {
           display: grid;
-          animation: 1.5s ease-out forwards float-in-out;
+          animation: 1s ease-out forwards float-in-out;
         }
       }
 
@@ -235,14 +234,19 @@
   }
 
   @keyframes float-in-out {
-    from {
-      right: 150px;
+    0% {
+      top: -50px;
       opacity: 0;
     }
 
-    to {
-      right: 85px;
+    75% {
+      top: -20px;
       opacity: .9;
+    }
+
+    100% {
+      top: -20px;
+      opacity: .2;
     }
   }
 </style>
