@@ -1,4 +1,5 @@
 <script lang="ts">
+  import type { SvelteHTMLElements } from "svelte/elements";
   import BlogPost from "../components/BlogPost.svelte";
   import { getBlogPost } from "../ts/utils";
 
@@ -22,6 +23,8 @@
     },
   ];
 
+  let message: any = {};
+
   const urlParams = new URLSearchParams(window.location.search);
   const post: string = urlParams.get("post") || "000001";
   const postObj: Post =
@@ -30,10 +33,13 @@
 
   // let blogPost = getBlogPost(`/blog/${postObj.fileName}.md`).then((p) => p);
 
-  const copyToClipboard = () =>
+  const copyToClipboard = () => {
     navigator.clipboard.writeText(
-      `${window.location.origin}/post?post=${currentPost}`
+      `${window.location.origin}/blog?post=${currentPost}`
     );
+    message.classList.toggle('show');
+    setTimeout(() => message.classList.toggle('show'), 1200);
+  }
 
   let currentPost = postObj.fileName;
   let blogPost = getBlogPost(`/blog/${currentPost}.md`).then((p) => p);
@@ -71,6 +77,7 @@
       {#await blogPost}
         <h2>Loading...</h2>
       {:then blogPost}
+        <aside bind:this={message} class="message">Copied to clipboard!</aside>
         <div
           class="perma-link"
           on:click={copyToClipboard}
@@ -132,6 +139,31 @@
       margin-top: 40px;
       padding: 20px;
       position: relative;
+
+      .message {
+        opacity: 0;
+        color: #000;
+        font-size: 1rem;
+        font-style: italic;
+        outline: 0.5px solid gray;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        padding-inline: 2px;
+        position: absolute;
+        // right: 120px;
+        top: -20px;
+        height: 35px;
+        width: fit-content;
+        padding-inline: 10px;
+        display: none;
+        place-content: center;
+        transition: opacity 1s;
+
+        &:global(.show) {
+          display: grid;
+          animation: 1.5s ease-out forwards float-in-out;
+        }
+      }
 
       .perma-link {
         color: #000;
@@ -199,6 +231,18 @@
           }
         }
       }
+    }
+  }
+
+  @keyframes float-in-out {
+    from {
+      right: 150px;
+      opacity: 0;
+    }
+
+    to {
+      right: 85px;
+      opacity: .9;
     }
   }
 </style>
