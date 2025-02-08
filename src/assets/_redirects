@@ -2,6 +2,6 @@
 /resume                /?page=resume
 /portfolio             /?page=portfolio
 /career                /?page=career
-/blog?*                  /?page=blog&:splat
+/blog?*                /?page=blog&:splat
 
 

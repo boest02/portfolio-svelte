@@ -12,6 +12,7 @@
   const urlParams = new URLSearchParams(window.location.search);
   const resType = urlParams.get('type') || "fe_dev";
   const page = urlParams.get('page') || "";
+  const post = urlParams.get('post') || "";
 
 
   setContext("resumeType", resType);
@@ -54,7 +55,8 @@
   console.log("parse url:", window.location.pathname.split('/'));
 
   console.log(`\\${page}`);
-  if(page) navigate(`\\${page}`);
+  if(page) navigate(post ? `\\${page}?post=${post}` : `\\${page}`);
+
 
 </script>
 
