@@ -35,7 +35,7 @@
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(
-      `${window.location.origin}/blog?post=${currentPost}`
+      `${window.location.origin}/blog/${currentPost}`
     );
     message.classList.toggle('show');
     setTimeout(() => message.classList.toggle('show'), 1200);
@@ -46,7 +46,7 @@
 
   const selectHandler = (evt) => {
     console.log(evt.target?.value);
-    window.location = `${window.location.origin}/blog?post=${evt.target?.value}`;
+    window.location = `${window.location.origin}/blog/${evt.target?.value}`;
   };
 
   document.body.setAttribute("data-page-name", "blog");
