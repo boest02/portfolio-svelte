@@ -2,7 +2,7 @@
   --site-background-color: #fff;
   --site-font-color: #000;
   --nav-background-color: rgb(67 106 181);
-  ;
+  --site-max-width: 1300px;
   --nav-font-color: #fff;
   --nav-height: 80px;
   --nav-bar-height: 60px;
@@ -52,7 +52,7 @@ body {
 .main-content {
   margin: auto;
   width: 95%;
-  max-width: 1500px;
+  max-width:var(--site-max-width);
   backdrop-filter: blur(3px);
 
   .page-content {

@@ -2,7 +2,6 @@
   import { Router, Route, navigate } from "svelte-routing";
   import { setContext } from 'svelte';
   import Home from "./pages/Home.svelte";
-  import Post from "./pages/Post.svelte";
   import Portfolio from "./pages/Portfolio.svelte";
   import Resume from "./pages/Resume.svelte";
   import Blog from "./pages/Blog.svelte";
@@ -42,19 +41,14 @@
       "name": "Resume"
     },
     {
-      "path": '/post',
-      "component": Post,
-      "name": "Post"
-    },
-    {
       "path": '/blog',
       "component": Blog,
       "name": "Blog"
     }
   ];
 
-  const navExcludeList = [
-    "Post"
+  const navExcludeList: string[] = [
+
   ];
 
   console.log("parse url:", window.location.pathname.split('/'));

@@ -1,36 +1,11 @@
 <script lang="ts">
   import SvelteMarkdown from "svelte-markdown";
-  export let data: string = `
-
-# Sample Blog Post
-
-## This is a subheader
-
-This is a paragraph.
-
-* This is a list
-* With two items
-  1. And a sublist
-  2. That is ordered
-* With another
-* Sublist inside
-
-**Bold**
-
-_Italic_
-
-[Link](https://www.google.com)
-
-![Image](/images/screenshots/in-page-placement.png)
-
-| And this is | A table |
-|-------------|---------|
-| With two    | columns |`;
+  export let data: string = ``;
 </script>
 
-<section class="blog-post-wrapper block">
+<article class="blog-post-wrapper block">
   <SvelteMarkdown source={data} />
-</section>
+</article>
 
 <style lang="scss">
   .blog-post-wrapper {
@@ -54,7 +29,7 @@ _Italic_
       margin-block: 20px 10px;
       margin-inline: 4px;
       &::after {
-        content: ':';
+        content: ":";
       }
     }
 
@@ -79,11 +54,11 @@ _Italic_
     }
 
     :global(ul) {
-      margin: 10px 40px 20px;
+      margin: 10px 40px 20px 20px;
     }
 
     :global(ol) {
-      margin: 10px 40px;
+      margin: 10px 40px 10px 20px;
     }
 
     :global(img) {
@@ -92,10 +67,6 @@ _Italic_
       max-width: 500px;
       margin: auto;
       box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
-
-      @media only screen and (max-width: 480px) {
-        width: 90%;
-      }
     }
 
     :global(pre) {
@@ -131,6 +102,44 @@ _Italic_
 
     :global(code) {
       white-space: pre-wrap;
+    }
+
+    // mobile
+    @media only screen and (max-width: 480px) {
+      :global(h1) {
+        font-size: 1.1rem;
+      }
+
+      :global(h2) {
+        font-size: 1rem;
+      }
+
+      :global(h3) {
+        font-size: 0.9rem;
+      }
+
+      :global(h4),
+      :global(h5) {
+        font-size: 0.8rem;
+      }
+
+      :global(img) {
+        width: 90%;
+      }
+
+      :global(p),
+      :global(ul) {
+        font-size: 0.75rem;
+        line-height: 1.2;
+      }
+
+      :global(ul) {
+        margin-inline: 25px 10px;
+      }
+
+      :global(pre) {
+        font-size: 65%;
+      }
     }
   }
 </style>

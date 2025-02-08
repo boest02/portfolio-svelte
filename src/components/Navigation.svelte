@@ -68,6 +68,8 @@
                 display: flex;
                 justify-content: space-around;
                 width: 100%;
+                max-width: var(--site-max-width);
+                margin: auto;
                 height: fit-content;
                 position: relative;
 
@@ -75,13 +77,13 @@
                     text-decoration: none;
                     color: var(--nav-font-color);
                     border-bottom: 2.5px solid transparent;
+                    transition: border .5s;
                 }
 
                 :global(a:hover) {
                     border-bottom-color: var(--nav-font-color);
                 }
             }
-
         }
     }
 

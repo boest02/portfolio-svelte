@@ -2,7 +2,12 @@
   import BlogPost from "../components/BlogPost.svelte";
   import { getBlogPost } from "../ts/utils";
 
-  const blogPosts = [
+  type Post = {
+    title: string;
+    fileName: string;
+  };
+
+  const blogPosts: Post[] = [
     {
       title: "Vanilla CSS vs Tailwind CSS",
       fileName: "000001",
@@ -17,15 +22,26 @@
     },
   ];
 
-  let blogPost = {};
-  let currentPost = blogPosts[0].fileName;
+  const urlParams = new URLSearchParams(window.location.search);
+  const post: string = urlParams.get("post") || "000001";
+  const postObj: Post =
+    blogPosts.find((p) => p.fileName === post) || blogPosts[0];
+  console.log("Load Post: ", { post, postObj });
 
-  const loadBlogPost = async (fileName: string) => {
-    currentPost = fileName;
-    blogPost = getBlogPost(`/blog/${fileName}.md`).then((post) => post);
+  // let blogPost = getBlogPost(`/blog/${postObj.fileName}.md`).then((p) => p);
+
+  const copyToClipboard = () =>
+    navigator.clipboard.writeText(
+      `${window.location.origin}/post?post=${currentPost}`
+    );
+
+  let currentPost = postObj.fileName;
+  let blogPost = getBlogPost(`/blog/${currentPost}.md`).then((p) => p);
+
+  const selectHandler = (evt) => {
+    console.log(evt.target?.value);
+    window.location = `${window.location.origin}/blog?post=${evt.target?.value}`;
   };
-
-  loadBlogPost(currentPost);
 
   document.body.setAttribute("data-page-name", "blog");
 </script>
@@ -37,33 +53,34 @@
 </svelte:head>
 
 <div class="blog-wrapper page-content">
-  <h1>Blog Posts</h1>
+  <div class="blog-selector">
+    <label for="posts">Blog Selector</label>
+    <select name="posts" id="posts" on:change={selectHandler}>
+      {#each blogPosts as blogPost}
+        {#if blogPost.fileName === currentPost}
+          <option selected value={blogPost.fileName}>{blogPost.title}</option>
+        {:else}
+          <option value={blogPost.fileName}>{blogPost.title}</option>
+        {/if}
+      {/each}
+    </select>
+  </div>
+
   <div class="blog-post-layout">
     <div class="blog-post">
       {#await blogPost}
         <h2>Loading...</h2>
       {:then blogPost}
-        <a href={`/post?post=${currentPost}`}
-           target="_blank"
-           title="open in a new tab">&#10149;</a>
+        <div
+          class="perma-link"
+          on:click={copyToClipboard}
+          title="copy link to clipboard"
+        >
+        <i class="fa-solid fa-link"></i>
+        </div>
+
         <BlogPost data={blogPost} />
       {/await}
-    </div>
-    <div class="blog-post-list">
-      <h2>All Posts...</h2>
-      <ul>
-        {#each blogPosts as blogPost}
-          <li>
-            <button
-              class="blog-post-link"
-              on:click={() => loadBlogPost(blogPost.fileName)}
-              title={blogPost.title}
-            >
-              {blogPost.title}
-            </button>
-          </li>
-        {/each}
-      </ul>
     </div>
   </div>
 </div>
@@ -78,20 +95,30 @@
     min-height: 100vh;
     border-radius: 10px;
     background: rgba(81, 50, 27, 0.35);
+    .blog-selector {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      padding-block: 10px;
+      place-self: end;
+      margin-right: 30px;
 
-    h1 {
-      color: #fff;
-      text-shadow:
-        -1px -1px 0 #000,
-        1px -1px 0 #000,
-        -1px 1px 0 #000,
-        1px 1px 0 #000;
+      label {
+        font-weight: 700;
+      }
+
+      select {
+        max-width: 375px;
+        height: 30px;
+        text-overflow: ellipsis;
+        background-color: #fff;
+        color: #000;
+        border-radius: 5px;
+        padding-inline: 5px;
+      }
     }
 
     .blog-post-layout {
-      display: grid;
-      grid-template-columns: 3fr 1.2fr;
-      gap: 20px;
       border: 1px solid #2c3e50;
       border-radius: 10px;
       margin: 20px;
@@ -102,59 +129,40 @@
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     }
     .blog-post {
+      margin-top: 40px;
       padding: 20px;
       position: relative;
 
-      & > a {
+      .perma-link {
         color: #000;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         text-decoration: none;
-        outline: .5px solid #000;
+        outline: 0.5px solid #000;
         border-radius: 5px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
         padding-inline: 2px;
         position: absolute;
-        right: 10px;
+        right: 50px;
+        top: -20px;
+        height: 35px;
+        width: 40px;
+        display: grid;
+        place-content: center;
+
+
+        &::before {
+          content: 'Get a link';
+          width: 200px;
+          left: -25%;
+          font-size: .7rem;
+          position: absolute;
+          top: -20px;
+          color: #000;
+        }
 
         &:hover {
           background: gray;
           color: #fff;
-        }
-      }
-    }
-    .blog-post-list {
-      padding: 0 20px;
-      border-left: 2px solid gray;
-      h2 {
-        margin-bottom: 5px;
-      }
-      ul {
-        list-style: none;
-        padding-block: 15px;
-        border-top: 2px solid gray;
-
-        li {
-          margin-bottom: 10px;
-
-          .blog-post-link {
-            cursor: pointer;
-            border: none;
-            padding: 2px 0;
-            margin: 0;
-            width: min(325px, 25vw);
-            text-align: left;
-            background: rgba(0, 0, 0, 0.1);
-            color: #000;
-            white-space: nowrap; /* Prevents text from wrapping */
-            overflow: hidden; /* Hides overflowing text */
-            text-overflow: ellipsis;
-
-            &:hover {
-              color: #fff;
-              background-color: rgba(0, 0, 0, 0.3);
-              outline: 1px solid gray;
-            }
-          }
         }
       }
     }
@@ -163,6 +171,18 @@
     @media only screen and (max-width: 480px) {
       width: 98%;
       font-size: 90%;
+
+      .blog-selector {
+        flex-direction: column;
+        gap: 2px;
+        align-items: start;
+        margin: 0 auto;
+        width: 95%;
+        select {
+          max-width: unset;
+          width: 100%;
+        }
+      }
       .blog-post-layout {
         display: flex;
         flex-direction: column-reverse;
@@ -172,18 +192,10 @@
 
         .blog-post {
           padding-inline: 10px;
-        }
 
-        .blog-post-list {
-          border: none;
-
-          ul {
-            height: 100px;
-            overflow-y: scroll;
-          }
-
-          .blog-post-link {
-            width: 100%;
+          .perma-link {
+            transform: scale(.9);
+            right: 10px;
           }
         }
       }
