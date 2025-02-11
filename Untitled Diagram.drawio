@@ -1,9 +1,79 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="26.0.8">
   <diagram name="Page-1" id="F6-4f8zCy02JajRTyHKw">
-    <mxGraphModel>
+    <mxGraphModel dx="1452" dy="792" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <object label="Page" id="JS-o4TKP0ENBU3jge4v7-9">
+          <mxCell style="whiteSpace=wrap;html=1;aspect=fixed;align=right;labelPosition=left;verticalLabelPosition=top;verticalAlign=bottom;" vertex="1" parent="1">
+            <mxGeometry x="70" y="120" width="290" height="290" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="JS-o4TKP0ENBU3jge4v7-1" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="120" y="190" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="JS-o4TKP0ENBU3jge4v7-2" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="120" y="290" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="JS-o4TKP0ENBU3jge4v7-3" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="210" y="290" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="JS-o4TKP0ENBU3jge4v7-4" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="210" y="190" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="JS-o4TKP0ENBU3jge4v7-5" value="open" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="240" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="JS-o4TKP0ENBU3jge4v7-6" value="open" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="240" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="JS-o4TKP0ENBU3jge4v7-7" value="open" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="340" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="JS-o4TKP0ENBU3jge4v7-8" value="open" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="340" width="50" height="20" as="geometry" />
+        </mxCell>
+        <object label="Page" id="JS-o4TKP0ENBU3jge4v7-11">
+          <mxCell style="whiteSpace=wrap;html=1;aspect=fixed;align=right;labelPosition=left;verticalLabelPosition=top;verticalAlign=bottom;" vertex="1" parent="1">
+            <mxGeometry x="450" y="120" width="290" height="290" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="JS-o4TKP0ENBU3jge4v7-12" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="500" y="190" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="JS-o4TKP0ENBU3jge4v7-13" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="500" y="290" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="JS-o4TKP0ENBU3jge4v7-14" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="590" y="290" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="JS-o4TKP0ENBU3jge4v7-15" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="590" y="190" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="JS-o4TKP0ENBU3jge4v7-16" value="open" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="240" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="JS-o4TKP0ENBU3jge4v7-17" value="open" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="610" y="240" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="JS-o4TKP0ENBU3jge4v7-18" value="open" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="340" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="JS-o4TKP0ENBU3jge4v7-19" value="open" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="610" y="340" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="JS-o4TKP0ENBU3jge4v7-20" value="" style="whiteSpace=wrap;html=1;aspect=fixed;opacity=90;" vertex="1" parent="1">
+          <mxGeometry x="490" y="160" width="210" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="JS-o4TKP0ENBU3jge4v7-21" value="Close" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=7;" vertex="1" parent="1">
+          <mxGeometry x="670" y="170" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="JS-o4TKP0ENBU3jge4v7-23" value="Component Slot" style="whiteSpace=wrap;html=1;aspect=fixed;opacity=90;" vertex="1" parent="1">
+          <mxGeometry x="510" y="190" width="170" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="JS-o4TKP0ENBU3jge4v7-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="JS-o4TKP0ENBU3jge4v7-8" target="JS-o4TKP0ENBU3jge4v7-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
