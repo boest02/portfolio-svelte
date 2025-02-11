@@ -4,9 +4,12 @@
     import '@splidejs/svelte-splide/css';
     import Bullets from './Bullets.svelte';
     import Lists from './Lists.svelte';
+    import Filter from './Filter.svelte';
 
     export let data: any[] = [];
     export let type = 'bullets';
+
+    let displayData: any[] = [];
     let more = false;
 
     const mainOptions = {
@@ -16,59 +19,59 @@
         padding: '.5rem',
     };
 
-    data = data.map(project => ({ ...project, more: false })).sort((a, b) => a.name.localeCompare(b.name));
+    const dataProvider = (newData: any[]) => {
+        displayData = newData;
+    }
 
     const teaserText = (text: string) => {
         return text.length > 100 ? text.substring(0, 100) + '...' : text;
     }
+
+    dataProvider(data.map(project => ({ ...project, more: false })).sort((a, b) => a.name.localeCompare(b.name)));
 </script>
 
 <section class="projects-wrapper">
     <h2>My Projects -</h2>
+    <Filter type="Projects..." list="{data}" callBack={dataProvider} />
     <div class="layout" class:alternate="{type === 'alternate'}">
-        {#each data as project}
-            <div class="project">
-                <div class="name">{project.name}</div>
-                <div class="type">{project.type}</div>
-                {#if !project.more}
-                    <div class="description">{teaserText(project.description)}</div>
-                    <button type="button" class="more button" aria-label="More"
-                        on:click={() => project.more = !project.more}
-                        on:keydown={e => e.key === 'Enter' && (project.more = !project.more)}>More</button>
-                {:else}
-                    <div class="description"
-                         in:slide="{{axis: 'y', duration: 400}}"
-                         out:slide="{{axis: 'y', duration: 400, delay: 150}}">
-                        {@html project.description}
-                    </div>
-                    <div class="bullets-wrapper"
-                         in:slide="{{axis: 'y', duration: 400}}"
-                         out:slide="{{axis: 'y', duration: 400, delay: 150}}">
-                        <div class="bullets-title">Highlights:</div>
-                        <Bullets list={project.highlights} />
-                    </div>
+        {#each displayData as project}
+        <div class="project">
+            <div class="name">{project.name}</div>
+            <div class="type">{project.type}</div>
+            {#if !project.more}
+            <div class="description">{teaserText(project.description)}</div>
+            <button type="button" class="more button" aria-label="More" on:click={()=> project.more = !project.more}
+                on:keydown={e => e.key === 'Enter' && (project.more = !project.more)}>More</button>
+            {:else}
+            <div class="description" in:slide="{{axis: 'y', duration: 400}}"
+                out:slide="{{axis: 'y', duration: 400, delay: 150}}">
+                {@html project.description}
+            </div>
+            <div class="bullets-wrapper" in:slide="{{axis: 'y', duration: 400}}"
+                out:slide="{{axis: 'y', duration: 400, delay: 150}}">
+                <div class="bullets-title">Highlights:</div>
+                <Bullets list={project.highlights} />
+            </div>
 
-                    {#if project?.url}
-                        <div class="project-link">
-                            <a target="_blank" href="{project.url}">Git Hub link...</a>
-                        </div>
-                    {/if}
+            {#if project?.url}
+            <div class="project-link">
+                <a target="_blank" href="{project.url}">Git Hub link...</a>
+            </div>
+            {/if}
 
-                    {#if project.images.length}
-                        <div class="carousel-section">
-                            <div class="carousel-title">Project Images:</div>
-                            <div class="carousel-wrapper">
-                                <Splide aria-label="My Favorite Images" options={mainOptions} >
-                                    {#each project.images as image}
-                                        <SplideSlide>
-                                            <div class="carousel-slide">
-                                                <div class="image-title">{image.alt}</div>
-                                                <button type="button" class="image-button"
-                                                    on:click={() => window.open(image.url, '_blank')}
-                                                    on:keydown={e => e.key === 'Enter' && window.open(image.url, '_blank')}>
-                                                    <img src={image.url}
-                                                         alt={image.alt}
-                                                         title={"Click to open " + image.alt} />
+            {#if project.images.length}
+            <div class="carousel-section">
+                <div class="carousel-title">Project Images:</div>
+                <div class="carousel-wrapper">
+                    <Splide aria-label="My Favorite Images" options={mainOptions}>
+                        {#each project.images as image}
+                        <SplideSlide>
+                            <div class="carousel-slide">
+                                <div class="image-title">{image.alt}</div>
+                                <button type="button" class="image-button" on:click={()=> window.open(image.url,
+                                    '_blank')}
+                                    on:keydown={e => e.key === 'Enter' && window.open(image.url, '_blank')}>
+                                    <img src={image.url} alt={image.alt} title={"Click to open " + image.alt} />
                                                 </button>
                                             </div>
                                         </SplideSlide>
@@ -77,18 +80,19 @@
                             </div>
                         </div>
                     {/if}
-                    <button type="button" class="less button" aria-label="Less"
-                        on:click={() => project.more = !project.more}
-                        on:keydown={e => e.key === 'Enter' && (project.more = !project.more)}>Less</button>
-                {/if}
-                <div class="tech-wrapper">
-                    {#each project.tech as tech}
-                    <div class="tech-item">{tech}</div>
-                    {/each}
+                    <button type=" button" class="less button" aria-label="Less" on:click={()=> project.more =
+                                    !project.more}
+                                    on:keydown={e => e.key === 'Enter' && (project.more = !project.more)}>Less</button>
+                                {/if}
+                                <div class="tech-wrapper">
+                                    {#each project.tech as tech}
+                                    <div class="tech-item">{tech}</div>
+                                    {/each}
+                                </div>
+                            </div>
+                            {/each}
                 </div>
-            </div>
-        {/each}
-    </div>
+                <div class="no-records">Sorry no Projects to display...</div>
 </section>
 
 <style lang="scss">
@@ -101,10 +105,22 @@
             margin-bottom: 10px;
         }
 
+
+        .no-records {
+            display: none;
+        }
+
         .layout {
             display: flex;
             flex-direction: column;
             gap: 10px;
+
+            &:empty+.no-records {
+                display: block;
+                font-style: italic;
+                margin: 20px;
+                padding-bottom: 100px;
+            }
         }
 
         .project {
@@ -114,9 +130,10 @@
             margin: 10px;
             border: 1px solid gray;
             border-radius: 10px;
-            padding: 20px;
+            padding: 40px 20px 20px;
             position: relative;
             box-shadow: 2px 0 15px rgba(0, 0, 0, 0.15);
+
             .name {
                 font-size: 125%;
                 font-weight: bold;
@@ -132,7 +149,9 @@
             }
 
             .project-link {
-                a, a:visited {
+
+                a,
+                a:visited {
                     margin: 10px;
                     font-weight: 600;
                     font-size: .8rem;
@@ -199,11 +218,11 @@
                 }
 
                 :global(.splide__arrow:active) {
-                   outline: 2px solid rgb(28, 141, 164);
+                    outline: 2px solid rgb(28, 141, 164);
                 }
 
                 img {
-                    max-width:400px;
+                    max-width: 400px;
                     max-height: 450px;
                     width: auto;
                     height: auto;
@@ -266,7 +285,9 @@
                 display: flex;
                 flex-wrap: wrap;
                 gap: 10px;
-                margin: 10px;
+                width: 85%;
+                margin-block: 10px;
+
                 .tech-item {
                     font-size: 85%;
                     background-color: rgb(28, 141, 164);
@@ -280,10 +301,11 @@
 
         @media (max-width: 700px) {
             .project {
-                padding-bottom: 60px;
+                padding: 50px 15px 60px;
+                font-size: 95%;
+
                 .name {
-                    font-size: 100%;
-                    margin: 30px 10px 0;
+                    font-size: 98%;
                 }
 
                 .carousel-wrapper {
@@ -300,11 +322,12 @@
                     margin-block: 0;
                     bottom: 20px;
                 }
-                .tech-wrapper {
 
+                .tech-wrapper {
+                    width: 100%;
                     .tech-item {
                         font-size: 75%;
-                        padding: 7px 15px;
+                        padding: 7px 10px;
                     }
                 }
             }

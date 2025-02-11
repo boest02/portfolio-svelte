@@ -58,6 +58,8 @@
         .my-photo {
             width: 120px;
             height: 125px;
+            min-width: 95px;
+            min-height: 95px;
             border-radius: 25%;
             box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
             background-image: url(/src/images/me-2.png);
@@ -68,7 +70,9 @@
 
         section {
             display: flex;
-            justify-content: stretch;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: space-between;
             width: 100%;
             margin-bottom: 20px;
 
@@ -82,12 +86,7 @@
                 font-weight: 600;
             }
 
-            .heading-wrapper {
-                width: 100%;
-            }
-
             .info-section {
-                min-width: 325px;
                 justify-self: right;
             }
 
