@@ -220,13 +220,55 @@
     ],
     "projects": [
         {
+            "name": "PCH Surveys",
+            "type": "Work Project: Website",
+            "tech": [
+                "vue.js",
+                "storybook",
+                "laravel",
+                "php",
+                "blade"
+            ],
+            "images": [
+
+            ],
+            "description": "PCH was developing a site to collect user information through surveys. I wasn’t involved from the start, but I was brought in to help get the project back on track. The frontend was being handled by two junior developers who were receiving tasks from the backend team but struggling to meet deadlines. After assessing the challenges, I worked closely with them to improve their workflow. We implemented daily touch-point meetings to address roadblocks in real-time and introduced structured code reviews to ensure their work was QA-ready. These changes helped streamline development, and we successfully delivered the site on time with high quality.",
+            "highlights": [
+                "Through pair programming and design discussions we were able to workout a plan on ho to deliver the outstanding features that were needed to get the site out the door.",
+                "Using Storybook I was able to setup their components so they could mock the data sent to the components and see how they would look without a dependency on the backend team."
+            ],
+            "url": ""
+        },
+        {
+            "name": "Replace PCH's Info site...",
+            "type": "Work Project: Website",
+            "tech": [
+                "vue.js",
+                "nuxt.js",
+                "postcss",
+                "tailwindcss",
+                "eslint"
+            ],
+            "images": [
+
+            ],
+            "description": "The Publishers Clearing House 'Info' site was previously hosted on WordPress, but the costs outweighed its needs and update frequency. I was part of a team tasked with replacing it with a more cost-effective, maintainable static site. We built the new site using Nuxt.js, leveraging Vue.js to generate static HTML and CSS. Tailwind CSS was used for styling, ensuring a responsive design. The project was integrated into a CI/CD pipeline, automating builds and deployments to a staging environment for review before going live.",
+            "highlights": [
+                "Developed a static site using Nuxt.js, Vue.js, and Tailwind CSS.",
+                "Created a command line utility to create the boilerplate template for a Vue.js page.",
+                "Used GitLab Issues to manage the project, we created an issue for each of the pages we needed to convert from the old site and used GitLab to help generate the branches and track through the Issues tab.",
+                "The site is live here: <a href='https://info.pch.com'>https://info.pch.com</a>."
+            ],
+            "url": ""
+        },
+        {
             "name": "Excel spreadsheet to JSON converter",
             "type": "Work Project: Internal Tool",
             "tech": [
                 "javascript",
-                "JSON",
-                "NPM",
-                "Node.js"
+                "json",
+                "npm package",
+                "node.js"
             ],
             "images": [
 
@@ -242,16 +284,16 @@
             "name": "Fake-le Game",
             "type": "Learning: React Project",
             "tech": [
-                "React",
-                "Typescript",
-                "HTML5",
-                "JavaScript",
-                "SASS"
+                "react",
+                "typescript",
+                "html5",
+                "javascript",
+                "sass"
             ],
             "images": [
 
             ],
-            "description": "This was a learning project I took an after seeing a video on a simulated React interview where they asked the interviewee to create a version of the popular game Wordle, built as a Ract app.  I created a React/Typescript project and built the game you can try <a target='_blank'  href='https://fake-le.netlify.app/'>here</a>. ",
+            "description": "This was a learning project I took an after seeing a video on a simulated React interview where they asked the interviewee to create a version of the popular game Wordle, built as a React app.  I created a React/Typescript project and built the game you can try <a target='_blank'  href='https://fake-le.netlify.app/'>here</a>. ",
             "highlights": [
                 "Used an API that I found to get the words at https://random-word-api.herokuapp.com/word",
                 "Implemented features from the game as I went, still some items I'm looking to add."
@@ -262,13 +304,12 @@
             "name": "Stepped Registration",
             "type": "Work Project: Website",
             "tech": [
-                "Svelte",
-                "Typescript",
-                "HTML5",
-                "JavaScript",
-                "SASS",
-                "Mocha",
-                "Chai"
+                "svelte",
+                "typescript",
+                "sass",
+                "mocha",
+                "chai",
+                "markdown"
             ],
             "images": [
                 {
@@ -289,7 +330,8 @@
                 "Innovated a versatile component library initially focused on user registration that evolved into a comprehensive system for creating diverse stepped user experiences across multiple applications",
                 "Engineered a robust backend integration system that dynamically generates page layouts and component configurations through structured JSON data, enabling flexible content management",
                 "Transformed static JSON configurations into a dynamic system supporting personalized user experiences based on user segments, significantly improving engagement and conversion rates",
-                "Developed fully tested, reusable components with comprehensive unit tests using Mocha and Chai, ensuring reliability and maintainability across the system"
+                "Developed fully tested, reusable components with comprehensive unit tests using Mocha and Chai, ensuring reliability and maintainability across the system",
+                "We setup a wiki that we could link to the Admin for reference as need and made this part of every new component we built.  This helped expand my markdown writing skills."
             ],
             "url": ""
         },
@@ -299,14 +341,13 @@
             "start": "03-2024",
             "end": "05-2024",
             "tech": [
-                "HTML5",
-                "JavaScript",
-                "CSS",
-                "NPM Package",
+                "javascript",
+                "sass",
+                "npm package",
                 "Blade",
-                "Laravel",
-                "Composer Package",
-                "PHP"
+                "laravel",
+                "composer package",
+                "php"
             ],
             "images": [
 
@@ -324,12 +365,11 @@
             "start": "08-2023",
             "end": "03-2024",
             "tech": [
-                "Blade",
-                "Laravel",
-                "PHP",
-                "HTML5",
-                "JavaScript",
-                "CSS"
+                "blade",
+                "laravel",
+                "php",
+                "es6 classes",
+                "sass"
             ],
             "images": [
                 {
@@ -359,14 +399,13 @@
             "name": "Realtime Ad Module System",
             "type": "Work Project: Component",
             "tech": [
-                "HTML5",
-                "JavaScript",
-                "SASS",
-                "Blade",
-                "Laravel",
-                "PHP",
-                "JavaScript",
-                "iframe"
+                "javascript",
+                "sass",
+                "blade components",
+                "iframe",
+                "kevel",
+                "rokt",
+                "adspostx"
             ],
             "images": [
                 {
@@ -389,7 +428,7 @@
             "description": "Developed a sophisticated real-time ad delivery system that seamlessly integrates both third-party and internal advertisements without requiring page reloads. The system interfaces with Kevel (our internal ad server) to dynamically serve targeted content ranging from simple markup and images to complex interactive ads from providers like Rokt and AdsPostx. Built a robust architecture that efficiently queries the ad server and renders appropriate content within secure iframes, ensuring optimal performance and user experience while maintaining site stability.",
             "highlights": [
                 "Engineered a responsive iframe service that dynamically monitors ad content dimensions and communicates with the parent page to seamlessly adjust layouts, preventing content jumps and ensuring smooth user experience",
-                "Developed a comprehensive JavaScript tracking library that captures and reports critical ad metrics including viewability, engagement time, and click-through rates to optimize ad performance and ROI",
+                "Developed a comprehensive JavaScript tracking library that captures and reports critical ad metrics including view-ability, engagement time, and click-through rates to optimize ad performance and ROI",
                 "Implemented an intelligent caching system that pre-loads upcoming ads to minimize latency and provide instant content transitions between ad displays"
             ],
             "url": ""
@@ -398,12 +437,10 @@
             "name": "GA Event Tracking Service",
             "type": "Work Project: Component",
             "tech": [
-                "HTML5",
-                "JavaScript",
-                "NPM",
-                "Vite",
-                "Vitest",
-                "CI/CD"
+                "es6 classes",
+                "vite",
+                "vitest",
+                "ci/cd"
             ],
             "images": [
 
@@ -420,10 +457,10 @@
             "name": "Email Validation Tool",
             "type": "Work Project: Internal Tool",
             "tech": [
-                "HTML",
-                "CSS",
-                "JavaScript",
-                "Regex"
+                "html",
+                "css",
+                "javascript",
+                "regex"
             ],
             "images": [
 
@@ -439,13 +476,13 @@
             "name": "Teachers App",
             "type": "Side Project: Website",
             "tech": [
-                "Blade",
-                "Laravel",
-                "PHP",
-                "HTML5",
-                "JavaScript",
-                "CSS",
-                "MySQL"
+                "blade",
+                "laravel",
+                "php",
+                "html",
+                "javascript",
+                "sass",
+                "mysql"
             ],
             "images": [
 
