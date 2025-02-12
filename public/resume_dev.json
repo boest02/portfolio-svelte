@@ -220,6 +220,25 @@
     ],
     "projects": [
         {
+            "name": "Excel spreadsheet to JSON converter",
+            "type": "Work Project: Internal Tool",
+            "tech": [
+                "javascript",
+                "JSON",
+                "NPM",
+                "Node.js"
+            ],
+            "images": [
+
+            ],
+            "description": "We had an internal site that let users enter a code that would be tied to an offer and it was an older system that they would receive a spreadsheet by email and then manually copy the new codes into the javascript file for this site.  So it was labor intensive and had to be done by a developer to not cause any issue if the user accidentally broke the javascript.  I create a command line utility they could usee to specify the  incoming excel file and this tool would parse the excel file and output a JSON file that could be used in the site.  This saved them a lot of time and effort and they were able to do it themselves.",
+            "highlights": [
+                "Found an NPM package that would help me load the excel file in a format that I could traverse like an object and from that pull out the data I needed and write to the JSON file",
+                "The command line was simple to use and would look something like this: 'node build/excelConverter.js -e 'codes/in/Spreadsheet.xlsx' -o 'codes/out/codes_out.json'"
+            ],
+            "url": ""
+        },
+        {
             "name": "Fake-le Game",
             "type": "Learning: React Project",
             "tech": [

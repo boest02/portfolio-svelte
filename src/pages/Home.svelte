@@ -40,7 +40,7 @@
     <h2>Loading...</h2>
   {:then resume}
     <div class="head-section">
-      <Outline basics={resume.basics} type="home" />
+      <Outline basics={resume.basics} exclude="portfolio" type="home" />
     </div>
     <Summary
       summary={resume.basics.home_summary}
@@ -51,6 +51,7 @@
     {#if resume.projects.length}
       <Projects data={resume.projects} />
     {/if}
+
   {:catch error}
     {error}
   {/await}

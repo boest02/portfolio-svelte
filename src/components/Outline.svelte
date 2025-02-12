@@ -2,7 +2,8 @@
     import { type resume } from "../ts/resume";
 
     export let basics: resume["basics"];
-    export let type: string;
+    export let type: string = '';
+    export let exclude: string = '';
 </script>
 
 <article class="outline-wrapper" class:resume-look="{type === 'resume' }" class:home-look="{type === 'home' }">
@@ -13,7 +14,8 @@
         <div class="heading-wrapper">
             <h1>{basics.name}</h1>
             <h2>{basics.label}</h2>
-            <div class="location-wrapper">{basics.location.city}, {basics.location.region} {basics.location.postalCode}</div>
+            <div class="location-wrapper">{basics.location.city}, {basics.location.region} {basics.location.postalCode}
+            </div>
             <div>{basics.phone}</div>
         </div>
         <div class="info-section">
@@ -24,12 +26,14 @@
                         {basics.email}
                     </a>
                 </li>
+                {#if exclude !== 'portfolio'}
                 <li>
                     <a target="_blank" href="https://{basics.portfolio_url}" title="Portfolio">
                         <i class="fa-solid fa-briefcase"></i>
                         {basics.portfolio_url}
                     </a>
                 </li>
+                {/if}
                 <li>
                     <a target="_blank" href="https://{basics.linkedin_url}" title="LinkedIn">
                         <i class="fa-brands fa-linkedin"></i>
@@ -99,6 +103,7 @@
 
                 li {
                     font-size: 95%;
+
                     a {
                         color: #000;
 
