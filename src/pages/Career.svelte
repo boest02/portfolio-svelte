@@ -5,7 +5,7 @@
     const resumeType = getContext("resumeType");
     const resumeFiles = getContext("resumeFiles");
 
-    let fetchJson = fetch(resumeFiles[resumeType]).then(res => res.json()).then(jsn => { console.log("JSON:", jsn); return jsn; });
+    let fetchJson = fetch(resumeFiles[resumeType]).then(res => res.json()).then(jsn => jsn);
 
     document.body.setAttribute("data-page-name", "career");
 </script>

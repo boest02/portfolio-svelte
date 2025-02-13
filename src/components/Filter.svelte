@@ -120,6 +120,14 @@
                     i {
                         color: #fff;
                     }
+
+                    &:hover {
+                        outline: 1px solid gray;
+                        i {
+                            color: gold;
+                            transform: scale(1.1);
+                        }
+                    }
                 }
             }
         }
@@ -155,6 +163,10 @@
                     position: absolute;
                     right: 15px;
                     bottom: 10px;
+
+                    &:hover {
+                        color: red;
+                    }
                 }
             }
 
@@ -171,7 +183,7 @@
                     font-size: 85%;
                     width: fit-content;
                     padding: 2px 10px;
-                    border-radius: 50px;
+                    border-radius: 10px;
                     color: rgb(28, 141, 164);
                     border: 1px solid rgb(28, 141, 164);
                     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2), -1px -1px 4px rgba(255, 255, 255, 0.3);
@@ -187,6 +199,7 @@
                         &:hover {
                             outline: .5px solid rgb(28, 141, 164);
                             border-radius: 50%;
+                            color: red;
                         }
                     }
                 }

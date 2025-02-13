@@ -17,8 +17,6 @@
   const resumeType = getContext<string>("resumeType");
   const resumeFiles = getContext<ResumeFiles>("resumeFiles");
 
-  console.log("Home", resumeFiles);
-
   let fetchJson = fetch(resumeFiles[resumeType])
     .then((res) => res.json())
     .then((jsn) => {

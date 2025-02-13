@@ -11,7 +11,6 @@
 
     const handleOnSubmit = (evt: SubmitEvent) => {
       evt.preventDefault();
-      console.log("Handle the Submit... ", evt);
 
       // Using FormData to get form data
       const formData = new FormData(evt.target as HTMLFormElement);
@@ -19,7 +18,6 @@
         choice.answer = formData.get(choice.name) as string;
       });
       choices = choices;
-      console.log(choices);
     };
 
 </script>

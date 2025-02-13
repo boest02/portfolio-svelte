@@ -1,6 +1,6 @@
 <script lang="ts">
     export let profiles: { url: string; icon: string; network: string }[] = [];
-    console.log(profiles);
+
 </script>
 
 <article class="profiles-wrapper">

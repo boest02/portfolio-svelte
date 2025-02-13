@@ -27,11 +27,7 @@
 
   const urlParams = new URLSearchParams(window.location.search);
   const post: string = urlParams.get("post") || "000001";
-  const postObj: Post =
-    blogPosts.find((p) => p.fileName === post) || blogPosts[0];
-  console.log("Load Post: ", { post, postObj });
-
-  // let blogPost = getBlogPost(`/blog/${postObj.fileName}.md`).then((p) => p);
+  const postObj: Post = blogPosts.find((p) => p.fileName === post) || blogPosts[0];
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(
@@ -45,7 +41,6 @@
   let blogPost = getBlogPost(`/blog/${currentPost}.md`).then((p) => p);
 
   const selectHandler = (evt) => {
-    console.log(evt.target?.value);
     window.location = `${window.location.origin}/blog/${evt.target?.value}`;
   };
 

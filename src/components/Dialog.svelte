@@ -1,29 +1,39 @@
 <script lang="ts">
     import { createEventDispatcher } from 'svelte';
     import { onMount } from 'svelte';
-    export let list: string[] = [];
 
+    let innerComponent = null;
+    let innerComponentData = {};
+    let dialogElement: HTMLDialogElement | null = null;
     const dispatch = createEventDispatcher();
 
-    const closeDialog = () => {
-        dialogElement?.close();
-        console.log('dispatch close');
-        dispatch('close');
+    // exported methos to open the dialog it takes
+    // 2 parameters the component to render and the data to pass to the component
+    export const open = (component, data) => {
+        innerComponentData = data;
+        innerComponent = component;
+        dialogElement?.showModal();
+        dispatch('open');
+        document.body.style.overflow = 'hidden'; //stop scrolling underneath the dialog
     }
 
+    // closes the dialog and dispatches a 'close' event to the parent component
+    const closeDialog = () => {
+        dialogElement?.close();
+        innerComponentData = {};
+        innerComponent = null;
 
-    let dialogElement: HTMLDialogElement | null = null;
-
-    onMount(() => {
-        // content here
-        dialogElement?.showModal();
-    });
+        dispatch('close');
+        document.body.style.overflow = 'initial'; // restore overflow setting
+    };
 </script>
 
 <div class="my-dialog">
-    <dialog bind:this={dialogElement} on:click={(evt)=>console.log(evt?.target)}>
+    <dialog bind:this={dialogElement}>
     <button on:click={closeDialog} title="close">X</button>
-        <slot></slot>
+    {#if innerComponent != null}
+        <svelte:component this={innerComponent} data={innerComponentData} />
+    {/if}
     </dialog>
 </div>
 
@@ -38,7 +48,13 @@
             border-radius: 10px;
             padding: 40px 25px 20px;
             margin: auto;
-            position: relative;
+            overflow: auto;
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
 
             &>button {
                 position: absolute;

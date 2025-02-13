@@ -3,8 +3,6 @@
     import Bullets from './Bullets.svelte';
     export let data: any[] = [];
 
-    console.log("data: ", data);
-
     const experienceList = data.slice(0, 3);
     let pastExperience: { [key: string]: any[] } = {};
 
@@ -17,8 +15,6 @@
 
     consolidateByCompany(data.slice(3));
 
-    console.log("experienceList: ", experienceList);
-    console.log("pastExperience: ", pastExperience);
 </script>
 
 <section class="experience-wrapper block">

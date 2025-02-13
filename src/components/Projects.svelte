@@ -11,16 +11,14 @@
     let more = false;
     let projectsElement: any = null;
     let dialogProject: any = null;
+    let dialog:HTMLDialogElement | null = null;
 
     const openDialog = (project: any) => {
-        document.body.style.position = 'fixed';
-        dialogProject = project;
+        dialog.open(Project, project);
     }
 
     const closeDialog = () => {
         dialogProject = null;
-        document.body.style.position = 'static';
-        projectsElement.scrollIntoView();
     }
 
     const dataProvider = (newData: any[]) => {
@@ -30,9 +28,6 @@
     dataProvider(data.map(project => ({ ...project, more: false })).sort((a, b) => a.name.localeCompare(b.name)));
 </script>
 
-{#if dialogProject}
-<Dialog on:close={closeDialog}><Project project="{dialogProject}" /></Dialog>
-{/if}
 
 <section class="projects-wrapper" bind:this={projectsElement}>
     <h2>My Projects -</h2>
@@ -46,7 +41,7 @@
     </div>
     <div class="no-records">Sorry no Projects to display...</div>
 </section>
-
+<Dialog bind:this={dialog} on:close={closeDialog}></Dialog>
 
 
 <style lang="scss">

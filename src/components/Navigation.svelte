@@ -4,8 +4,6 @@
     export let links: Link[] = [];
     export let exclude: string[] = [];
 
-    console.log("excludeList: ", exclude);
-
     type Link = {
         name: string,
         path: string
@@ -15,12 +13,10 @@
     let optOpen = false;
 
     const clickNav = () => {
-        console.log("clickNav", navOpen);
         navOpen = !navOpen;
     }
 
     const clickOpt = () => {
-        console.log("clickOptions", optOpen);
         optOpen = !optOpen;
     }
 

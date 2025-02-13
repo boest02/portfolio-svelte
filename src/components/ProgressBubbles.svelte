@@ -5,9 +5,6 @@
 
     const count = bubbles.length;
 
-    console.log(`count: ${count}, completed: ${completed}`);
-
-
     onMount(() => {
         let activeProgress: Element | null = document.querySelector('.active');
         activeProgress?.addEventListener('animationend', () => activeProgress?.nextElementSibling?.querySelector('.ball')?.classList.add('completed'));

@@ -1,7 +1,7 @@
 <script lang="ts">
     import KeyValue from './KeyValue.svelte';
     export let data: { name: string; description: string }[] = [];
-    console.log(data);
+
 </script>
 
 <section class="strengths-wrapper">

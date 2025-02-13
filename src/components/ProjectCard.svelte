@@ -91,7 +91,7 @@
                 font-weight: 700;
                 padding: 5px 10px;
                 border: 1px solid rgb(28, 141, 164);
-                border-radius: 25px;
+                border-radius: 10px;
                 box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2), -1px -1px 4px rgba(255, 255, 255, 0.3);
             }
         }

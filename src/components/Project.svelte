@@ -12,7 +12,9 @@
         images: string[];
     }
 
-    export let project: Project;
+    export let data: Project;
+
+    let project: Project = data;
 
     const mainOptions = {
         type: 'slide',
@@ -84,7 +86,7 @@
         padding: 30px 20px 20px;
         position: relative;
         box-shadow: 2px 0 15px rgba(0, 0, 0, 0.15);
-        color: rgb(28, 141, 164);
+        color: #000;
 
         .tech-wrapper {
             display: flex;
@@ -100,7 +102,7 @@
                 background-color: rgb(28, 141, 164);
                 color: #fff;
                 padding: 5px 12px;
-                border-radius: 25px;
+                border-radius: 5px;
                 box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2), -1px -1px 4px rgba(255, 255, 255, 0.3);
             }
         }
@@ -113,13 +115,13 @@
         .type {
             font-size: 85%;
             font-weight: bold;
+            color: rgb(28, 141, 164);
             position: absolute;
             top: 20px;
             right: 25px;
         }
 
         .project-link {
-
             a,
             a:visited {
                 margin: 10px;
