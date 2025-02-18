@@ -5,11 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "npm run copy && npm run copy-blog && vite",
-    "copy": "cp -v -f src/assets/* public/",
-    "copy-blog": "mkdir -p public/blog && cp -v -f blog/* public/blog/",
-    "build": "vite build && cp -v -f src/assets/* dist/",
+    "copy": "cp -v -f src//assets//* public//",
+    "copy-blog": "cp -v -f blog//* public//blog//",
+    "build": "vite build && cp -v -f src//assets/* dist//",
     "preview": "vite preview",
-    "check": "svelte-check --tsconfig ./tsconfig.json && tsc -p tsconfig.node.json"
+    "check": "svelte-check --tsconfig .//tsconfig.json && tsc -p tsconfig.node.json"
   },
   "devDependencies": {
     "@rollup/plugin-json": "^6.1.0",
