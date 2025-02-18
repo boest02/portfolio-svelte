@@ -257,7 +257,7 @@
                 "Developed a static site using Nuxt.js, Vue.js, and Tailwind CSS.",
                 "Created a command line utility to create the boilerplate template for a Vue.js page.",
                 "Used GitLab Issues to manage the project, we created an issue for each of the pages we needed to convert from the old site and used GitLab to help generate the branches and track through the Issues tab.",
-                "The site is live here: <a href='https://info.pch.com'>https://info.pch.com</a>."
+                "The site is live here: <a target='_blank' href='https://info.pch.com'>https://info.pch.com</a>."
             ],
             "url": ""
         },
