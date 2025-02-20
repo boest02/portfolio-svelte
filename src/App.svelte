@@ -5,6 +5,7 @@
   import Portfolio from "./pages/Portfolio.svelte";
   import Resume from "./pages/Resume.svelte";
   import Blog from "./pages/Blog.svelte";
+  import Career from "./pages/Career.svelte";
   import Navigation from "./components/Navigation.svelte";
 
   export let url = "";
@@ -30,16 +31,21 @@
       "path": '/',
       "component": Home,
       "name": "Home"
+    },    
+    {
+      "path": '/resume',
+      "component": Resume,
+      "name": "Resume"
+    },
+    {
+      "path": '/career',
+      "component": Career,
+      "name": "Career"
     },
     {
       "path": '/portfolio',
       "component": Portfolio,
       "name": "Portfolio"
-    },
-    {
-      "path": '/resume',
-      "component": Resume,
-      "name": "Resume"
     },
     {
       "path": '/blog',

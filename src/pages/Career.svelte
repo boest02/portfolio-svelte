@@ -1,6 +1,6 @@
 <script>
     import { getContext } from 'svelte';
-    import Experience from "../components/Experience.svelte";
+    import CareerExperience from "../components/CareerExperience.svelte";
 
     const resumeType = getContext("resumeType");
     const resumeFiles = getContext("resumeFiles");
@@ -20,7 +20,7 @@
     {#await fetchJson}
         <h2>Loading...</h2>
     {:then resume}
-        <Experience data={resume.work} includeNonHighlights="true" />
+        <CareerExperience data={resume.work} includeNonHighlights="true" />
     {:catch error}
     error
     {/await}

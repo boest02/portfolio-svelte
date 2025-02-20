@@ -56,14 +56,15 @@
             "url": "https://info.pch.com/",
             "startDate": "2019-08-01",
             "endDate": "",
-            "summary": "Description…",
+            "summary": "As a Lead Front-End Developer, I take a hands-on role in guiding the development process, mentoring junior developers, and ensuring best practices in code quality and performance. I work closely with designers and stakeholders to break down complex UI/UX designs into modular, reusable components that form the foundation of the site’s architecture. My focus is on creating scalable and maintainable front-end solutions while fostering a collaborative team environment where junior developers can grow their skills and contribute effectively.",
             "highlights": [
                 "Spearheaded the complete redesign of the PCH Weekly Prize website, increasing organic traffic by 20% and enhancing user engagement through improved UX and performance optimization.",
                 "Developed a fully responsive and portable navigation system adopted by 15+ PCH properties, enhancing user journey consistency across platforms while improving site interaction rates by over 25% within three months of deployment.",
                 "Created a reusable 'tooltip' type component that enhanced on-page communication regarding critical products; enhancements led to increased user engagement metrics, generating over 1,500 positive feedback responses within the first month post-launch.",
                 "Championed accessibility initiatives by conducting thorough audits on over 30 web pages, ensuring compliance with WCAG standards and delivering inclusive digital experiences that emphasized engagement for users with disabilities.",
                 "Guided junior and mid-level engineers through bi-weekly one-on-one sessions, directly addressing technical challenges that enhanced coding efficiency across the team while fostering professional growth and collaboration."
-            ]
+            ],
+            "resume": true
         },
         {
             "name": "Publishers Clearing House",
@@ -71,7 +72,7 @@
             "url": "https://info.pch.com/",
             "startDate": "2018-08-01",
             "endDate": "2019-07-30",
-            "summary": "Description…",
+            "summary": "As a Front-End Developer, I work closely with the team to build and integrate reusable components into the site. I focus on implementing designs with precision, ensuring functionality through testing, and maintaining a robust component library in Storybook. By collaborating with developers and designers, I help create a seamless and scalable front-end experience.",
             "highlights": [
                 "Implemented a flexible communication module, enabling targeted user messaging and enhancing customer interaction.",
                 "Developed unique game mechanics which directly addressed previously identified pain points, leading to a 20% increase in user engagement metrics.",
@@ -80,7 +81,8 @@
                 "Brought about comprehensive unit testing strategies within the CI/CD pipeline, enhancing code stability across 10+ projects while reducing bug-related downtime by an estimated 35 hours per month.",
                 "Collaborated with QA teams to establish end-to-end testing processes, ensuring defect-free feature releases.",
                 "Integrated third-party APIs to enhance application functionality, including real-time updates and dynamic content rendering."
-            ]
+            ],
+            "resume": true
         },
         {
             "name": "Publishers Clearing House",
@@ -88,12 +90,13 @@
             "url": "https://info.pch.com/",
             "startDate": "2013-11-01",
             "endDate": "2018-07-30",
-            "summary": "Description…",
+            "summary": "As a Senior Business Analyst / Scrum Master, I translated business needs into clear, actionable user stories and specifications for developers and QA teams. I worked closely with product owners and designers to define feature requirements, ensuring alignment with business goals. In addition to facilitating Agile ceremonies, I led daily standups, grooming, and sizing meetings to keep the team aligned and development on track. By fostering collaboration and removing roadblocks, I helped ensure a smooth and efficient workflow.",
             "highlights": [
                 "Led the development of a web-based Contest Tracking System, streamlining prize tracking, drawing, and fulfillment processes.",
                 "Acted as Scrum Master, managing sprint goals, ceremonies, and release schedules to ensure high quality deliverables.",
                 "Coordinated integrations with legacy systems and third-party vendors, ensuring seamless system interoperability that enhanced operational efficiency."
-            ]
+            ],
+            "resume": true
         },
         {
             "name": "Computer Associates",
@@ -101,12 +104,13 @@
             "url": "https://en.wikipedia.org/wiki/CA_Technologies",
             "startDate": "2006-09-01",
             "endDate": "2013-05-30",
-            "summary": "Description…",
+            "summary": "DescAs Director of ARCserve Software Development, I guided the technical direction of our development group, ensuring strategic alignment with business goals. I managed both local developers and remote teams across the globe, fostering collaboration and efficiency across time zones. My role involved overseeing software architecture decisions, driving innovation, and optimizing development processes to enhance ARCserve’s backup and storage solutions.ription…",
             "highlights": [
                 "Promoted a 'code peer review' process adopted by the broader team, improving code quality and consistency across projects.",
                 "Mentored team members through design and implementation phases, providing guidance on best practices and supporting defect resolution to enhance team performance.",
                 "Facilitated 12 training sessions for support and sales teams on ARCserve product updates, enabling clear communication and troubleshooting strategies that addressed the top three customer concerns with new features."
-            ]
+            ],
+            "resume": true
         },
         {
             "name": "Computer Associates",
@@ -114,11 +118,12 @@
             "url": "https://en.wikipedia.org/wiki/CA_Technologies",
             "startDate": "2005-05-31",
             "endDate": "2006-09-01",
-            "summary": "Description…",
+            "summary": "As Senior Manager of ARCserve Device Development, I worked closely with stakeholders to understand requirements and shape how our team implemented solutions. While continuing hands-on development, I managed local and remote developers, ensuring smooth collaboration and efficient delivery. My responsibilities included guiding device integration, optimizing performance, and helping the team translate business needs into effective technical solutions for backup and storage.",
             "highlights": [
                 "Managed a team of six developers across the home office, with dotted-line oversight of remote teams in Beijing, China, and Hyderabad, India, ensuring global collaboration and productivity.",
                 "Cultivated solutions that aligned tightly with user requirements and emerging technologies, generating comprehensive design documents alongside workflow diagrams to streamline the development process for a successful implementation cycle of 6 months."
-            ]
+            ],
+            "resume": true
         },
         {
             "name": "Computer Associates",
@@ -126,10 +131,68 @@
             "url": "https://en.wikipedia.org/wiki/CA_Technologies",
             "startDate": "2003-05-01",
             "endDate": "2005-04-30",
-            "summary": "Description…",
+            "summary": "As a Senior Software Engineer, I developed C-based applications for Windows architecture, focusing on data movement to tape devices. I designed and implemented SCSI communication protocols to control tape drives and tape library devices across a SAN, ensuring seamless integration and reliable data transfer. This role required hands-on setup and configuration of storage hardware, working directly with tape devices to optimize performance, troubleshoot low-level interactions, and enhance system stability for enterprise backup and storage solutions.",
             "highlights": [
                 "Engineered high-performance software solutions using Win32 C programming in Visual Studio 6.0, resulting in the identification and resolution of the three largest causes of application crashes for enhanced system stability."
-            ]
+            ],
+            "resume": true
+        },
+        {
+            "name": "Computer Associates",
+            "position": "Software Engineer",
+            "url": "https://en.wikipedia.org/wiki/CA_Technologies",
+            "startDate": "1999-12-01",
+            "endDate": "2003-05-01",
+            "summary": "As a Software Engineer, I developed core features for ARCserve based on management’s specifications, focusing on data movement and device integration. I implemented solutions in C for Windows architecture, writing SCSI code to control tape drives and libraries. I also helped plan and scope development tasks according to our waterfall schedule, ensuring timely delivery and alignment with project goals.",
+            "highlights": [
+                "Develop new features for ARCserve device support, including automated SAN device sharing, tape drive encryption, and cluster failover handling.",
+                "Maintain and manage the SAN lab for development and testing.",
+                "Support the device certification team by configuring new hardware and ensuring compatibility with existing software.",
+                "Implement fixes and improvements to support new devices within the ARCserve ecosystem."
+            ],
+            "resume": false
+        },
+        {
+            "name": "Computer Associates",
+            "position": "Maintenance Software Engineer",
+            "url": "https://en.wikipedia.org/wiki/CA_Technologies",
+            "startDate": "1999-05-01",
+            "endDate": "1999-12-01",
+            "summary": "As a Maintenance Software Engineer, I provided technical support for ARCserve, assisting customers with software and hardware issues. I worked closely with the development team to diagnose problems, release patches, and ensure fixes were integrated into the production codebase. My role bridged the gap between support and development, helping to improve system stability and enhance the customer experience.",
+            "highlights": [
+                "Assist support engineers with escalated issues that require deep investigation or code changes.",
+                "Work directly with customers to troubleshoot complex technical issues.",
+                "Develop and publish fixes to the company website for broader end-user access.",
+                "Ensure that resolved issues are documented to help prevent future occurrences."
+            ],
+            "resume": false
+        },
+        {
+            "name": "Computer Associates",
+            "position": "Senior Technical Support Representative",
+            "url": "https://en.wikipedia.org/wiki/CA_Technologies",
+            "startDate": "1997-04-01",
+            "endDate": "1999-05-01",
+            "summary": "As a Senior Technical Support Representative, I worked directly with customers online to diagnose and resolve technical issues. I developed a library of detailed technical responses to streamline support and assist users based on the information they provided. My role focused on troubleshooting, guiding customers through solutions, and improving overall support efficiency.",
+            "highlights": [
+                "Provided technical product support online via AOL and CompuServe.",
+                "Mentored support representatives by offering guidance and assistance.",
+                "Updated and maintained an internal solutions database for team reference.",
+                "Ensured support resources were accurate and up to date to improve issue resolution efficiency."
+            ],
+            "resume": false
+        },
+        {
+            "name": "Computer Associates / Cheyenne Software",
+            "position": "Technical Support Representative",
+            "url": "https://en.wikipedia.org/wiki/Arcserve",
+            "startDate": "1996-02-01",
+            "endDate": "1997-04-01",
+            "summary": "As a Technical Support Representative, I provided phone-based support to customers, assisting them with troubleshooting and resolving technical issues. I guided users through solutions, ensuring a positive experience and high customer satisfaction. When needed, I escalated more complex issues to our Level 2 maintenance group, ensuring timely resolution and seamless support.",
+            "highlights": [
+                "Offered product technical support, over the phone, for ARCserve products covering: Windows NT and Novell Netware customers."
+            ],
+            "resume": false
         }
     ],
     "education": [
@@ -229,9 +292,7 @@
                 "php",
                 "blade"
             ],
-            "images": [
-
-            ],
+            "images": [],
             "description": "PCH was developing a site to collect user information through surveys. I wasn’t involved from the start, but I was brought in to help get the project back on track. The frontend was being handled by two junior developers who were receiving tasks from the backend team but struggling to meet deadlines. After assessing the challenges, I worked closely with them to improve their workflow. We implemented daily touch-point meetings to address roadblocks in real-time and introduced structured code reviews to ensure their work was QA-ready. These changes helped streamline development, and we successfully delivered the site on time with high quality.",
             "highlights": [
                 "Through pair programming and design discussions we were able to workout a plan on ho to deliver the outstanding features that were needed to get the site out the door.",
@@ -249,9 +310,7 @@
                 "tailwindcss",
                 "eslint"
             ],
-            "images": [
-
-            ],
+            "images": [],
             "description": "The Publishers Clearing House 'Info' site was previously hosted on WordPress, but the costs outweighed its needs and update frequency. I was part of a team tasked with replacing it with a more cost-effective, maintainable static site. We built the new site using Nuxt.js, leveraging Vue.js to generate static HTML and CSS. Tailwind CSS was used for styling, ensuring a responsive design. The project was integrated into a CI/CD pipeline, automating builds and deployments to a staging environment for review before going live.",
             "highlights": [
                 "Developed a static site using Nuxt.js, Vue.js, and Tailwind CSS.",
@@ -270,9 +329,7 @@
                 "npm package",
                 "node.js"
             ],
-            "images": [
-
-            ],
+            "images": [],
             "description": "We had an internal site that let users enter a code that would be tied to an offer and it was an older system that they would receive a spreadsheet by email and then manually copy the new codes into the javascript file for this site.  So it was labor intensive and had to be done by a developer to not cause any issue if the user accidentally broke the javascript.  I create a command line utility they could usee to specify the  incoming excel file and this tool would parse the excel file and output a JSON file that could be used in the site.  This saved them a lot of time and effort and they were able to do it themselves.",
             "highlights": [
                 "Found an NPM package that would help me load the excel file in a format that I could traverse like an object and from that pull out the data I needed and write to the JSON file",
@@ -290,9 +347,7 @@
                 "javascript",
                 "sass"
             ],
-            "images": [
-
-            ],
+            "images": [],
             "description": "This was a learning project I took an after seeing a video on a simulated React interview where they asked the interviewee to create a version of the popular game Wordle, built as a React app.  I created a React/Typescript project and built the game you can try <a target='_blank'  href='https://fake-le.netlify.app/'>here</a>. ",
             "highlights": [
                 "Used an API that I found to get the words at https://random-word-api.herokuapp.com/word",
@@ -349,9 +404,7 @@
                 "composer package",
                 "php"
             ],
-            "images": [
-
-            ],
+            "images": [],
             "description": "Led the re-design of PCH's Universal Navigation bar that is used on 8 of the websites in the PCH umbrella. The navigation bar has multiple interactive areas so there was significant HTML markup, CSS styling and event driven Javascript.  We were given designs in Figma and we had multiple meetings to walkthrough how users will integrate and how web admins might configure, leading to us creating and sizing stories for the dev work needed to build it.",
             "highlights": [
                 "We built a test site where we could stand up the Uninav on it's own to develop it and work on the different configurations to see how they rendered and functioned",
@@ -442,9 +495,7 @@
                 "vitest",
                 "ci/cd"
             ],
-            "images": [
-
-            ],
+            "images": [],
             "description": "Developed a robust Google Analytics Event Tracking Service that simplifies click event monitoring across web applications. The service utilizes a data attribute-based system to automatically detect and track user interactions, transforming specified HTML elements into trackable components. It seamlessly captures and transmits event data to Google Analytics, requiring minimal setup while providing comprehensive tracking capabilities. Built with modern tooling including Vite and Vitest, the service is thoroughly tested and optimized for easy integration into any JavaScript project.",
             "highlights": [
                 "Implemented an intelligent redirect delay system that ensures accurate event tracking by waiting for analytics data transmission before page navigation",
@@ -462,9 +513,7 @@
                 "javascript",
                 "regex"
             ],
-            "images": [
-
-            ],
+            "images": [],
             "description": "Developed an internal tool for the email team to validate email HTML by running it through a series of automated tests. The tool utilized regex patterns to identify positive or negative matches, ensuring email content adhered to required standards. This solution significantly increased the email team's productivity and reduced the risk of sending out broken or non-compliant emails.",
             "highlights": [
                 "Allowed users to paste in or upload HTML and run it through the tests.",
@@ -484,9 +533,7 @@
                 "sass",
                 "mysql"
             ],
-            "images": [
-
-            ],
+            "images": [],
             "description": "Developed a comprehensive teacher's application for assisting in doing student evaluations.  The application allows teachers to create and manage student profiles and evaluations.  It also the teacher to create a bank of student evaluation comments that can be used and personalized for each evaluation.",
             "highlights": [
                 "Created a student registration portion of the app to add students to the system.",

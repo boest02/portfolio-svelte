@@ -3,6 +3,7 @@
     export let end = '';
 
     const formatDate = (date: string) => {
+        if(date === '') return "Present";
         const d = new Date(date);
         return `${d.toLocaleString("en-us", { month: "long", year: "numeric" })}`;
     }
@@ -10,7 +11,7 @@
 
 </script>
 
-<time class="date-wrapper" datetime="2011-04-02/2011-04-04">
+<time class="date-wrapper" datetime="{start}/{end}">
    ({formatDate(start)} ~ {formatDate(end)})
 </time>
 
