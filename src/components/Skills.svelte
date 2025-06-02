@@ -30,12 +30,14 @@
         .bullet-wrapper {
           display: flex;
           align-items: start;
+          gap: 10px;
           line-height: 1.5;
 
           h3 {
-            margin: 0 5px;
+            margin: 5px;
             font-weight: 600;
             margin-top: -4px;
+            text-wrap: nowrap;
             &::after {
               content: ": ";
             }

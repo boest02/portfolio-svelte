@@ -8,12 +8,12 @@
         "portfolio_url": "sboettcher.com",
         "linkedin_url": "linkedin.com/in/stephenboettcher",
         "github_url": "github.com/boest02",
-        "res_summary": "Lead Front-End Developer with over 10 years of experience creating scalable web applications; proficient in modern JavaScript frameworks such as Svelte and React. Guided the redesign of the PCH Weekly Prize website, resulting in a 20% increase in organic traffic. Promoted from Front-End Developer to Lead Front-End Developer within one year due to exceptional performance and leadership in optimizing user experiences across platforms.",
+        "res_summary": "Highly accomplished Lead Front-End Developer with over 10 years of experience architecting and creating scalable, high-performance web applications, specializing in modern JavaScript frameworks such as Svelte and React. Successfully guided the redesign of the PCH Weekly Prize website, driving a 20% increase in organic traffic. Recognized for exceptional performance and technical leadership, leading to rapid promotion and optimizing user experiences across diverse platforms.",
         "home_summary": [
             "Welcome! This portfolio is a work in progress, evolving as I refine and expand my work. Built with Svelte, SASS, and a touch of Tailwind CSS, it's hosted on Netlify. I've also added a Blog section, where I share insights and experiences using markdown-based posts.",
-            "I'm a seasoned front-end web developer specializing in crafting dynamic, accessible, and user-friendly web experiences. My expertise spans HTML, CSS, and JavaScript, alongside modern frameworks like Svelte, React and Vue. I also have experience in back-end technologies such as PHP, Node.js, and Next.js, enabling me to build seamless full-stack solutions.",
-            "My journey in technology started with C programming, developing backup software for Windows and working with SCSI interfaces for data movement and device control. This early experience sharpened my problem-solving skills and attention to detail—qualities that continue to shape my approach to development today.",
-            "I thrive on challenges, continuously learning and adapting to the ever-evolving landscape of web development. If you're looking for a developer passionate about performance, usability, and innovation, let’s connect!"
+            "I'm a seasoned web technology leader with a deep foundation in front-end development, specializing in crafting dynamic, accessible, and user-friendly web experiences using HTML, CSS, and modern JavaScript frameworks like Svelte, React, and Vue. My expertise also spans into back-end technologies such as PHP, Node.js, and Next.js, enabling me to build seamless full-stack solutions.",
+            "Beyond the code, I bring a robust background in technical leadership, project management, and business analysis. I've honed skills in orchestrating cross-functional teams, serving as a Scrum Master to streamline agile delivery, and effectively bridging the gap between complex business needs and impactful technical solutions. My journey in technology started with C programming, developing backup software for Windows, which sharpened my problem-solving skills and attention to detail, qualities that continue to shape my holistic approach to development and project oversight today.",
+            "I thrive on challenges, continuously learning and adapting to the ever-evolving landscape of technology. If you're looking for a professional passionate about performance, usability, and innovation, who can also lead teams and drive projects from concept to completion, let’s connect!"
         ],
         "summary": "",
         "location": {
@@ -55,14 +55,14 @@
             "position": "Lead Front-End Developer",
             "url": "https://info.pch.com/",
             "startDate": "2019-08-01",
-            "endDate": "",
+            "endDate": "2025-04-24",
             "summary": "As a Lead Front-End Developer, I take a hands-on role in guiding the development process, mentoring junior developers, and ensuring best practices in code quality and performance. I work closely with designers and stakeholders to break down complex UI/UX designs into modular, reusable components that form the foundation of the site’s architecture. My focus is on creating scalable and maintainable front-end solutions while fostering a collaborative team environment where junior developers can grow their skills and contribute effectively.",
             "highlights": [
-                "Spearheaded the complete redesign of the PCH Weekly Prize website, increasing organic traffic by 20% and enhancing user engagement through improved UX and performance optimization.",
-                "Developed a fully responsive and portable navigation system adopted by 15+ PCH properties, enhancing user journey consistency across platforms while improving site interaction rates by over 25% within three months of deployment.",
-                "Created a reusable 'tooltip' type component that enhanced on-page communication regarding critical products; enhancements led to increased user engagement metrics, generating over 1,500 positive feedback responses within the first month post-launch.",
-                "Championed accessibility initiatives by conducting thorough audits on over 30 web pages, ensuring compliance with WCAG standards and delivering inclusive digital experiences that emphasized engagement for users with disabilities.",
-                "Guided junior and mid-level engineers through bi-weekly one-on-one sessions, directly addressing technical challenges that enhanced coding efficiency across the team while fostering professional growth and collaboration."
+                "Architected and spearheaded the complete redesign of the PCH Weekly Prize website, resulting in a 20% increase in organic traffic and significantly enhancing user engagement through optimized UX and performance metrics.",
+                "Engineered a fully responsive and portable navigation system, subsequently adopted by 15+ PCH properties to improve user journey consistency and boost site interaction rates by over 25% within three months.",
+                "Developed and deployed a reusable 'tooltip' component that improved on-page communication and generated over 1,500 positive user feedback responses within the first month post-launch.",
+                "Led accessibility initiatives, conducting thorough audits on 30+ web pages to ensure WCAG compliance and deliver inclusive, highly engaging digital experiences.",
+                "Provided technical leadership and mentorship to junior and mid-level engineers through bi-weekly 1:1 sessions, improving team coding efficiency and fostering collaborative development practices."
             ],
             "resume": true
         },
@@ -74,13 +74,13 @@
             "endDate": "2019-07-30",
             "summary": "As a Front-End Developer, I work closely with the team to build and integrate reusable components into the site. I focus on implementing designs with precision, ensuring functionality through testing, and maintaining a robust component library in Storybook. By collaborating with developers and designers, I help create a seamless and scalable front-end experience.",
             "highlights": [
-                "Implemented a flexible communication module, enabling targeted user messaging and enhancing customer interaction.",
-                "Developed unique game mechanics which directly addressed previously identified pain points, leading to a 20% increase in user engagement metrics.",
-                "Designed and deployed a suite of modular components that streamlined the development process, resulting in an average reduction of 15 hours per project by eliminating redundant code and ensuring consistent design across applications.",
-                "Optimized web performance, reducing page load times by 25% through code refactoring, asset optimization, and efficient use of caching mechanisms.",
-                "Brought about comprehensive unit testing strategies within the CI/CD pipeline, enhancing code stability across 10+ projects while reducing bug-related downtime by an estimated 35 hours per month.",
-                "Collaborated with QA teams to establish end-to-end testing processes, ensuring defect-free feature releases.",
-                "Integrated third-party APIs to enhance application functionality, including real-time updates and dynamic content rendering."
+                "Engineered and deployed a flexible communication module, enabling targeted user messaging and significantly enhancing customer interaction.",
+                "Developed innovative game mechanics that directly addressed user pain points, leading to a 20% increase in user engagement metrics.",
+                "Designed and implemented a suite of modular, reusable components that streamlined development by 15 hours per project through code standardization and elimination of redundancy.",
+                "Executed comprehensive web performance optimizations, reducing page load times by 25% via strategic code refactoring, asset optimization, and robust caching.",
+                "Pioneered and integrated unit testing strategies into the CI/CD pipeline, enhancing code stability across 10+ projects and reducing bug-related downtime by ~35 hours/month.",
+                "Collaborated closely with QA teams to establish rigorous end-to-end testing processes, ensuring the release of defect-free features.",
+                "Integrated complex third-party APIs to extend application functionality, enabling real-time updates and dynamic content rendering."
             ],
             "resume": true
         },
@@ -92,48 +92,35 @@
             "endDate": "2018-07-30",
             "summary": "As a Senior Business Analyst / Scrum Master, I translated business needs into clear, actionable user stories and specifications for developers and QA teams. I worked closely with product owners and designers to define feature requirements, ensuring alignment with business goals. In addition to facilitating Agile ceremonies, I led daily standups, grooming, and sizing meetings to keep the team aligned and development on track. By fostering collaboration and removing roadblocks, I helped ensure a smooth and efficient workflow.",
             "highlights": [
-                "Led the development of a web-based Contest Tracking System, streamlining prize tracking, drawing, and fulfillment processes.",
-                "Acted as Scrum Master, managing sprint goals, ceremonies, and release schedules to ensure high quality deliverables.",
-                "Coordinated integrations with legacy systems and third-party vendors, ensuring seamless system interoperability that enhanced operational efficiency."
+                "Leveraged strong understanding of SDLC and technical requirements to facilitate communication between development teams and stakeholders, streamlining project delivery for web-based systems.",
+                "Managed Agile Scrum ceremonies and release schedules, ensuring clarity on technical deliverables and fostering team efficiency.",
+                "Coordinated technical integrations with legacy systems and third-party vendors, ensuring seamless interoperability and operational efficiency."
             ],
             "resume": true
         },
         {
             "name": "Computer Associates",
-            "position": "Director: ARCserve Software Development",
+            "position": "Director / Senior Manager, Software Development - ARCserve",
             "url": "https://en.wikipedia.org/wiki/CA_Technologies",
-            "startDate": "2006-09-01",
+            "startDate": "2005-05-01",
             "endDate": "2013-05-30",
-            "summary": "DescAs Director of ARCserve Software Development, I guided the technical direction of our development group, ensuring strategic alignment with business goals. I managed both local developers and remote teams across the globe, fostering collaboration and efficiency across time zones. My role involved overseeing software architecture decisions, driving innovation, and optimizing development processes to enhance ARCserve’s backup and storage solutions.ription…",
+            "summary": "…",
             "highlights": [
-                "Promoted a 'code peer review' process adopted by the broader team, improving code quality and consistency across projects.",
-                "Mentored team members through design and implementation phases, providing guidance on best practices and supporting defect resolution to enhance team performance.",
-                "Facilitated 12 training sessions for support and sales teams on ARCserve product updates, enabling clear communication and troubleshooting strategies that addressed the top three customer concerns with new features."
+                "Led and mentored engineering teams across global locations, championing initiatives like a code peer review process that significantly improved code quality and consistency across large-scale software projects.",
+                "Drove technical strategy and streamlined development processes, overseeing the design and implementation of complex software solutions with a focus on best practices and effective problem-solving.",
+                "Facilitated technical training for external teams, bridging communication gaps between engineering and sales/support to address critical product concerns."
             ],
             "resume": true
-        },
-        {
-            "name": "Computer Associates",
-            "position": "Senior Manager: ARCserve Device Development",
-            "url": "https://en.wikipedia.org/wiki/CA_Technologies",
-            "startDate": "2005-05-31",
-            "endDate": "2006-09-01",
-            "summary": "As Senior Manager of ARCserve Device Development, I worked closely with stakeholders to understand requirements and shape how our team implemented solutions. While continuing hands-on development, I managed local and remote developers, ensuring smooth collaboration and efficient delivery. My responsibilities included guiding device integration, optimizing performance, and helping the team translate business needs into effective technical solutions for backup and storage.",
-            "highlights": [
-                "Managed a team of six developers across the home office, with dotted-line oversight of remote teams in Beijing, China, and Hyderabad, India, ensuring global collaboration and productivity.",
-                "Cultivated solutions that aligned tightly with user requirements and emerging technologies, generating comprehensive design documents alongside workflow diagrams to streamline the development process for a successful implementation cycle of 6 months."
-            ],
-            "resume": true
-        },
+        },        
         {
             "name": "Computer Associates",
             "position": "Senior Software Engineer",
             "url": "https://en.wikipedia.org/wiki/CA_Technologies",
-            "startDate": "2003-05-01",
+            "startDate": "2003-04-01",
             "endDate": "2005-04-30",
-            "summary": "As a Senior Software Engineer, I developed C-based applications for Windows architecture, focusing on data movement to tape devices. I designed and implemented SCSI communication protocols to control tape drives and tape library devices across a SAN, ensuring seamless integration and reliable data transfer. This role required hands-on setup and configuration of storage hardware, working directly with tape devices to optimize performance, troubleshoot low-level interactions, and enhance system stability for enterprise backup and storage solutions.",
+            "summary": "...",
             "highlights": [
-                "Engineered high-performance software solutions using Win32 C programming in Visual Studio 6.0, resulting in the identification and resolution of the three largest causes of application crashes for enhanced system stability."
+                "Engineered high-performance Win32 C solutions, resolving the top three causes of application crashes and significantly enhancing system stability."
             ],
             "resume": true
         },
@@ -217,15 +204,16 @@
     ],
     "skills": [
         {
-            "name": "Front-End Technologies",
+            "name": "Front-End Core",
             "level": "Expert",
             "keywords": [
                 "HTML5",
-                "CSS3",
-                "JavaScript",
+                "CSS3 (Tailwind CSS, SASS)",
+                "JavaScript (ES6+)",
                 "Typescript",
-                "SASS",
-                "Tailwind CSS"
+                "Responsive Web Design",
+                "Web Accessibility (WCAG, a11y)",
+                "Performance Optimization"
             ]
         },
         {
@@ -235,53 +223,108 @@
                 "Svelte",
                 "React",
                 "Vue.js",
+                "Next.js",
+                "Astro",
                 "Lit"
             ]
         },
         {
-            "name": "Other Tools",
+            "name": "Build Tools & Package Management",
             "level": "Advanced",
             "keywords": [
-                "Node.js",
-                "Express",
-                "PHP",
-                "MySQL",
-                "Webpack",
-                "Git",
-                "Docker"
+                "Webpack", 
+                "Vite", 
+                "npm", 
+                "Yarn"
             ]
         },
         {
-            "name": "Design Tools",
+            "name": "Backend & APIs",
             "level": "Advanced",
             "keywords": [
-                "Figma",
-                "Photoshop"
+                "Node.js", 
+                "Express", 
+                "PHP", 
+                "MySQL", 
+                "RESTful APIs"
             ]
         },
         {
-            "name": "Testing Tools",
+            "name": "Testing & Quality",
             "level": "Advanced",
             "keywords": [
                 "Jest",
                 "Mocha",
                 "Chai",
                 "Vitest",
-                "Storybook"
+                "Storybook",
+                "Unit Testing", 
+                "Integration Testing", 
+                "CI/CD Principles"
             ]
         },
         {
             "name": "Methodologies",
             "level": "Advanced",
             "keywords": [
-                "Agile(Scrum)",
-                "Web Accessibility(a11y)",
-                "Responsive Web Design",
-                "Performance Optimization"
+                "Agile (Scrum, Kanban)",
+                "SDLC"
+            ]
+        },
+        {
+            "name": "Other Tools",
+            "level": "Advanced",
+            "keywords": [
+                "Figma",
+                "Photoshop",
+                "Jira", 
+                "Confluence",
+                "Git",
+                "Docker"
             ]
         }
     ],
     "projects": [
+        {
+            "name": "Blog for a Poet",
+            "type": "Side Project: Website/Blog",
+            "tech": [
+                "Astro",
+                "Markdown",
+                "Static Site Generator"
+            ],
+            "images": [],
+            "description": "Worked with a poet to create a blog that would allow her to post her poetry and share it with the world.  The site was built using Next.js and Astro, allowing for a fast and responsive experience.  The site is hosted on Netlify and uses markdown files for the blog posts.",
+            "highlights": [
+                "Static site generator using Astro to create a fast and responsive blog.",
+                "Used markdown files for the blog posts, allowing for easy editing and management of content.",
+                "The site is hosted on Netlify, allowing for easy deployment and management of the site."
+            ],
+            "url": ""
+        },
+        {
+            "name": "Custom Bingo Card Generator",
+            "type": "Side Project: Website",
+            "tech": [
+                "Next.js",
+                "React",
+                "Typescript",
+                "Tailwind CSS",
+                "HTML5",
+                "app router",
+                "Gemini API"
+            ],
+            "images": [],
+            "description": "This project was developed through an interactive collaboration with Gemini AI. By iteratively prompting and refining ideas, I was able to define the core concept, refine the technical description, and identify key features, ultimately bringing the Custom Bingo Card Generator to life.",
+            "highlights": [
+                "AI-Powered Customization: Leverages the Gemini AI API to intelligently generate unique bingo card lists based on user-provided topics.",
+                "Canned topics also available, built using Gemini AI to generate a list of topics that can be used to create bingo cards and stored ina JSON file.",
+                "Dynamic Content Generation: Offers both a selection of pre-defined static topics from a JSON file and dynamic, on-demand content creation.",
+                "Modern & Responsive Stack: Built with Next.js and React, ensuring a fast, responsive, and seamless user experience across devices.",
+                "Intuitive User Experience: Designed for effortless creation of personalized bingo games for various purposes."
+            ],
+            "url": "https://github.com/boest02/bingo-cards"
+        },
         {
             "name": "PCH Surveys",
             "type": "Work Project: Website",

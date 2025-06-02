@@ -2,8 +2,11 @@
   import Heading from "./Heading.svelte";
   import Bullets from "./Bullets.svelte";
   export let data: any[] = [];
+  export let pastExp: boolean = false;
 
-  const experienceList = data.slice(0, 3);
+  let sliceCount: number = pastExp ? 3 : 5;
+
+  const experienceList = data.slice(0, sliceCount);
   let pastExperience: { [key: string]: any[] } = {};
 
   const consolidateByCompany = (jobs: any[]) => {
@@ -16,7 +19,7 @@
     });
   };
 
-  consolidateByCompany(data.slice(3));
+  if (pastExp) consolidateByCompany(data.slice(3));
 </script>
 
 <section class="experience-wrapper block">
@@ -34,24 +37,26 @@
     </section>
   {/each}
 
-  <h2>Past Experience:</h2>
-  <div class="past-experience-wrapper">
-    {#each Object.keys(pastExperience) as company}
-      <section>
-        <h2>{company}</h2>
-        {#each pastExperience[company] as job}
-          <Heading
-            title={job.position}
-            start={job.startDate}
-            end={job.endDate}
-          />
-          <div class="highlights-wrapper">
-            <Bullets list={job.highlights} />
-          </div>
-        {/each}
-      </section>
-    {/each}
-  </div>
+  {#if pastExp}
+    <h2>Past Experience:</h2>
+    <div class="past-experience-wrapper">
+      {#each Object.keys(pastExperience) as company}
+        <section>
+          <h2>{company}</h2>
+          {#each pastExperience[company] as job}
+            <Heading
+              title={job.position}
+              start={job.startDate}
+              end={job.endDate}
+            />
+            <div class="highlights-wrapper">
+              <Bullets list={job.highlights} />
+            </div>
+          {/each}
+        </section>
+      {/each}
+    </div>
+  {/if}
 </section>
 
 <style lang="scss">

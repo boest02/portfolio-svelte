@@ -21,7 +21,8 @@
   let resumeFiles = {
     fe_dev: "resume_dev.json",
     full_stack: "resume_full.json",
-    tpm: "resume_tpm.json"
+    tpm: "resume_tpm.json",
+    ba: "business_analyst.json"
   };
 
   setContext("resumeFiles", resumeFiles);
