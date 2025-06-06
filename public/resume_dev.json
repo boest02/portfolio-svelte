@@ -56,7 +56,7 @@
             "url": "https://info.pch.com/",
             "startDate": "2019-08-01",
             "endDate": "2025-04-24",
-            "summary": "As a Lead Front-End Developer, I take a hands-on role in guiding the development process, mentoring junior developers, and ensuring best practices in code quality and performance. I work closely with designers and stakeholders to break down complex UI/UX designs into modular, reusable components that form the foundation of the site’s architecture. My focus is on creating scalable and maintainable front-end solutions while fostering a collaborative team environment where junior developers can grow their skills and contribute effectively.",
+            "summary": "Leading front-end development, I focused on guiding engineers and upholding best practices in code quality and performance. My role involved translating complex UI/UX designs into scalable, modular, and reusable solutions, fostering a collaborative environment, and driving architectural excellence to promote team growth.",
             "highlights": [
                 "Architected and spearheaded the complete redesign of the PCH Weekly Prize website, resulting in a 20% increase in organic traffic and significantly enhancing user engagement through optimized UX and performance metrics.",
                 "Engineered a fully responsive and portable navigation system, subsequently adopted by 15+ PCH properties to improve user journey consistency and boost site interaction rates by over 25% within three months.",
@@ -72,7 +72,7 @@
             "url": "https://info.pch.com/",
             "startDate": "2018-08-01",
             "endDate": "2019-07-30",
-            "summary": "As a Front-End Developer, I work closely with the team to build and integrate reusable components into the site. I focus on implementing designs with precision, ensuring functionality through testing, and maintaining a robust component library in Storybook. By collaborating with developers and designers, I help create a seamless and scalable front-end experience.",
+            "summary": "My work as a Front-End Developer centered on building and integrating reusable components with precision, maintaining a robust Storybook library, and ensuring functionality through comprehensive testing. I collaborated closely with designers and developers to craft seamless, scalable, and high-performance front-end experiences.",
             "highlights": [
                 "Engineered and deployed a flexible communication module, enabling targeted user messaging and significantly enhancing customer interaction.",
                 "Developed innovative game mechanics that directly addressed user pain points, leading to a 20% increase in user engagement metrics.",
@@ -90,7 +90,7 @@
             "url": "https://info.pch.com/",
             "startDate": "2013-11-01",
             "endDate": "2018-07-30",
-            "summary": "As a Senior Business Analyst / Scrum Master, I translated business needs into clear, actionable user stories and specifications for developers and QA teams. I worked closely with product owners and designers to define feature requirements, ensuring alignment with business goals. In addition to facilitating Agile ceremonies, I led daily standups, grooming, and sizing meetings to keep the team aligned and development on track. By fostering collaboration and removing roadblocks, I helped ensure a smooth and efficient workflow.",
+            "summary": "In my role as a Senior Business Analyst / Scrum Master, I effectively bridged the gap between business needs and technical execution, translating requirements into actionable user stories and specifications. I facilitated all Agile ceremonies, leading daily standups, grooming, and sizing to ensure team alignment, efficient workflow, and timely delivery through active impediment removal.",
             "highlights": [
                 "Leveraged strong understanding of SDLC and technical requirements to facilitate communication between development teams and stakeholders, streamlining project delivery for web-based systems.",
                 "Managed Agile Scrum ceremonies and release schedules, ensuring clarity on technical deliverables and fostering team efficiency.",
@@ -104,21 +104,21 @@
             "url": "https://en.wikipedia.org/wiki/CA_Technologies",
             "startDate": "2005-05-01",
             "endDate": "2013-05-30",
-            "summary": "…",
+            "summary": "My leadership as Director of ARCserve Software Development involved setting the technical direction for global development teams, ensuring strategic alignment with business goals. I managed local and remote engineers worldwide, overseeing software architecture, driving innovation, and optimizing development processes to enhance ARCserve’s enterprise backup and storage solutions.",
             "highlights": [
                 "Led and mentored engineering teams across global locations, championing initiatives like a code peer review process that significantly improved code quality and consistency across large-scale software projects.",
                 "Drove technical strategy and streamlined development processes, overseeing the design and implementation of complex software solutions with a focus on best practices and effective problem-solving.",
                 "Facilitated technical training for external teams, bridging communication gaps between engineering and sales/support to address critical product concerns."
             ],
             "resume": true
-        },        
+        },
         {
             "name": "Computer Associates",
-            "position": "Senior Software Engineer",
+            "position": "Senior Software Engineer (Team Lead / Device Development)",
             "url": "https://en.wikipedia.org/wiki/CA_Technologies",
             "startDate": "2003-04-01",
             "endDate": "2005-04-30",
-            "summary": "...",
+            "summary": "Serving as a Senior Software Engineer and Team Lead, I blended hands-on development with direct management of local and remote engineers. I collaborated closely with stakeholders, translating business needs into technical solutions, guiding device integration, optimizing performance, and ensuring efficient delivery for ARCserve’s backup and storage solutions.",
             "highlights": [
                 "Engineered high-performance Win32 C solutions, resolving the top three causes of application crashes and significantly enhancing system stability."
             ],
@@ -130,12 +130,12 @@
             "url": "https://en.wikipedia.org/wiki/CA_Technologies",
             "startDate": "1999-12-01",
             "endDate": "2003-05-01",
-            "summary": "As a Software Engineer, I developed core features for ARCserve based on management’s specifications, focusing on data movement and device integration. I implemented solutions in C for Windows architecture, writing SCSI code to control tape drives and libraries. I also helped plan and scope development tasks according to our waterfall schedule, ensuring timely delivery and alignment with project goals.",
+            "summary": "In this Software Engineer role, I developed core features for ARCserve’s backup and storage solutions, with a focus on data movement and device integration. I implemented robust C solutions for Windows architecture, including SCSI code for tape drives and libraries, and contributed to project planning and scoping within a waterfall methodology.",
             "highlights": [
-                "Develop new features for ARCserve device support, including automated SAN device sharing, tape drive encryption, and cluster failover handling.",
-                "Maintain and manage the SAN lab for development and testing.",
-                "Support the device certification team by configuring new hardware and ensuring compatibility with existing software.",
-                "Implement fixes and improvements to support new devices within the ARCserve ecosystem."
+                "Developed new features for ARCserve device support, including automated SAN device sharing, tape drive encryption, and cluster failover handling.",
+                "Maintained and managed the SAN lab, ensuring optimal development and testing environments for core features.",
+                "Supported the device certification team, accelerating hardware integration by configuring new systems and ensuring software compatibility.",
+                "Implemented fixes and improvements to expand device compatibility within the ARCserve ecosystem, enhancing product range."
             ],
             "resume": false
         },
@@ -145,12 +145,12 @@
             "url": "https://en.wikipedia.org/wiki/CA_Technologies",
             "startDate": "1999-05-01",
             "endDate": "1999-12-01",
-            "summary": "As a Maintenance Software Engineer, I provided technical support for ARCserve, assisting customers with software and hardware issues. I worked closely with the development team to diagnose problems, release patches, and ensure fixes were integrated into the production codebase. My role bridged the gap between support and development, helping to improve system stability and enhance the customer experience.",
+            "summary": "My role as a Maintenance Software Engineer involved providing critical technical support for ARCserve, diagnosing complex software and hardware issues. I collaborated closely with the development team to implement and release patches, ensuring seamless integration into the production codebase and improving system stability and customer experience.",
             "highlights": [
-                "Assist support engineers with escalated issues that require deep investigation or code changes.",
-                "Work directly with customers to troubleshoot complex technical issues.",
-                "Develop and publish fixes to the company website for broader end-user access.",
-                "Ensure that resolved issues are documented to help prevent future occurrences."
+                "Resolved escalated technical issues for customers, providing deep investigation and implementing code changes to stabilize production.",
+                "Collaborated directly with customers to diagnose and troubleshoot complex technical issues, improving resolution efficiency.",
+                "Developed and published critical software fixes to the company website, enabling broader self-service and reducing incoming support volume.",
+                "Ensured comprehensive documentation of resolved issues, contributing to a robust knowledge base and preventing future recurrences."
             ],
             "resume": false
         },
@@ -160,12 +160,12 @@
             "url": "https://en.wikipedia.org/wiki/CA_Technologies",
             "startDate": "1997-04-01",
             "endDate": "1999-05-01",
-            "summary": "As a Senior Technical Support Representative, I worked directly with customers online to diagnose and resolve technical issues. I developed a library of detailed technical responses to streamline support and assist users based on the information they provided. My role focused on troubleshooting, guiding customers through solutions, and improving overall support efficiency.",
+            "summary": "As a Senior Technical Support Representative, I focused on diagnosing and resolving complex technical issues for customers online. I developed a comprehensive library of technical responses to streamline support and proactively guided users through solutions, significantly improving overall support efficiency and customer satisfaction.",
             "highlights": [
-                "Provided technical product support online via AOL and CompuServe.",
-                "Mentored support representatives by offering guidance and assistance.",
-                "Updated and maintained an internal solutions database for team reference.",
-                "Ensured support resources were accurate and up to date to improve issue resolution efficiency."
+                "Provided specialized technical product support online via AOL and CompuServe, addressing complex customer inquiries.",
+                "Mentored junior support representatives, improving team efficiency and knowledge transfer through guidance and assistance.",
+                "Updated and maintained a comprehensive internal solutions database, enhancing team reference capabilities and expediting issue resolution.",
+                "Ensured the accuracy and timeliness of support resources, directly contributing to improved issue resolution efficiency."
             ],
             "resume": false
         },
@@ -175,9 +175,9 @@
             "url": "https://en.wikipedia.org/wiki/Arcserve",
             "startDate": "1996-02-01",
             "endDate": "1997-04-01",
-            "summary": "As a Technical Support Representative, I provided phone-based support to customers, assisting them with troubleshooting and resolving technical issues. I guided users through solutions, ensuring a positive experience and high customer satisfaction. When needed, I escalated more complex issues to our Level 2 maintenance group, ensuring timely resolution and seamless support.",
+            "summary": "In my Technical Support Representative role, I provided essential phone-based support, assisting customers with troubleshooting and resolving product issues. I guided users through solutions to ensure high customer satisfaction and seamlessly escalated complex cases to higher-level support for timely resolution.",
             "highlights": [
-                "Offered product technical support, over the phone, for ARCserve products covering: Windows NT and Novell Netware customers."
+                "Provided phone-based technical support for ARCserve products across Windows NT and Novell Netware environments, assisting customers with troubleshooting and solutions."
             ],
             "resume": false
         }
@@ -232,9 +232,9 @@
             "name": "Build Tools & Package Management",
             "level": "Advanced",
             "keywords": [
-                "Webpack", 
-                "Vite", 
-                "npm", 
+                "Webpack",
+                "Vite",
+                "npm",
                 "Yarn"
             ]
         },
@@ -242,10 +242,11 @@
             "name": "Backend & APIs",
             "level": "Advanced",
             "keywords": [
-                "Node.js", 
-                "Express", 
-                "PHP", 
-                "MySQL", 
+                "Node.js",
+                "Express",
+                "PHP",
+                ".NET",
+                "MySQL",
                 "RESTful APIs"
             ]
         },
@@ -258,8 +259,8 @@
                 "Chai",
                 "Vitest",
                 "Storybook",
-                "Unit Testing", 
-                "Integration Testing", 
+                "Unit Testing",
+                "Integration Testing",
                 "CI/CD Principles"
             ]
         },
@@ -277,7 +278,7 @@
             "keywords": [
                 "Figma",
                 "Photoshop",
-                "Jira", 
+                "Jira",
                 "Confluence",
                 "Git",
                 "Docker"

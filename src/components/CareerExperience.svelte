@@ -5,28 +5,30 @@
 
   let ascend = false;
 
-  const sort = (a,b) => (new Date(b.startDate) - new Date(a.startDate));
-  const sortDirection = (a, b, direction) => direction === true ? sort(a, b) : sort(b, a);
-  
+  const sort = (a, b) => new Date(b.startDate) - new Date(a.startDate);
+  const sortDirection = (a, b, direction) =>
+    direction === true ? sort(a, b) : sort(b, a);
+
   let experienceList: any[] = [];
 
-  $:{
+  $: {
     experienceList = data.sort((a, b) => sortDirection(b, a, ascend));
   }
-  
 </script>
 
 <article class="experience-wrapper block">
   <h2>Full Career Experience:</h2>
-  <button on:click={() => ascend = !ascend}>Sort Order: {ascend ? 'Oldest' : 'Newest'} First</button>
+  <button on:click={() => (ascend = !ascend)}
+    >Sort Order: {ascend ? "Oldest" : "Newest"} First</button
+  >
   {#each experienceList as job}
     <section>
       <h2>
-        <a target='_blank' href="{job.url}">{job.name}</a>
+        <a target="_blank" href={job.url}>{job.name}</a>
         <span>--</span>
-        <Heading title={job.position} start={job.startDate} end={job.endDate} />        
+        <Heading title={job.position} start={job.startDate} end={job.endDate} />
       </h2>
-      
+
       <section class="summary">
         <h3>Summary</h3>
         <p>{job.summary}</p>
@@ -40,9 +42,15 @@
   {/each}
 </article>
 
-
 <style lang="scss">
   .experience-wrapper {
+    :global(.date-wrapper) {
+      display: none;
+    }
+
+    .summary p {
+      margin: 10px 15px;
+    }
     button {
       padding: 5px 10px;
       background: transparent;
@@ -76,7 +84,7 @@
       .highlights-wrapper {
         margin: 5px 10px;
       }
-    }    
+    }
 
     @media only screen and (max-width: 480px) {
       section {

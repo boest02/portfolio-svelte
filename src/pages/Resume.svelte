@@ -32,8 +32,8 @@
     <div class="resume-type">
       <label for="resume-type">Resume Type:</label>
       <select id="resume-type" bind:value={resumeType}>
-        <option value="ba">Business Analyst / Technical Product Manager</option>
-        <option value="fe_dev">Frontend Developer</option>
+        <option value="ba">Technical PM / BA</option>
+        <option value="fe_dev">Developer</option>
       </select>
     </div>
     <button on:click={() => window.print()}>Print Me</button>
