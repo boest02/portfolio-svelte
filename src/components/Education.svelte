@@ -16,7 +16,7 @@
         {#each data as edu, index}
             <section>
                 <h2>{edu.institution}, <span>{edu.location}</span></h2>
-                <h4>Completed {edu['studyType'] + '; Major ' + edu['area']}</h4>
+                <h4>{edu['studyType'] + ' / ' + edu['area']}</h4>
             </section>
         {/each}
     </div>

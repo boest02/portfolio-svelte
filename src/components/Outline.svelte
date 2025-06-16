@@ -12,8 +12,7 @@
     {/if}
     <section>
         <div class="heading-wrapper">
-            <h1>{basics.name}</h1>
-            <h2>{basics.label}</h2>
+            <h1>{basics.name}</h1>            
             <div class="location-wrapper">{basics.location.city}, {basics.location.region} {basics.location.postalCode}
             </div>
             <div>{basics.phone}</div>

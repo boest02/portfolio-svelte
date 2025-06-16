@@ -43,7 +43,7 @@
     <h2>Loading...</h2>
   {:then resume}
     <Outline type="resume" basics={resume.basics} />
-    <Summary summary={resume.basics.res_summary} />
+    <Summary summary={resume.basics.res_summary} title={resume.basics.label}/>
     <Skills data={resume.skills} />
     <Experience data={resume.work} />
     <Education data={[resume.education[0]]} />

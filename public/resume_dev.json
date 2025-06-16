@@ -1,14 +1,14 @@
 {
     "basics": {
         "name": "Stephen L Boettcher",
-        "label": "Front-End Developer",
+        "label": "Front-End Focused Full-Stack Developer",
         "image": "/src/images/Me.JPG",
         "email": "boest02@gmail.com",
         "phone": "516-220-4640",
         "portfolio_url": "sboettcher.com",
         "linkedin_url": "linkedin.com/in/stephenboettcher",
         "github_url": "github.com/boest02",
-        "res_summary": "Highly accomplished Lead Front-End Developer with over 10 years of experience architecting and creating scalable, high-performance web applications, specializing in modern JavaScript frameworks such as Svelte and React. Successfully guided the redesign of the PCH Weekly Prize website, driving a 20% increase in organic traffic. Recognized for exceptional performance and technical leadership, leading to rapid promotion and optimizing user experiences across diverse platforms.",
+        "res_summary": "Versatile and highly accomplished web developer with 10+ years of experience delivering scalable, high-performance applications across the stack. Specializes in modern front-end frameworks like Svelte and React, while also experienced in backend integration, component-based architecture, and performance optimization. Led the successful redesign of the PCH Weekly Prize site, resulting in a 20% boost in organic traffic. Known for technical leadership, thoughtful UX implementation, and the ability to translate business goals into efficient, maintainable code solutions.",
         "home_summary": [
             "Welcome! This portfolio is a work in progress, evolving as I refine and expand my work. Built with Svelte, SASS, and a touch of Tailwind CSS, it's hosted on Netlify. I've also added a Blog section, where I share insights and experiences using markdown-based posts.",
             "I'm a seasoned web technology leader with a deep foundation in front-end development, specializing in crafting dynamic, accessible, and user-friendly web experiences using HTML, CSS, and modern JavaScript frameworks like Svelte, React, and Vue. My expertise also spans into back-end technologies such as PHP, Node.js, and Next.js, enabling me to build seamless full-stack solutions.",
