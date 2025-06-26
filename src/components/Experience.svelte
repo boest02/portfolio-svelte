@@ -2,48 +2,46 @@
   import Heading from "./Heading.svelte";
   import Bullets from "./Bullets.svelte";
   export let data: any[] = [];
-  export let pastExp: boolean = false;
+  export let consolidated: boolean = true;
 
-  let sliceCount: number = pastExp ? 3 : 5;
+  let sliceCount: number = 5;
 
-  const experienceList = data.slice(0, sliceCount);
-  let pastExperience: { [key: string]: any[] } = {};
+  const consolidateByCompany = (jobs: any[]) =>
+    jobs.reduce((acc, job) => {
+      acc[job.name] =
+        acc[job.name] === undefined ? [job] : [...acc[job.name], job];
+      return acc;
+    }, []);
 
-  const consolidateByCompany = (jobs: any[]) => {
-    jobs.forEach((job) => {
-      if (job.resume) {
-        pastExperience[job.name] === undefined &&
-          (pastExperience[job.name] = []);
-        pastExperience[job.name].push(job);
-      }
-    });
-  };
-
-  if (pastExp) consolidateByCompany(data.slice(3));
+  $: experienceList = consolidated
+    ? consolidateByCompany(data.slice(0, sliceCount))
+    : data.slice(0, sliceCount);
 </script>
 
 <section class="experience-wrapper block">
   <h2>Experience:</h2>
-  {#each experienceList as job}
-    <section>
-      <h2>
-        <div>{job.name} -</div>
-        <Heading title={job.position} start={job.startDate} end={job.endDate} />
-      </h2>
-
-      <div class="highlights-wrapper">
-        <Bullets list={job.highlights} />
-      </div>
-    </section>
-  {/each}
-
-  {#if pastExp}
-    <h2>Past Experience:</h2>
-    <div class="past-experience-wrapper">
-      {#each Object.keys(pastExperience) as company}
+  {#if !consolidated}
+    {#each experienceList as job}
+      <section>
+        <h2>
+          <div>{job.name} -</div>
+          <Heading
+            title={job.position}
+            start={job.startDate}
+            end={job.endDate}
+          />
+        </h2>
+        <div class="highlights-wrapper">
+          <Bullets list={job.highlights} />
+        </div>
+      </section>
+    {/each}
+  {:else}
+    <div class="consolidated-experience-wrapper">
+      {#each Object.keys(experienceList) as company}
         <section>
           <h2>{company}</h2>
-          {#each pastExperience[company] as job}
+          {#each experienceList[company] as job}
             <Heading
               title={job.position}
               start={job.startDate}
@@ -78,7 +76,7 @@
       }
     }
 
-    .past-experience-wrapper {
+    .consolidated-experience-wrapper {
       section {
         margin: 0 15px;
 

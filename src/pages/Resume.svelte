@@ -3,14 +3,13 @@
   import Outline from "../components/Outline.svelte";
   import Experience from "../components/Experience.svelte";
   import Education from "../components/Education.svelte";
-  import Aside from "../components/Aside.svelte";
   import Skills from "../components/Skills.svelte";
-  import Strengths from "../components/Strengths.svelte";
   import Summary from "../components/Summary.svelte";
 
   import { type resume } from "../ts/resume";
 
   let resumeType: string = "ba";
+  let resumeConsolidated: boolean = true;
 
   const resumeFiles: { [key: string]: string } = getContext("resumeFiles");
 
@@ -35,6 +34,14 @@
         <option value="ba">Technical PM / BA</option>
         <option value="fe_dev">Developer</option>
       </select>
+      <label
+        >Consolidate Experience?
+        <input
+          type="checkbox"
+          id="consolidated"
+          bind:checked={resumeConsolidated}
+        />
+      </label>
     </div>
     <button on:click={() => window.print()}>Print Me</button>
   </div>
@@ -43,9 +50,9 @@
     <h2>Loading...</h2>
   {:then resume}
     <Outline type="resume" basics={resume.basics} />
-    <Summary summary={resume.basics.res_summary} title={resume.basics.label}/>
+    <Summary summary={resume.basics.res_summary} title={resume.basics.label} />
     <Skills data={resume.skills} />
-    <Experience data={resume.work} />
+    <Experience data={resume.work} consolidated={resumeConsolidated} />
     <Education data={[resume.education[0]]} />
   {:catch error}
     error
@@ -68,12 +75,19 @@
       border-radius: 5px;
       padding: 5px 20px;
       width: 100%;
+
+      .resume-type {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
       label {
         font-weight: bold;
       }
 
       select {
         padding: 5px;
+        margin-right: 10px;
         border-radius: 5px;
         border: 1px solid #ccc;
         background-color: #fff;
@@ -98,8 +112,18 @@
     }
 
     @media only screen and (max-width: 480px) {
-      padding: 30px 10px;
+      padding: 35px 10px;
       margin: 10px;
+      .tool-bar {
+        top: 20px;
+        margin-bottom: 20px;
+        flex-direction: column;
+        justify-content: center;
+        .resume-type {
+          flex-direction: column;
+          justify-content: center;
+        }
+      }
     }
 
     h1 {
