@@ -8,9 +8,8 @@
         "portfolio_url": "sboettcher.com",
         "linkedin_url": "linkedin.com/in/stephenboettcher",
         "github_url": "github.com/boest02",
-        "res_summary": "With over a decade of experience in software development, I specialize in aligning cross-functional teams and translating complex business needs into clear technical specifications and iterable deliverables. I regularly create workflows, wireframes, or prototypes as needed to clarify direction and ensure alignment. I excel at driving project delivery in agile environments, optimizing processes, managing stakeholders, and fostering a culture of continuous improvement to support scalable, high-impact product outcomes.",
-        "home_summary": [
-        ],
+        "res_summary": "Technical Project Manager and Senior Business Analyst with over 10 years of experience leading agile teams, delivering software solutions, and translating business goals into clear, actionable requirements. Proven track record driving measurable results, including a 15% boost in user retention and a 20% increase in organic traffic. Skilled in product strategy, stakeholder alignment, data modeling, and iterative delivery, with a strong foundation in programming principles and cross-functional collaboration.",
+        "home_summary": [],
         "summary": "",
         "location": {
             "city": "Floral Park",
@@ -51,7 +50,34 @@
             }
         ]
     },
-    "work": [        
+    "work": [
+        {
+            "name": "Publishers Clearing House",
+            "position": "Lead Front-End Developer",
+            "url": "https://info.pch.com/",
+            "startDate": "2019-08-01",
+            "endDate": "2025-04-24",
+            "summary": "Description…",
+            "highlights": [
+                "Collaborated extensively with Product teams to analyze complex business requirements, translating them into user-focused website features that increased organic traffic by 20%.",
+                "Directed frontend planning and technical refinement sessions, ensuring proposed solutions were strategically aligned with core business objectives and design standards.",
+                "Orchestrated collaborative validation efforts with QA and key stakeholders, leveraging acceptance testing and iterative feedback loops to ensure features met critical business needs."
+            ]
+        },
+        {
+            "name": "Publishers Clearing House",
+            "position": "Front-End Developer",
+            "url": "https://info.pch.com/",
+            "startDate": "2018-08-01",
+            "endDate": "2019-07-30",
+            "summary": "Description…",
+            "highlights": [
+                "Led the end-to-end development and implementation of a customizable communication module, empowering business teams to deliver personalized user messages and enhancing engagement and communication efficiency.",
+                "Drove cross-functional design and implementation of innovative features, ensuring technical solutions directly aligned with key business objectives to enhance user engagement in a dynamic gaming environment.",
+                "Designed and deployed a reusable communication module that facilitated targeted messaging and promotions, directly contributing to improved conversion rates.",
+                "Collaborated with marketing analysts to develop and integrate robust tracking for campaign metrics, providing critical data insights that informed future A/B testing strategies."
+            ]
+        },
         {
             "name": "Publishers Clearing House",
             "position": "Business Analyst / Scrum Master",
@@ -95,33 +121,6 @@
                 "Streamlined the development process from conception to a successful 6-month implementation cycle, enhancing efficiency and reducing time-to-market."
             ],
             "resume": true
-        },
-        {
-            "name": "Publishers Clearing House",
-            "position": "Lead Front-End Developer",
-            "url": "https://info.pch.com/",
-            "startDate": "2019-08-01",
-            "endDate": "2025-04-24",
-            "summary": "Description…",
-            "highlights": [
-                "Collaborated extensively with Product teams to analyze complex business requirements, translating them into user-focused website features that increased organic traffic by 20%.",
-                "Directed frontend planning and technical refinement sessions, ensuring proposed solutions were strategically aligned with core business objectives and design standards.",
-                "Orchestrated collaborative validation efforts with QA and key stakeholders, leveraging acceptance testing and iterative feedback loops to ensure features met critical business needs."
-            ]
-        },
-        {
-            "name": "Publishers Clearing House",
-            "position": "Front-End Developer",
-            "url": "https://info.pch.com/",
-            "startDate": "2018-08-01",
-            "endDate": "2019-07-30",
-            "summary": "Description…",
-            "highlights": [
-                "Led the end-to-end development and implementation of a customizable communication module, empowering business teams to deliver personalized user messages and enhancing engagement and communication efficiency.",
-                "Drove cross-functional design and implementation of innovative features, ensuring technical solutions directly aligned with key business objectives to enhance user engagement in a dynamic gaming environment.",
-                "Designed and deployed a reusable communication module that facilitated targeted messaging and promotions, directly contributing to improved conversion rates.",
-                "Collaborated with marketing analysts to develop and integrate robust tracking for campaign metrics, providing critical data insights that informed future A/B testing strategies."
-            ]
         },
         {
             "name": "Computer Associates",
@@ -227,19 +226,26 @@
     ],
     "skills": [
         {
+            "name": "Core Competencies",
+            "level": "Advanced",
+            "keywords": [
+                "Agile Delivery",
+                "Cross-Functional Collaboration",
+                "Product Strategy",
+                "Data Modeling",
+                "Workflow Optimization",
+                "Technical Communication"
+            ]
+        },
+        {
             "name": "Project Management",
             "level": "Advanced",
             "keywords": [
-                "Scrum Master", 
-                "Agile Methodologies", 
-                "Sprint Planning & Execution",
-                "Backlog Grooming & Prioritization", 
-                "Impediment Removal", 
-                "Release Management", 
-                "Cross-Functional Team Leadership",
-                "Stakeholder Management", 
-                "Requirement Gathering", 
-                "Metrics & Reporting", 
+                "Agile & Scrum Practices",
+                "Backlog Management",
+                "Release Planning",
+                "Stakeholder Management",
+                "Metrics & Reporting",
                 "Continuous Improvement"
             ]
         },
@@ -247,52 +253,39 @@
             "name": "Business Analysis",
             "level": "Proficient",
             "keywords": [
-                "User Story Creation",
-                "Functional & Technical Specifications", 
-                "Workflow Design",
-                "Data Analysis", 
-                "Process Improvement", 
-                "Acceptance Criteria", 
-                "User Acceptance Testing (UAT)",
-                "QA Collaboration"
+                "User Stories & Acceptance Criteria",
+                "Functional Specifications",
+                "Process Improvement",
+                "UAT & QA Collaboration",
+                "Data Analysis"
             ]
-        },        
+        },
         {
             "name": "Documentation & Communication",
             "level": "Proficient",
             "keywords": [
-                "Wireframes", 
-                "Data Flow Diagrams", 
-                "UML", 
-                "Presentations", 
-                "Technical Writing", 
+                "Wireframes & Diagrams",
+                "Technical Writing",
                 "Executive Communication"
             ]
         },
         {
             "name": "Technical Foundation",
-            "level": "Advanced",
+            "level": "Proficient",
             "keywords": [
-                "JavaScript (React, Svelte, Node.js)",
-                "HTML",
-                "CSS",
-                "SQL",
-                "Microservices", 
-                "Docker",
-                "Git"
+                "Programming Concepts",
+                "Data Modeling",
+                "Microservices Architecture",
+                "Version Control"
             ]
         },
         {
             "name": "Tools & Platforms",
             "level": "Expert",
-            "keywords": [               
-                "Jira",
-                "Confluence",
-                "VersionOne",
+            "keywords": [
+                "Jira & Confluence",
                 "Google Analytics",
-                "Figma", 
-                "Visio",
-                "Lucidchart",
+                "Figma & Lucidchart",
                 "MS Office Suite"
             ]
         }

@@ -1,64 +1,25 @@
 <script lang="ts">
   import Lists from "./Lists.svelte";
-  export let data: { name: string; keywords: string[] }[] = [];
+  import Table from "./Table.svelte";
 
+  export let data: { name: string; keywords: string[] }[] = [];
 </script>
 
 <section class="skills-wrapper block">
   <h2>Skills:</h2>
   <div class="skills-layout">
-    <ul>
-      {#each data as skill}
-        <li>
-          <div class="bullet-wrapper">
-            <h3>{skill.name}</h3>
-            <Lists list={skill.keywords} />
-          </div>
-        </li>
-      {/each}
-    </ul>
+    {#each data as skill}
+      <Table title={skill.name} list={skill.keywords} />
+    {/each}
   </div>
 </section>
 
 <style lang="scss">
   .skills-layout {
-    margin: 0 10px;
-
-    ul {
-      margin: 20px;
-      li {
-        .bullet-wrapper {
-          display: flex;
-          align-items: start;
-          gap: 10px;
-          line-height: 1.5;
-
-          h3 {
-            margin: 5px;
-            font-weight: 600;
-            margin-top: -4px;
-            text-wrap: nowrap;
-            &::after {
-              content: ": ";
-            }
-          }
-        }
-      }
-    }
+    margin: 0 10px;   
 
     @media (max-width: 700px) {
-      ul {
-        li {
-          .bullet-wrapper {
-            flex-direction: column;
-            align-items: unset;
-
-            :global(span) {
-              margin-left: 10px;
-            }
-          }
-        }
-      }
+      
     }
   }
 </style>

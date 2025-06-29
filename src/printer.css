@@ -50,7 +50,11 @@
                     display: none;
                 }
 
-                .heading-wrapper, .summary-wrapper, .skills-wrapper, .education-wrapper {
+                .heading-wrapper, 
+                .summary-wrapper, 
+                .skills-wrapper, 
+                .table-wrapper,
+                .education-wrapper {
                     font-size: 90%;
                 }
 

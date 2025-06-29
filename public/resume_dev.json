@@ -204,15 +204,17 @@
     ],
     "skills": [
         {
-            "name": "Front-End Core",
+            "name": "Core Front-End",
             "level": "Expert",
             "keywords": [
                 "HTML5",
-                "CSS3 (Tailwind CSS, SASS)",
+                "CSS3",
+                "Tailwind CSS",
+                "SASS",
                 "JavaScript (ES6+)",
-                "Typescript",
-                "Responsive Web Design",
-                "Web Accessibility (WCAG, a11y)",
+                "TypeScript",
+                "Responsive Design",
+                "Accessibility (WCAG)",
                 "Performance Optimization"
             ]
         },
@@ -229,18 +231,8 @@
             ]
         },
         {
-            "name": "Build Tools & Package Management",
-            "level": "Advanced",
-            "keywords": [
-                "Webpack",
-                "Vite",
-                "npm",
-                "Yarn"
-            ]
-        },
-        {
-            "name": "Backend & APIs",
-            "level": "Advanced",
+            "name": "Back-End & APIs",
+            "level": "Proficient",
             "keywords": [
                 "Node.js",
                 "Express",
@@ -251,37 +243,44 @@
             ]
         },
         {
-            "name": "Testing & Quality",
+            "name": "Build & Tooling",
             "level": "Advanced",
+            "keywords": [
+                "Vite",
+                "Webpack",
+                "npm",
+                "Yarn",
+                "Docker",
+                "Git"
+            ]
+        },
+        {
+            "name": "Testing & Quality",
+            "level": "Proficient",
             "keywords": [
                 "Jest",
                 "Mocha",
                 "Chai",
                 "Vitest",
                 "Storybook",
-                "Unit Testing",
-                "Integration Testing",
-                "CI/CD Principles"
+                "CI/CD Integration"
             ]
         },
         {
-            "name": "Methodologies",
+            "name": "Workflow & Process",
             "level": "Advanced",
             "keywords": [
                 "Agile (Scrum, Kanban)",
-                "SDLC"
+                "SDLC",
+                "Jira & Confluence"
             ]
         },
         {
-            "name": "Other Tools",
-            "level": "Advanced",
+            "name": "Design & Collaboration",
+            "level": "Proficient",
             "keywords": [
                 "Figma",
-                "Photoshop",
-                "Jira",
-                "Confluence",
-                "Git",
-                "Docker"
+                "Photoshop"
             ]
         }
     ],
