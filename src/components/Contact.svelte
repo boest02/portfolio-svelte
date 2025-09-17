@@ -2,6 +2,7 @@
 </script>
 
 <form name="contact" method="POST" netlify>
+  <input type="hidden" name="form-name" value="ask-question" />
   <div class="title-section">
     <h1>Contact Me</h1>
     <p>
@@ -74,7 +75,7 @@
           height: 30px;
           color: #000;
           border-radius: 5px;
-          font-size: .9rem;
+          font-size: 0.9rem;
         }
 
         &:has(textarea) {
