@@ -1,7 +1,7 @@
 <script lang="ts">
 </script>
 
-<form name="contact" netlify>
+<form name="contact" method="POST" netlify>
   <div class="title-section">
     <h1>Contact Me</h1>
     <p>
