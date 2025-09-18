@@ -1,8 +1,14 @@
 <script lang="ts">
 </script>
 
-<form name="contact" method="POST" netlify>
-  <input type="hidden" name="form-name" value="ask-question" />
+<form
+  name="contact"
+  method="POST"
+  action="/"
+  data-netlify="true"
+  data-netlify-honeypot="bot-field"
+>
+  <input type="hidden" name="form-name" value="contact" />
   <div class="title-section">
     <h1>Contact Me</h1>
     <p>
