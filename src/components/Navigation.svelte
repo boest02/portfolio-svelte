@@ -2,11 +2,11 @@
     import { Link } from "svelte-routing";
 
     export let links: Link[] = [];
-    export let exclude: string[] = [];
 
     type Link = {
         name: string,
-        path: string
+        path: string,
+        hide?: boolean
     }
 
     let navOpen = false;
@@ -36,7 +36,7 @@
         </button>
         <div class="links" tabindex="0" on:click={clickNav} on:keydown={clickNav} aria-label="Page Links" role="menu">
             {#each links as link}
-                {#if !exclude.includes(link.name)}
+                {#if !link.hasOwnProperty('hide') || !link.hide }
                     <Link to={link.path}>{link.name}</Link>
                 {/if}
             {/each}
