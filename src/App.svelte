@@ -61,8 +61,6 @@
     },
   ];
 
-  const navExcludeList: string[] = [];
-
   console.log("parse url:", window.location.pathname.split("/"));
 
   console.log(`\\${page}`);
@@ -70,7 +68,7 @@
 </script>
 
 <Router {url}>
-  <Navigation {links} exclude={navExcludeList} />
+  <Navigation {links} />
   <main class="main-content">
     {#each links as link}
       <Route path={link.path}>
