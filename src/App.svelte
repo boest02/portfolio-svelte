@@ -43,11 +43,11 @@
       component: Career,
       name: "Career",
     },
-    {
-      path: "/contact",
-      component: Contact,
-      name: "Contact",
-    },
+    // {
+    //   path: "/contact",
+    //   component: Contact,
+    //   name: "Contact",
+    // },
     {
       path: "/portfolio",
       component: Portfolio,
