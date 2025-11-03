@@ -12,14 +12,14 @@
   export let url = "";
 
   const urlParams = new URLSearchParams(window.location.search);
-  const resType = urlParams.get("type") || "fe_dev";
+  const resType = urlParams.get("type") || "dev";
   const page = urlParams.get("page") || "";
   const post = urlParams.get("post") || "";
 
   setContext("resumeType", resType);
 
   let resumeFiles = {
-    fe_dev: "resume_dev.json",
+    dev: "resume_dev.json",
     full_stack: "resume_full.json",
     tpm: "resume_tpm.json",
     ba: "business_analyst.json",

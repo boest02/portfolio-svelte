@@ -5,7 +5,8 @@
         vertical-align: top;
     }
 
-    nav, footer {
+    nav,
+    footer {
         display: none;
     }
 
@@ -18,7 +19,7 @@
         margin: 0;
         padding: 0;
 
-        .resume-wrapper > .tool-bar {
+        .resume-wrapper>.tool-bar {
             display: none !important;
         }
 
@@ -32,7 +33,7 @@
                 padding: 0 !important;
                 margin: 0 auto;
                 box-shadow: unset;
-                opacity: 1;                
+                opacity: 1;
 
                 .block {
                     margin: 5px;
@@ -50,20 +51,35 @@
                     display: none;
                 }
 
-                .heading-wrapper, 
-                .summary-wrapper, 
-                .skills-wrapper, 
-                .table-wrapper,
+                h2 {
+                    font-size: 95%;
+                }
+
+                .summary-wrapper,
+                .skills-wrapper,
+                .experience-wrapper,
                 .education-wrapper {
-                    font-size: 90%;
+                    font-size: 95%;
+                }
+
+                .skills-wrapper {
+                    .table-wrapper {
+                        margin: 10px 0;
+                    }
+                }
+
+                .education-wrapper {
+                    .alignment-wrapper {
+                        margin-inline-start: 20px;
+                        padding-bottom: 0;
+                    }
                 }
 
                 .experience-wrapper {
                     margin: 0;
-                    font-size:  90%;
 
                     .highlights-wrapper {
-                        font-size: 85%;
+                        font-size: 95%;
                         margin: 5px;
                     }
 

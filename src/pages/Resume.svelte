@@ -8,7 +8,7 @@
 
   import { type resume } from "../ts/resume";
 
-  let resumeType: string = "ba";
+  let resumeType: string = "dev";
   let resumeConsolidated: boolean = true;
 
   const resumeFiles: { [key: string]: string } = getContext("resumeFiles");
@@ -32,7 +32,7 @@
       <label for="resume-type">Resume Type:</label>
       <select id="resume-type" bind:value={resumeType}>
         <option value="ba">Technical PM / BA</option>
-        <option value="fe_dev">Developer</option>
+        <option value="dev">Developer</option>
       </select>
       <label
         >Consolidate Experience?

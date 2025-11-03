@@ -8,7 +8,10 @@
         "portfolio_url": "sboettcher.com",
         "linkedin_url": "linkedin.com/in/stephenboettcher",
         "github_url": "github.com/boest02",
-        "res_summary": "Versatile and highly accomplished web developer with 10+ years of experience delivering scalable, high-performance applications across the stack. Specializes in modern front-end frameworks like Svelte and React, while also experienced in backend integration, component-based architecture, and performance optimization. Led the successful redesign of the PCH Weekly Prize site, resulting in a 20% boost in organic traffic. Known for technical leadership, thoughtful UX implementation, and the ability to translate business goals into efficient, maintainable code solutions.",
+        "res_summary": [
+            "Versatile and highly accomplished Web Developer with over 10 years of experience delivering scalable, high-performance applications across the stack. Adept at building modern, maintainable interfaces using frameworks like Svelte, React, and Vue, with a strong focus on accessibility, performance, and clean architecture. Experienced in backend integration, API design, and component-based development that supports large, multi-site ecosystems.",
+            "Recognized for leading front-end initiatives and fostering collaboration between design, engineering, and product teams. Successfully directed the redesign of the PCH Weekly Prize site, improving UX and achieving a 20% increase in organic traffic. Known for technical leadership, thoughtful UX implementation, and the ability to translate business goals into efficient, future-proof code solutions that drive measurable impact."
+        ],
         "home_summary": [
             "Welcome! This portfolio is a work in progress, evolving as I refine and expand my work. Built with Svelte, SASS, and a touch of Tailwind CSS, it's hosted on Netlify. I've also added a Blog section, where I share insights and experiences using markdown-based posts.",
             "I'm a seasoned web technology leader with a deep foundation in front-end development, specializing in crafting dynamic, accessible, and user-friendly web experiences using HTML, CSS, and modern JavaScript frameworks like Svelte, React, and Vue. My expertise also spans into back-end technologies such as PHP, Node.js, and Next.js, enabling me to build seamless full-stack solutions.",
@@ -50,6 +53,22 @@
         ]
     },
     "work": [
+        {
+            "name": "Freelance / Independent Projects",
+            "position": "Front-End Developer & Consultant",
+            "url": "",
+            "startDate": "2025-04-25",
+            "endDate": "",
+            "summary": "Creating web experiences for clients ranging from a local poet to a team launching a handyman business. I focused on building modern, performant, and accessible websites while learning and applying new technologies including Next.js, React, TypeScript, and Astro. Projects were deployed using GitHub CI/CD pipelines to Netlify servers, emphasizing responsive design, accessibility, and strong SEO performance.",
+            "highlights": [
+                "Developed a portfolio and blog site using Astro, optimizing build performance and SEO for faster load times and improved visibility.",
+                "Created and deployed a modern handyman business site using React and Next.js, implementing reusable components and responsive layouts.",
+                "Leveraged GitHub Actions and Netlify’s CI/CD workflows to automate builds and streamline deployment pipelines for multiple client projects.",
+                "Applied accessibility best practices and responsive design principles to ensure usability across devices and user groups.",
+                "Explored emerging front-end technologies to expand technical versatility and strengthen modern JavaScript framework expertise."
+            ],
+            "resume": true
+        },
         {
             "name": "Publishers Clearing House",
             "position": "Lead Front-End Developer",
@@ -210,12 +229,13 @@
                 "HTML5",
                 "CSS3",
                 "Tailwind CSS",
-                "SASS",
+                "SASS / LESS",
                 "JavaScript (ES6+)",
                 "TypeScript",
                 "Responsive Design",
-                "Accessibility (WCAG)",
-                "Performance Optimization"
+                "Accessibility (WCAG 2.1)",
+                "Performance Optimization",
+                "SEO Best Practices"
             ]
         },
         {
@@ -227,7 +247,8 @@
                 "Vue.js",
                 "Next.js",
                 "Astro",
-                "Lit"
+                "Lit",
+                "jQuery (legacy support)"
             ]
         },
         {
@@ -236,10 +257,11 @@
             "keywords": [
                 "Node.js",
                 "Express",
-                "PHP",
+                "PHP (Laravel Blade Components)",
                 ".NET",
                 "MySQL",
-                "RESTful APIs"
+                "RESTful APIs",
+                "JSON / Fetch / Axios"
             ]
         },
         {
@@ -251,7 +273,9 @@
                 "npm",
                 "Yarn",
                 "Docker",
-                "Git"
+                "Git & GitHub",
+                "GitLab",
+                "CI/CD (GitHub Actions, Netlify)"
             ]
         },
         {
@@ -262,7 +286,9 @@
                 "Mocha",
                 "Chai",
                 "Vitest",
+                "Playwright",
                 "Storybook",
+                "Lighthouse Audits",
                 "CI/CD Integration"
             ]
         },
@@ -272,7 +298,9 @@
             "keywords": [
                 "Agile (Scrum, Kanban)",
                 "SDLC",
-                "Jira & Confluence"
+                "Code Reviews & Mentorship",
+                "Jira & Confluence",
+                "Documentation & Knowledge Sharing"
             ]
         },
         {
@@ -280,7 +308,8 @@
             "level": "Proficient",
             "keywords": [
                 "Figma",
-                "Photoshop"
+                "Adobe Photoshop",
+                "Cross-Functional Collaboration"
             ]
         }
     ],
