@@ -8,7 +8,11 @@
         "portfolio_url": "sboettcher.com",
         "linkedin_url": "linkedin.com/in/stephenboettcher",
         "github_url": "github.com/boest02",
-        "res_summary": "Technical Project Manager and Senior Business Analyst with over 10 years of experience leading agile teams, delivering software solutions, and translating business goals into clear, actionable requirements. Proven track record driving measurable results, including a 15% boost in user retention and a 20% increase in organic traffic. Skilled in product strategy, stakeholder alignment, data modeling, and iterative delivery, with a strong foundation in programming principles and cross-functional collaboration.",
+        "res_summary": [
+            "Technical Project Manager and Senior Business Analyst with over a decade of experience leading agile teams and delivering high-impact software solutions. Adept at translating complex business workflows and technical requirements into clear, actionable, and testable user stories, ensuring development teams can efficiently implement features that align with business objectives. Proven success in bridging communication between stakeholders, product teams, and engineers to facilitate clarity, alignment, and predictable delivery.",
+            "Skilled in driving product strategy and defining functional specifications that support measurable business outcomes, including a 15% improvement in user retention and a 20% increase in organic traffic. Experienced in conducting discovery sessions, analyzing data, and modeling processes to identify opportunities for optimization and operational efficiency. Strong aptitude for balancing technical feasibility with business value, ensuring solutions are scalable, maintainable, and meet user needs.",
+            "Brings a solid foundation in programming principles and modern web development practices, enabling effective collaboration with engineering teams and informed decision-making throughout the software development lifecycle. Adept at fostering cross-functional collaboration, mentoring team members, and managing iterative delivery in fast-paced environments while maintaining focus on quality, accessibility, and end-user experience."
+        ],
         "home_summary": [],
         "summary": "",
         "location": {
@@ -57,13 +61,12 @@
             "url": "",
             "startDate": "2025-04-25",
             "endDate": "",
-            "summary": "Partnering with small clients to define, plan, and deliver custom web solutions. I collaborated closely with stakeholders to gather requirements, translate goals into actionable development plans, and choose the most effective technologies for each project. Projects ranged from personal portfolio sites to a handyman service platform, where I oversaw every phase from scope definition and wireframing to implementation, testing, and deployment.",
             "highlights": [
-                "Conducted discovery sessions with clients to clarify business objectives, define technical needs, and translate requirements into project deliverables.",
-                "Evaluated and selected appropriate technologies — including Next.js, React, TypeScript, and Astro — based on performance goals, scalability, and client budgets.",
-                "Created project timelines and task breakdowns to manage scope, ensure alignment, and deliver milestones efficiently.",
-                "Oversaw deployment pipelines using GitHub CI/CD and Netlify, ensuring reliable delivery and seamless client feedback integration.",
-                "Led testing, accessibility, and SEO reviews to ensure each site met technical quality standards and business success criteria."
+                "Partnered with small clients to define project scope, clarify business objectives, and translate requirements into actionable technical plans for custom web solutions.",
+                "Evaluated and selected technologies such as Next.js, React, TypeScript, and Astro based on scalability, performance goals, and client constraints.",
+                "Created project timelines, task breakdowns, and milestone plans to ensure predictable delivery and strong alignment with client expectations.",
+                "Managed deployment workflows using GitHub CI/CD and Netlify, ensuring reliable releases and seamless client feedback cycles.",
+                "Led testing, accessibility reviews, and SEO audits to ensure each site met technical quality standards and business success criteria."
             ],
             "resume": true
         },
@@ -73,12 +76,12 @@
             "url": "https://info.pch.com/",
             "startDate": "2019-08-01",
             "endDate": "2025-04-24",
-            "summary": "Description…",
             "highlights": [
-                "Collaborated extensively with Product teams to analyze complex business requirements, translating them into user-focused website features that increased organic traffic by 20%.",
-                "Directed frontend planning and technical refinement sessions, ensuring proposed solutions were strategically aligned with core business objectives and design standards.",
-                "Orchestrated collaborative validation efforts with QA and key stakeholders, leveraging acceptance testing and iterative feedback loops to ensure features met critical business needs."
-            ]
+                "Collaborated with Product teams to analyze complex business requirements and translate them into user-focused features, contributing to a 20% increase in organic traffic.",
+                "Led frontend planning, refinement, and design alignment sessions to ensure all solutions met business objectives, UX standards, and long-term maintainability goals.",
+                "Coordinated acceptance testing and iterative feedback loops with QA and stakeholders to validate features and ensure they met critical business needs."
+            ],
+            "resume": true
         },
         {
             "name": "Publishers Clearing House",
@@ -86,13 +89,12 @@
             "url": "https://info.pch.com/",
             "startDate": "2018-08-01",
             "endDate": "2019-07-30",
-            "summary": "Description…",
             "highlights": [
-                "Led the end-to-end development and implementation of a customizable communication module, empowering business teams to deliver personalized user messages and enhancing engagement and communication efficiency.",
-                "Drove cross-functional design and implementation of innovative features, ensuring technical solutions directly aligned with key business objectives to enhance user engagement in a dynamic gaming environment.",
-                "Designed and deployed a reusable communication module that facilitated targeted messaging and promotions, directly contributing to improved conversion rates.",
-                "Collaborated with marketing analysts to develop and integrate robust tracking for campaign metrics, providing critical data insights that informed future A/B testing strategies."
-            ]
+                "Built and launched a customizable communication module that enabled targeted user messaging and drove significant improvements in engagement and conversion rates.",
+                "Collaborated cross-functionally to design and implement features that supported key business objectives in a fast-paced gaming environment.",
+                "Partnered with marketing analysts to implement tracking and analytics, producing insights that informed A/B testing and future campaign strategies."
+            ],
+            "resume": true
         },
         {
             "name": "Publishers Clearing House",
@@ -100,53 +102,29 @@
             "url": "https://info.pch.com/",
             "startDate": "2013-11-01",
             "endDate": "2018-07-30",
-            "summary": "Description…",
             "highlights": [
-                "Spearheaded discovery and documentation for a cross-departmental Contest Tracking System, significantly improving operational workflows for prize fulfillment and compliance.",
-                "Served as Scrum Master for 4 Agile teams, expertly managing all Scrum ceremonies, defining clear sprint goals, tracking velocity, and facilitating stakeholder demos to ensure predictable delivery.",
-                "Leveraged data analysis to identify key engagement drop-offs, directly influencing new campaign features that increased retention by 15%.",
-                "Orchestrated integration projects with legacy systems and third-party platforms, streamlining communications and enhancing data integrity across critical systems.",
-                "Collaborated cross-functionally with marketing, legal, and engineering teams to prioritize and deliver complex projects under tight deadlines."
-            ]
-        },
-        {
-            "name": "Computer Associates",
-            "position": "Director: ARCserve Software Development",
-            "url": "https://en.wikipedia.org/wiki/CA_Technologies",
-            "startDate": "2006-09-01",
-            "endDate": "2013-05-30",
-            "summary": "...",
-            "highlights": [
-                "Led and managed diverse software development projects within the ARCserve division, overseeing critical phases from design to deployment.",
-                "Championed and implemented a 'code peer review' process that was adopted across the broader development organization, resulting in significant improvements in code quality and consistency.",
-                "Mentored and guided technical teams through complex design and implementation phases, fostering best practices and accelerating defect resolution to enhance overall team performance.",
-                "Drove cross-functional communication by facilitating 12 training sessions for support and sales teams on ARCserve product updates, resolving the top three customer concerns and enhancing field enablement."
+                "Led discovery, requirements gathering, and documentation for major cross-departmental initiatives such as the Contest Tracking System, improving fulfillment workflows and compliance.",
+                "Served as Scrum Master for four Agile teams, managing sprint ceremonies, defining goals, tracking velocity, and conducting stakeholder demos to ensure predictable delivery.",
+                "Used data analysis to identify engagement drop-offs and influenced feature updates that improved retention by 15%.",
+                "Managed integrations with legacy systems and third-party platforms to improve data consistency, system communication, and operational efficiency.",
+                "Coordinated delivery with marketing, legal, and engineering teams to execute complex projects under tight deadlines."
             ],
             "resume": true
         },
         {
             "name": "Computer Associates",
-            "position": "Senior Manager: ARCserve Device Development",
-            "url": "https://en.wikipedia.org/wiki/CA_Technologies",
-            "startDate": "2005-05-31",
-            "endDate": "2006-09-01",
-            "summary": "...",
-            "highlights": [
-                "Managed a globally distributed team of six developers (home office, Beijing, Hyderabad), optimizing collaboration and productivity across international time zones.",
-                "Cultivated solutions tightly aligned with user requirements and emerging technologies, meticulously documenting technical solutions through comprehensive design documents and workflow diagrams to streamline development.",
-                "Streamlined the development process from conception to a successful 6-month implementation cycle, enhancing efficiency and reducing time-to-market."
-            ],
-            "resume": true
-        },
-        {
-            "name": "Computer Associates",
-            "position": "Senior Software Engineer",
+            "position": "Director / Senior Manager: ARCserve",
             "url": "https://en.wikipedia.org/wiki/CA_Technologies",
             "startDate": "2003-05-01",
-            "endDate": "2005-04-30",
-            "summary": "As a Senior Software Engineer, I developed C-based applications for Windows architecture, focusing on data movement to tape devices. I designed and implemented SCSI communication protocols to control tape drives and tape library devices across a SAN, ensuring seamless integration and reliable data transfer. This role required hands-on setup and configuration of storage hardware, working directly with tape devices to optimize performance, troubleshoot low-level interactions, and enhance system stability for enterprise backup and storage solutions.",
+            "endDate": "2013-05-30",
             "highlights": [
-                "Engineered high-performance software solutions using Win32 C programming in Visual Studio 6.0, resulting in the identification and resolution of the three largest causes of application crashes for enhanced system stability."
+                "Directed global software development initiatives within the ARCserve division, guiding projects from design through deployment for enterprise backup and device-integration products.",
+                "Led distributed engineering teams across multiple time zones (U.S., Beijing, Hyderabad), optimizing collaboration, productivity, and delivery efficiency.",
+                "Developed high-performance Win32 C components and implemented SCSI protocols for tape drives and libraries, improving system stability and data transfer reliability across SAN environments.",
+                "Implemented an organization-wide code peer review process, improving code quality, consistency, and cross-team knowledge sharing.",
+                "Produced detailed design documents, workflows, and technical specifications to ensure clarity, alignment, and successful delivery of complex projects.",
+                "Mentored engineering teams through design and implementation challenges, accelerating defect resolution and promoting architectural best practices.",
+                "Delivered technical training and enablement sessions for support and sales teams, resolving top customer concerns and improving field readiness."
             ],
             "resume": true
         },
@@ -156,12 +134,10 @@
             "url": "https://en.wikipedia.org/wiki/CA_Technologies",
             "startDate": "1999-12-01",
             "endDate": "2003-05-01",
-            "summary": "As a Software Engineer, I developed core features for ARCserve based on management’s specifications, focusing on data movement and device integration. I implemented solutions in C for Windows architecture, writing SCSI code to control tape drives and libraries. I also helped plan and scope development tasks according to our waterfall schedule, ensuring timely delivery and alignment with project goals.",
             "highlights": [
-                "Develop new features for ARCserve device support, including automated SAN device sharing, tape drive encryption, and cluster failover handling.",
-                "Maintain and manage the SAN lab for development and testing.",
-                "Support the device certification team by configuring new hardware and ensuring compatibility with existing software.",
-                "Implement fixes and improvements to support new devices within the ARCserve ecosystem."
+                "Developed ARCserve features including SAN device sharing, tape drive encryption, and cluster failover handling.",
+                "Maintained the SAN lab and supported the device certification team by configuring and validating new hardware.",
+                "Implemented device support enhancements and resolved integration issues across the ARCserve ecosystem."
             ],
             "resume": false
         },
@@ -171,27 +147,10 @@
             "url": "https://en.wikipedia.org/wiki/CA_Technologies",
             "startDate": "1999-05-01",
             "endDate": "1999-12-01",
-            "summary": "As a Maintenance Software Engineer, I provided technical support for ARCserve, assisting customers with software and hardware issues. I worked closely with the development team to diagnose problems, release patches, and ensure fixes were integrated into the production codebase. My role bridged the gap between support and development, helping to improve system stability and enhance the customer experience.",
             "highlights": [
-                "Assist support engineers with escalated issues that require deep investigation or code changes.",
-                "Work directly with customers to troubleshoot complex technical issues.",
-                "Develop and publish fixes to the company website for broader end-user access.",
-                "Ensure that resolved issues are documented to help prevent future occurrences."
-            ],
-            "resume": false
-        },
-        {
-            "name": "Computer Associates",
-            "position": "Senior Technical Support Representative",
-            "url": "https://en.wikipedia.org/wiki/CA_Technologies",
-            "startDate": "1997-04-01",
-            "endDate": "1999-05-01",
-            "summary": "As a Senior Technical Support Representative, I worked directly with customers online to diagnose and resolve technical issues. I developed a library of detailed technical responses to streamline support and assist users based on the information they provided. My role focused on troubleshooting, guiding customers through solutions, and improving overall support efficiency.",
-            "highlights": [
-                "Provided technical product support online via AOL and CompuServe.",
-                "Mentored support representatives by offering guidance and assistance.",
-                "Updated and maintained an internal solutions database for team reference.",
-                "Ensured support resources were accurate and up to date to improve issue resolution efficiency."
+                "Diagnosed complex technical issues and collaborated with developers to produce patches and long-term fixes.",
+                "Worked directly with customers to troubleshoot critical problems and ensure fast resolution.",
+                "Published fixes and maintained documentation to prevent recurring issues."
             ],
             "resume": false
         },
@@ -201,9 +160,9 @@
             "url": "https://en.wikipedia.org/wiki/Arcserve",
             "startDate": "1996-02-01",
             "endDate": "1997-04-01",
-            "summary": "As a Technical Support Representative, I provided phone-based support to customers, assisting them with troubleshooting and resolving technical issues. I guided users through solutions, ensuring a positive experience and high customer satisfaction. When needed, I escalated more complex issues to our Level 2 maintenance group, ensuring timely resolution and seamless support.",
             "highlights": [
-                "Offered product technical support, over the phone, for ARCserve products covering: Windows NT and Novell Netware customers."
+                "Provided technical phone support for ARCserve across Windows NT and Novell NetWare environments.",
+                "Escalated complex issues to Level 2 engineering when necessary to ensure fast and accurate resolution."
             ],
             "resume": false
         }

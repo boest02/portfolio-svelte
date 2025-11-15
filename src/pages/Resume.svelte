@@ -29,13 +29,15 @@
 
   <div class="tool-bar">
     <div class="resume-type">
-      <label for="resume-type">Resume Type:</label>
+      <label for="resume-type">View Me As...</label>
       <select id="resume-type" bind:value={resumeType}>
-        <option value="ba">Technical PM / BA</option>
-        <option value="dev">Developer</option>
+        <option value="dev">Full-Stack Developer</option>
+        <option value="ba">Technical PM & BA</option>
+        <option value="hardware">Systems Engineer</option>
+        <option value="sales">Sales Engineer</option>
       </select>
       <label
-        >Consolidate Experience?
+        >Company Consolidation:
         <input
           type="checkbox"
           id="consolidated"

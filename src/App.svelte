@@ -20,9 +20,9 @@
 
   let resumeFiles = {
     dev: "resume_dev.json",
-    full_stack: "resume_full.json",
-    tpm: "resume_tpm.json",
+    hardware: "resume_hw.json",
     ba: "business_analyst.json",
+    sales: "resume_sales.json",
   };
 
   setContext("resumeFiles", resumeFiles);

@@ -1,0 +1,199 @@
+{
+    "basics": {
+        "name": "Stephen L Boettcher",
+        "label": "Solutions Engineer (Software / Developer Transition)",
+        "image": "/src/images/Me.JPG",
+        "email": "boest02@gmail.com",
+        "phone": "516-220-4640",
+        "portfolio_url": "sboettcher.com",
+        "linkedin_url": "linkedin.com/in/stephenboettcher",
+        "github_url": "github.com/boest02",
+        "res_summary": [
+            "Technical professional with 10+ years of software development experience, transitioning into Solutions Engineering. Skilled at translating complex software systems into actionable business solutions and guiding clients through evaluation, implementation, and optimization of web-based and SaaS platforms.",
+            "Proven ability to partner with stakeholders, lead Agile teams, deliver technical demos, and ensure customer success, leveraging hands-on experience with front-end and full-stack technologies including Svelte, React, Next.js, TypeScript, and PHP.",
+            "Experienced in bridging business requirements and technical execution, capturing detailed specifications, managing projects, and providing workflow recommendations that improve adoption, operational efficiency, and measurable impact for clients."
+        ],
+        "home_summary": [
+            "Welcome! This portfolio highlights my journey from a developer and technical project manager to a Solutions Engineer. I specialize in helping organizations understand, evaluate, and implement software solutions while ensuring technical and business alignment.",
+            "I have hands-on experience with web and enterprise software, including Svelte, React, Next.js, Astro, and back-end integrations, combined with a proven track record in stakeholder collaboration and agile delivery.",
+            "Beyond technical expertise, I thrive in client-facing settings — leading demos, discovery sessions, and proofs of concept, and translating technical concepts into business value. My goal is to leverage my development experience to help clients maximize software impact and adoption."
+        ],
+        "summary": "",
+        "location": {
+            "city": "Floral Park",
+            "countryCode": "US",
+            "region": "New York",
+            "postalCode": "11001"
+        },
+        "profiles": [
+            {
+                "network": "LinkedIn",
+                "username": "boest02",
+                "url": "https://www.linkedin.com/in/stephen-boettcher-77051b7/",
+                "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7PAYCRc3WD7kGgYDf1ZyIBHCIPLOD4v1wpg&s"
+            },
+            {
+                "network": "GitHub",
+                "username": "boest02",
+                "url": "https://github.com/boest02",
+                "icon": "https://cdn-icons-png.flaticon.com/512/25/25231.png"
+            },
+            {
+                "network": "GitLab",
+                "username": "@boest02",
+                "url": "https://gitlab.com/boest02",
+                "icon": "https://gitlab.com/assets/favicon-72a2cad5025aa931d6ea56c3201d1f18e68a8cd39788c7c80d5b2b82aa5143ef.png"
+            },
+            {
+                "network": "CodePen",
+                "username": "boest02",
+                "url": "https://codepen.io/boest02",
+                "icon": "https://cdn.iconscout.com/icon/free/png-256/free-codepen-icon-download-in-svg-png-gif-file-formats--behance-logo-delicious-social-media-technology-development-pack-user-interface-icons-6700108.png?f=webp&w=256"
+            },
+            {
+                "network": "JSFiddle",
+                "username": "boest02",
+                "url": "https://jsfiddle.net/u/boest02/fiddles/",
+                "icon": "https://pbs.twimg.com/profile_images/1832018871382872064/wxvfa5pU_400x400.jpg"
+            }
+        ]
+    },
+    "work": [
+        {
+            "name": "Freelance / Independent Projects",
+            "position": "Technical Consultant & Solutions Advisor",
+            "url": "",
+            "startDate": "2025-04-25",
+            "endDate": "",
+            "highlights": [
+                "Partnered with small businesses to assess needs, lead discovery workshops, and translate requirements into actionable technical plans for web and SaaS solutions.",
+                "Designed and implemented scalable, maintainable front-end architectures using Next.js, React, Svelte, and Astro tailored to client goals.",
+                "Guided clients through deployment strategies and CI/CD workflows, enabling maintainable long-term operations and simplified release management.",
+                "Delivered live demos and proofs of concept to demonstrate functionality, ROI, and business value.",
+                "Advised clients on accessibility, performance optimization, and SEO best practices to maximize user engagement and adoption."
+            ],
+            "resume": true
+        },
+        {
+            "name": "Publishers Clearing House",
+            "position": "Lead Front-End Developer / Customer Solutions Partner",
+            "url": "https://info.pch.com/",
+            "startDate": "2019-08-01",
+            "endDate": "2025-04-24",
+            "highlights": [
+                "Collaborated with Product, Marketing, and BA teams to define technical requirements aligned with business objectives, contributing to a 20% improvement in user engagement.",
+                "Delivered internal demos and walkthroughs that communicated technical solutions in terms of business and user impact.",
+                "Promoted adoption of reusable front-end components and scalable UI patterns across multiple PCH properties.",
+                "Analyzed and recommended third-party integrations to support business workflows and improve operational efficiency."
+            ],
+            "resume": true
+        },
+        {
+            "name": "Publishers Clearing House",
+            "position": "Front-End Developer / Pre-Sales Technical Consultant",
+            "url": "https://info.pch.com/",
+            "startDate": "2018-08-01",
+            "endDate": "2019-07-30",
+            "highlights": [
+                "Developed modular communication components that enhanced personalized messaging capabilities and improved engagement metrics.",
+                "Conducted technical feasibility reviews for upcoming features, advising product teams on integration strategies and engineering impact.",
+                "Delivered internal demos to illustrate feature functionality and support stakeholder decision-making and adoption."
+            ],
+            "resume": true
+        },
+        {
+            "name": "Publishers Clearing House",
+            "position": "Senior Business Analyst / Technical Project Manager",
+            "url": "https://info.pch.com/",
+            "startDate": "2013-11-01",
+            "endDate": "2018-07-30",
+            "highlights": [
+                "Led discovery and requirements sessions with cross-functional teams to define software needs and clarify project objectives.",
+                "Managed multiple Agile teams as Scrum Master, facilitating ceremonies, grooming, sprint planning, and release coordination.",
+                "Translated business objectives into clear user stories and functional specifications aligned with engineering capabilities.",
+                "Oversaw integrations between internal systems and external platforms, ensuring reliable data flow and operational stability.",
+                "Presented demos and technical walkthroughs to stakeholders to drive alignment, adoption, and feedback-driven improvements."
+            ],
+            "resume": true
+        },
+        {
+            "name": "Computer Associates",
+            "position": "Director: ARCserve Software Development / Client Solutions Liaison",
+            "url": "https://en.wikipedia.org/wiki/CA_Technologies",
+            "startDate": "2005-05-01",
+            "endDate": "2013-05-30",
+            "highlights": [
+                "Acted as a primary liaison between engineering, support, and pre-sales teams, helping communicate product capabilities and resolve complex customer concerns.",
+                "Delivered technical training and enablement sessions to strengthen cross-functional understanding of ARCserve's architecture and constraints.",
+                "Translated advanced product features into business-focused value propositions for client presentations and demonstrations.",
+                "Guided engineering teams in incorporating customer requirements and real-world use cases into product design and delivery."
+            ],
+            "resume": true
+        }
+    ],
+    "education": [
+        {
+            "institution": "Iona College",
+            "url": "https://www.iona.edu/",
+            "area": "Computer Science",
+            "studyType": "Bachelor of Science",
+            "location": "New Rochelle, NY",
+            "startDate": "1989-09-01",
+            "endDate": "1991-06-01"
+        },
+        {
+            "institution": "St. John's University",
+            "url": "https://www.stjohns.edu/",
+            "area": "Computer Science",
+            "studyType": "Bachelor of Science",
+            "location": "New York, NY",
+            "startDate": "1987-09-01",
+            "endDate": "1989-06-01"
+        }
+    ],
+    "skills": [
+        {
+            "name": "Pre-Sales & Customer Solutions",
+            "level": "Expert",
+            "keywords": [
+                "Technical Discovery & Requirements Gathering",
+                "Solution Design & Architecture",
+                "Proof of Concept & Demo Delivery",
+                "Stakeholder Collaboration",
+                "Client Enablement & Training"
+            ]
+        },
+        {
+            "name": "Technical Competencies",
+            "level": "Expert",
+            "keywords": [
+                "Front-End Development (Svelte, React, Next.js, Astro)",
+                "Backend Integrations (.NET, PHP, Node.js)",
+                "RESTful APIs / JSON / Webhooks",
+                "CI/CD Pipelines & Deployment",
+                "Performance Optimization & Accessibility"
+            ]
+        },
+        {
+            "name": "Tools & Platforms",
+            "level": "Advanced",
+            "keywords": [
+                "Jira & Confluence",
+                "GitHub & GitLab",
+                "Netlify & Vercel",
+                "Figma & Lucidchart",
+                "CRM / Sales Tools Familiarity"
+            ]
+        },
+        {
+            "name": "Workflow & Communication",
+            "level": "Advanced",
+            "keywords": [
+                "Agile (Scrum, Kanban)",
+                "Technical Presentations & Demos",
+                "Cross-Functional Collaboration",
+                "Executive & Stakeholder Communication"
+            ]
+        }
+    ]
+}

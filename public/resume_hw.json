@@ -1,0 +1,162 @@
+{
+    "basics": {
+        "name": "Stephen L Boettcher",
+        "label": "Linux & Systems Engineer / Technical Professional",
+        "image": "/src/images/Me.JPG",
+        "email": "boest02@gmail.com",
+        "phone": "516-220-4640",
+        "portfolio_url": "sboettcher.com",
+        "linkedin_url": "linkedin.com/in/stephenboettcher",
+        "github_url": "github.com/boest02",
+        "res_summary": [
+            "Technical professional with deep experience in Linux systems, hardware integration, and software development. Over a decade of experience developing enterprise backup solutions, working directly with tape drives, tape libraries, and SCSI interfaces to control devices via software.",
+            "Proficient with Linux command line tools, Docker, Git, and system-level scripting, bridging the gap between hardware, software, and client-facing technical solutions.",
+            "Experienced in translating complex technical systems into actionable workflows, mentoring teams, and delivering robust solutions that integrate hardware and software components.",
+            "Developed and maintained large-scale web applications using HTML, CSS, and JavaScript, integrating with Node and PHP backends to deliver performant, responsive user experiences."
+        ],
+        "location": {
+            "city": "Floral Park",
+            "countryCode": "US",
+            "region": "New York",
+            "postalCode": "11001"
+        },
+        "profiles": [
+            {
+                "network": "LinkedIn",
+                "username": "boest02",
+                "url": "https://www.linkedin.com/in/stephenboettcher/",
+                "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7PAYCRc3WD7kGgYDf1ZyIBHCIPLOD4v1wpg&s"
+            },
+            {
+                "network": "GitHub",
+                "username": "boest02",
+                "url": "https://github.com/boest02",
+                "icon": "https://cdn-icons-png.flaticon.com/512/25/25231.png"
+            }
+        ]
+    },
+    "work": [
+        {
+            "name": "Publishers Clearing House",
+            "position": "Senior Business Analyst / Scrum Master & Front-End Developer",
+            "url": "https://info.pch.com/",
+            "startDate": "2013-11-01",
+            "endDate": "2025-04-24",
+            "highlights": [
+                "Technical professional with extensive experience in web and software development, skilled in PHP, JavaScript, and MySQL for building dynamic, data-driven applications.",
+                "Managed Agile Scrum processes for multiple teams, translating business requirements into actionable user stories and functional specifications.",
+                "Partnered with Product and UX teams to architect and deliver high-impact front-end solutions, including reusable components, interactive modules, and responsive designs.",
+                "Oversaw the full development lifecycle for web projects, from wireframing and prototyping to testing, deployment, and optimization.",
+                "Implemented CI/CD workflows using Git and Docker to streamline deployment and improve team efficiency.",
+                "Applied Mac command line tools, Git, and Docker for project development, deployment, and workflow automation.",
+                "Led accessibility initiatives, conducting audits to ensure WCAG compliance and inclusive user experiences.",
+                "Provided mentorship to junior and mid-level engineers, improving coding efficiency and fostering collaborative development practices."
+            ],
+            "resume": true
+        },
+        {
+            "name": "Computer Associates / ARCserve",
+            "position": "Director / Senior Manager, Software Development - ARCserve",
+            "url": "https://en.wikipedia.org/wiki/CA_Technologies",
+            "startDate": "2005-05-01",
+            "endDate": "2013-05-30",
+            "highlights": [
+                "Directed global software development teams for ARCserve, focusing on enterprise backup and storage solutions.",
+                "Led and mentored engineering teams globally, promoting best practices in system-level programming and hardware integration.",
+                "Oversaw technical strategy and development processes, ensuring alignment with business goals for enterprise backup systems.",
+                "Collaborated with QA, support, and sales teams to resolve complex hardware-software interactions and improve field enablement.",
+                "Managed architecture and development of enterprise backup software across Windows and Linux platforms."
+            ],
+            "resume": true
+        },
+        {
+            "name": "Computer Associates / ARCserve",
+            "position": "Senior Software Engineer / Device Development",
+            "url": "https://en.wikipedia.org/wiki/CA_Technologies",
+            "startDate": "2003-04-01",
+            "endDate": "2005-04-30",
+            "highlights": [
+                "Developed C-based software controlling enterprise backup devices, including tape drives and libraries.",
+                "Implemented low-level SCSI protocols to optimize device performance and reliability.",
+                "Built and maintained Linux utilities and command-line tools for hardware testing and system performance validation.",
+                "Managed virtualized test environments using VMware for development and QA."
+            ],
+            "resume": true
+        },
+        {
+            "name": "Computer Associates / ARCserve",
+            "position": "Software Engineer / ARCserve Device Support",
+            "url": "https://en.wikipedia.org/wiki/CA_Technologies",
+            "startDate": "1999-12-01",
+            "endDate": "2003-05-01",
+            "highlights": [
+                "Supported and developed core ARCserve features with a focus on hardware integration and system-level software.",
+                "Developed device drivers and software modules for SCSI-based tape drives, tape libraries, and SAN integration.",
+                "Created Linux shell scripts and command-line tools to automate hardware testing and deployment processes.",
+                "Maintained SAN lab environments to ensure compatibility with multiple hardware configurations."
+            ],
+            "resume": true
+        }
+    ],
+    "education": [
+        {
+            "institution": "Iona College",
+            "url": "https://www.iona.edu/",
+            "area": "Computer Science",
+            "studyType": "Bachelor of Science",
+            "location": "New Rochelle, NY",
+            "startDate": "1989-09-01",
+            "endDate": "1991-06-01"
+        },
+        {
+            "institution": "St. John's University",
+            "url": "https://www.stjohns.edu/",
+            "area": "Computer Science",
+            "studyType": "Bachelor of Science",
+            "location": "New York, NY",
+            "startDate": "1987-09-01",
+            "endDate": "1989-06-01"
+        }
+    ],
+    "skills": [
+        {
+            "name": "Linux & Systems",
+            "level": "Expert",
+            "keywords": [
+                "Linux CLI / Bash Scripting",
+                "Docker / Containerization",
+                "System Integration",
+                "Hardware & Device Control",
+                "SCSI Protocols",
+                "SAN Lab Management",
+                "Command Line Tooling"
+            ]
+        },
+        {
+            "name": "Programming & Software Development",
+            "level": "Advanced",
+            "keywords": [
+                "HTML5 / CSS3 / JavaScript (ES6+)",
+                "React / Vue.js / Next.js / Svelte / Lit",
+                "PHP / Node.js",
+                "MySQL / Database Integration",
+                "C / Win32 Programming",
+                "Software Architecture",
+                "Full-Stack Development (Front-End Emphasis)",
+                "Data Movement & Storage Systems",
+                "CI/CD Implementation",
+                "Agile & Scrum Methodologies"
+            ]
+        },
+        {
+            "name": "Technical Collaboration",
+            "level": "Advanced",
+            "keywords": [
+                "Cross-Functional Team Leadership",
+                "Technical Training & Mentorship",
+                "Stakeholder Communication",
+                "Product Implementation Guidance"
+            ]
+        }
+    ]
+}

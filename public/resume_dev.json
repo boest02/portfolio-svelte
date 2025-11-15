@@ -59,13 +59,10 @@
             "url": "",
             "startDate": "2025-04-25",
             "endDate": "",
-            "summary": "Creating web experiences for clients ranging from a local poet to a team launching a handyman business. I focused on building modern, performant, and accessible websites while learning and applying new technologies including Next.js, React, TypeScript, and Astro. Projects were deployed using GitHub CI/CD pipelines to Netlify servers, emphasizing responsive design, accessibility, and strong SEO performance.",
             "highlights": [
-                "Developed a portfolio and blog site using Astro, optimizing build performance and SEO for faster load times and improved visibility.",
-                "Created and deployed a modern handyman business site using React and Next.js, implementing reusable components and responsive layouts.",
-                "Leveraged GitHub Actions and Netlify’s CI/CD workflows to automate builds and streamline deployment pipelines for multiple client projects.",
-                "Applied accessibility best practices and responsive design principles to ensure usability across devices and user groups.",
-                "Explored emerging front-end technologies to expand technical versatility and strengthen modern JavaScript framework expertise."
+                "Designed and built modern, performant websites for multiple clients, including a poet, a handyman business, and personal portfolio projects, using frameworks such as Svelte, React, Next.js, and Astro, with a focus on responsive layouts, accessibility, SEO, and clean, component-driven architecture.",
+                "Leveraged GitHub Actions and Netlify CI/CD pipelines to automate builds and streamline deployments across multiple environments.",
+                "Implemented accessibility best practices to ensure inclusive, user-friendly experiences across devices."
             ],
             "resume": true
         },
@@ -75,31 +72,25 @@
             "url": "https://info.pch.com/",
             "startDate": "2019-08-01",
             "endDate": "2025-04-24",
-            "summary": "Leading front-end development, I focused on guiding engineers and upholding best practices in code quality and performance. My role involved translating complex UI/UX designs into scalable, modular, and reusable solutions, fostering a collaborative environment, and driving architectural excellence to promote team growth.",
             "highlights": [
-                "Architected and spearheaded the complete redesign of the PCH Weekly Prize website, resulting in a 20% increase in organic traffic and significantly enhancing user engagement through optimized UX and performance metrics.",
-                "Engineered a fully responsive and portable navigation system, subsequently adopted by 15+ PCH properties to improve user journey consistency and boost site interaction rates by over 25% within three months.",
-                "Developed and deployed a reusable 'tooltip' component that improved on-page communication and generated over 1,500 positive user feedback responses within the first month post-launch.",
-                "Led accessibility initiatives, conducting thorough audits on 30+ web pages to ensure WCAG compliance and deliver inclusive, highly engaging digital experiences.",
-                "Provided technical leadership and mentorship to junior and mid-level engineers through bi-weekly 1:1 sessions, improving team coding efficiency and fostering collaborative development practices."
+                "Delivered scalable, modular front-end architectures by translating complex UI/UX requirements into performant, reusable components while guiding engineers on quality and performance best practices.",
+                "Led major initiatives at PCH, including redesigning the Weekly Prize website (resulting in 20% organic traffic growth) and building shared components like the portable navigation system used across 15+ properties.",
+                "Created high-impact UI features, such as a reusable tooltip component with 1,500+ positive feedback responses, and drove accessibility improvements across 30+ pages to meet WCAG standards.",
+                "Mentored junior and mid-level developers through regular 1:1s and promoted modern front-end patterns to strengthen team collaboration and long-term maintainability."
             ],
             "resume": true
         },
         {
             "name": "Publishers Clearing House",
-            "position": "Front-End Developer",
+            "position": "Front End Developer",
             "url": "https://info.pch.com/",
             "startDate": "2018-08-01",
             "endDate": "2019-07-30",
-            "summary": "My work as a Front-End Developer centered on building and integrating reusable components with precision, maintaining a robust Storybook library, and ensuring functionality through comprehensive testing. I collaborated closely with designers and developers to craft seamless, scalable, and high-performance front-end experiences.",
             "highlights": [
-                "Engineered and deployed a flexible communication module, enabling targeted user messaging and significantly enhancing customer interaction.",
-                "Developed innovative game mechanics that directly addressed user pain points, leading to a 20% increase in user engagement metrics.",
-                "Designed and implemented a suite of modular, reusable components that streamlined development by 15 hours per project through code standardization and elimination of redundancy.",
-                "Executed comprehensive web performance optimizations, reducing page load times by 25% via strategic code refactoring, asset optimization, and robust caching.",
-                "Pioneered and integrated unit testing strategies into the CI/CD pipeline, enhancing code stability across 10+ projects and reducing bug-related downtime by ~35 hours/month.",
-                "Collaborated closely with QA teams to establish rigorous end-to-end testing processes, ensuring the release of defect-free features.",
-                "Integrated complex third-party APIs to extend application functionality, enabling real-time updates and dynamic content rendering."
+                "Built and maintained a scalable Storybook component library, delivering modular UI patterns that cut project development time by over 15 hours through standardization and code reuse.",
+                "Engineered key engagement features, including a targeted communication module and new game mechanics, that increased customer interaction metrics by more than 20%.",
+                "Improved site reliability and performance by reducing load times by 25% through code and asset optimization, and by introducing robust unit and E2E testing that reduced bug-related downtime by ~35 hours monthly.",
+                "Integrated advanced third-party APIs to enable real-time content rendering and more dynamic user experiences."
             ],
             "resume": true
         },
@@ -109,96 +100,29 @@
             "url": "https://info.pch.com/",
             "startDate": "2013-11-01",
             "endDate": "2018-07-30",
-            "summary": "In my role as a Senior Business Analyst / Scrum Master, I effectively bridged the gap between business needs and technical execution, translating requirements into actionable user stories and specifications. I facilitated all Agile ceremonies, leading daily standups, grooming, and sizing to ensure team alignment, efficient workflow, and timely delivery through active impediment removal.",
             "highlights": [
-                "Leveraged strong understanding of SDLC and technical requirements to facilitate communication between development teams and stakeholders, streamlining project delivery for web-based systems.",
-                "Managed Agile Scrum ceremonies and release schedules, ensuring clarity on technical deliverables and fostering team efficiency.",
-                "Coordinated technical integrations with legacy systems and third-party vendors, ensuring seamless interoperability and operational efficiency."
+                "Bridged business and engineering by converting requirements into actionable user stories and clear functional specs, improving alignment across teams.",
+                "Led Agile Scrum processes and optimized delivery by removing blockers, improving communication, and maintaining transparent timelines.",
+                "Coordinated integrations with legacy and third-party systems, ensuring architectural continuity and reducing operational risk.",
+                "Strengthened stakeholder collaboration by explaining technical constraints and guiding requirement discussions toward realistic, high-impact solutions."
             ],
             "resume": true
         },
         {
-            "name": "Computer Associates",
-            "position": "Director / Senior Manager, Software Development - ARCserve",
-            "url": "https://en.wikipedia.org/wiki/CA_Technologies",
-            "startDate": "2005-05-01",
-            "endDate": "2013-05-30",
-            "summary": "My leadership as Director of ARCserve Software Development involved setting the technical direction for global development teams, ensuring strategic alignment with business goals. I managed local and remote engineers worldwide, overseeing software architecture, driving innovation, and optimizing development processes to enhance ARCserve’s enterprise backup and storage solutions.",
-            "highlights": [
-                "Led and mentored engineering teams across global locations, championing initiatives like a code peer review process that significantly improved code quality and consistency across large-scale software projects.",
-                "Drove technical strategy and streamlined development processes, overseeing the design and implementation of complex software solutions with a focus on best practices and effective problem-solving.",
-                "Facilitated technical training for external teams, bridging communication gaps between engineering and sales/support to address critical product concerns."
-            ],
-            "resume": true
-        },
-        {
-            "name": "Computer Associates",
-            "position": "Senior Software Engineer (Team Lead / Device Development)",
+            "name": "Computer Associates (CA Technologies)",
+            "position": "Director / Senior Manager - ARCserve Software Engineering",
             "url": "https://en.wikipedia.org/wiki/CA_Technologies",
             "startDate": "2003-04-01",
-            "endDate": "2005-04-30",
-            "summary": "Serving as a Senior Software Engineer and Team Lead, I blended hands-on development with direct management of local and remote engineers. I collaborated closely with stakeholders, translating business needs into technical solutions, guiding device integration, optimizing performance, and ensuring efficient delivery for ARCserve’s backup and storage solutions.",
+            "endDate": "2013-05-30",
             "highlights": [
-                "Engineered high-performance Win32 C solutions, resolving the top three causes of application crashes and significantly enhancing system stability."
+                "Led global engineering teams across multiple time zones, driving architectural strategy, feature delivery, and performance improvements for ARCserve’s enterprise backup products.",
+                "Directed technical planning and long-term product vision, ensuring alignment between engineering efforts and business objectives.",
+                "Oversaw design and development of large-scale, high-reliability systems, promoting strong architecture, code quality, and maintainability.",
+                "Engineered high-performance Win32 C components early in tenure, resolving critical crash sources and significantly improving product stability.",
+                "Implemented formal peer-review practices and cross-team knowledge sharing that elevated code quality and accelerated development efficiency.",
+                "Provided technical training for engineering, support, and sales teams, strengthening cross-functional understanding of product capabilities and constraints."
             ],
             "resume": true
-        },
-        {
-            "name": "Computer Associates",
-            "position": "Software Engineer",
-            "url": "https://en.wikipedia.org/wiki/CA_Technologies",
-            "startDate": "1999-12-01",
-            "endDate": "2003-05-01",
-            "summary": "In this Software Engineer role, I developed core features for ARCserve’s backup and storage solutions, with a focus on data movement and device integration. I implemented robust C solutions for Windows architecture, including SCSI code for tape drives and libraries, and contributed to project planning and scoping within a waterfall methodology.",
-            "highlights": [
-                "Developed new features for ARCserve device support, including automated SAN device sharing, tape drive encryption, and cluster failover handling.",
-                "Maintained and managed the SAN lab, ensuring optimal development and testing environments for core features.",
-                "Supported the device certification team, accelerating hardware integration by configuring new systems and ensuring software compatibility.",
-                "Implemented fixes and improvements to expand device compatibility within the ARCserve ecosystem, enhancing product range."
-            ],
-            "resume": false
-        },
-        {
-            "name": "Computer Associates",
-            "position": "Maintenance Software Engineer",
-            "url": "https://en.wikipedia.org/wiki/CA_Technologies",
-            "startDate": "1999-05-01",
-            "endDate": "1999-12-01",
-            "summary": "My role as a Maintenance Software Engineer involved providing critical technical support for ARCserve, diagnosing complex software and hardware issues. I collaborated closely with the development team to implement and release patches, ensuring seamless integration into the production codebase and improving system stability and customer experience.",
-            "highlights": [
-                "Resolved escalated technical issues for customers, providing deep investigation and implementing code changes to stabilize production.",
-                "Collaborated directly with customers to diagnose and troubleshoot complex technical issues, improving resolution efficiency.",
-                "Developed and published critical software fixes to the company website, enabling broader self-service and reducing incoming support volume.",
-                "Ensured comprehensive documentation of resolved issues, contributing to a robust knowledge base and preventing future recurrences."
-            ],
-            "resume": false
-        },
-        {
-            "name": "Computer Associates",
-            "position": "Senior Technical Support Representative",
-            "url": "https://en.wikipedia.org/wiki/CA_Technologies",
-            "startDate": "1997-04-01",
-            "endDate": "1999-05-01",
-            "summary": "As a Senior Technical Support Representative, I focused on diagnosing and resolving complex technical issues for customers online. I developed a comprehensive library of technical responses to streamline support and proactively guided users through solutions, significantly improving overall support efficiency and customer satisfaction.",
-            "highlights": [
-                "Provided specialized technical product support online via AOL and CompuServe, addressing complex customer inquiries.",
-                "Mentored junior support representatives, improving team efficiency and knowledge transfer through guidance and assistance.",
-                "Updated and maintained a comprehensive internal solutions database, enhancing team reference capabilities and expediting issue resolution.",
-                "Ensured the accuracy and timeliness of support resources, directly contributing to improved issue resolution efficiency."
-            ],
-            "resume": false
-        },
-        {
-            "name": "Computer Associates / Cheyenne Software",
-            "position": "Technical Support Representative",
-            "url": "https://en.wikipedia.org/wiki/Arcserve",
-            "startDate": "1996-02-01",
-            "endDate": "1997-04-01",
-            "summary": "In my Technical Support Representative role, I provided essential phone-based support, assisting customers with troubleshooting and resolving product issues. I guided users through solutions to ensure high customer satisfaction and seamlessly escalated complex cases to higher-level support for timely resolution.",
-            "highlights": [
-                "Provided phone-based technical support for ARCserve products across Windows NT and Novell Netware environments, assisting customers with troubleshooting and solutions."
-            ],
-            "resume": false
         }
     ],
     "education": [
@@ -226,12 +150,12 @@
             "name": "Core Front-End",
             "level": "Expert",
             "keywords": [
-                "HTML5",
-                "CSS3",
-                "Tailwind CSS",
-                "SASS / LESS",
-                "JavaScript (ES6+)",
+                "HTML",
+                "JavaScript",
                 "TypeScript",
+                "CSS",
+                "Tailwind CSS",
+                "SASS / LESS",                
                 "Responsive Design",
                 "Accessibility (WCAG 2.1)",
                 "Performance Optimization",
@@ -257,7 +181,7 @@
             "keywords": [
                 "Node.js",
                 "Express",
-                "PHP (Laravel Blade Components)",
+                "PHP / Laravel",
                 ".NET",
                 "MySQL",
                 "RESTful APIs",
@@ -271,10 +195,8 @@
                 "Vite",
                 "Webpack",
                 "npm",
-                "Yarn",
                 "Docker",
                 "Git & GitHub",
-                "GitLab",
                 "CI/CD (GitHub Actions, Netlify)"
             ]
         },
