@@ -52,7 +52,30 @@
             }
         ]
     },
+    "OpenSource": [
+        {
+            "name": "Open Source Contributions",
+            "position": "",
+            "highlights": [
+                "Contributed UI enhancements to an open source JavaScript project, implementing new filter operators and improving the client-side filtering architecture in a React application."
+            ]
+        }
+    ],
     "work": [
+        {
+            "name": "Optimum",
+            "position": "Frontend UI Software Development Engineer II",
+            "url": "",
+            "startDate": "2026-01-01",
+            "endDate": "",
+            "highlights": [
+                "Develop and maintain customer-facing web applications using Svelte, SvelteKit, and TypeScript, building responsive UI components and improving application performance and usability.",
+                "Collaborate with designers, product managers, and backend engineers to deliver new features and maintain a consistent design system across all paths.",
+                "Improving test coverage across the front-end codebase, working to increase unit test coverage from roughly 10% toward 80% using Vitest and Svelte Testing Library.",
+                "Contribute to improvements in development workflows, build pipelines, and code quality to support reliable deployments and maintainable front-end architecture."
+            ],
+            "resume": true
+        },
         {
             "name": "Freelance / Independent Projects",
             "position": "Front-End Developer & Consultant",
@@ -60,37 +83,23 @@
             "startDate": "2025-04-25",
             "endDate": "",
             "highlights": [
-                "Designed and built modern, performant websites for multiple clients, including a poet, a handyman business, and personal portfolio projects, using frameworks such as Svelte, React, Next.js, and Astro, with a focus on responsive layouts, accessibility, SEO, and clean, component-driven architecture.",
-                "Leveraged GitHub Actions and Netlify CI/CD pipelines to automate builds and streamline deployments across multiple environments.",
-                "Implemented accessibility best practices to ensure inclusive, user-friendly experiences across devices."
+                "Designed and built modern websites for multiple clients and personal projects using Svelte, React, Next.js, and Astro.",
+                "Focused on responsive layouts, accessibility, SEO, and clean component-driven architecture.",
+                "Automated builds and deployments using GitHub Actions and Netlify CI/CD pipelines."
             ],
             "resume": true
         },
         {
             "name": "Publishers Clearing House",
-            "position": "Lead Front-End Developer",
-            "url": "https://info.pch.com/",
-            "startDate": "2019-08-01",
-            "endDate": "2025-04-24",
-            "highlights": [
-                "Delivered scalable, modular front-end architectures by translating complex UI/UX requirements into performant, reusable components while guiding engineers on quality and performance best practices.",
-                "Led major initiatives at PCH, including redesigning the Weekly Prize website (resulting in 20% organic traffic growth) and building shared components like the portable navigation system used across 15+ properties.",
-                "Created high-impact UI features, such as a reusable tooltip component with 1,500+ positive feedback responses, and drove accessibility improvements across 30+ pages to meet WCAG standards.",
-                "Mentored junior and mid-level developers through regular 1:1s and promoted modern front-end patterns to strengthen team collaboration and long-term maintainability."
-            ],
-            "resume": true
-        },
-        {
-            "name": "Publishers Clearing House",
-            "position": "Front End Developer",
+            "position": "Lead Front-End Developer (Previously Front-End Developer)",
             "url": "https://info.pch.com/",
             "startDate": "2018-08-01",
-            "endDate": "2019-07-30",
+            "endDate": "2025-04-24",
             "highlights": [
-                "Built and maintained a scalable Storybook component library, delivering modular UI patterns that cut project development time by over 15 hours through standardization and code reuse.",
-                "Engineered key engagement features, including a targeted communication module and new game mechanics, that increased customer interaction metrics by more than 20%.",
-                "Improved site reliability and performance by reducing load times by 25% through code and asset optimization, and by introducing robust unit and E2E testing that reduced bug-related downtime by ~35 hours monthly.",
-                "Integrated advanced third-party APIs to enable real-time content rendering and more dynamic user experiences."
+                "Led development of scalable, modular front-end architectures and reusable UI components across multiple high-traffic properties.",
+                "Directed major initiatives including the redesign of the Weekly Prize website, contributing to 20% organic traffic growth, and built shared navigation used across 15+ properties.",
+                "Developed reusable UI systems such as a tooltip component receiving 1,500+ positive user feedback responses, while improving accessibility across 30+ pages to meet WCAG standards.",
+                "Mentored developers and promoted modern front-end practices, strengthening collaboration and long-term maintainability."
             ],
             "resume": true
         },
@@ -101,10 +110,8 @@
             "startDate": "2013-11-01",
             "endDate": "2018-07-30",
             "highlights": [
-                "Bridged business and engineering by converting requirements into actionable user stories and clear functional specs, improving alignment across teams.",
-                "Led Agile Scrum processes and optimized delivery by removing blockers, improving communication, and maintaining transparent timelines.",
-                "Coordinated integrations with legacy and third-party systems, ensuring architectural continuity and reducing operational risk.",
-                "Strengthened stakeholder collaboration by explaining technical constraints and guiding requirement discussions toward realistic, high-impact solutions."
+                "Bridged product and engineering teams by translating requirements into actionable user stories and functional specifications.",
+                "Led Agile Scrum processes and coordinated integrations with legacy and third-party systems to maintain delivery timelines and system reliability."
             ],
             "resume": true
         },
@@ -115,12 +122,9 @@
             "startDate": "2003-04-01",
             "endDate": "2013-05-30",
             "highlights": [
-                "Led global engineering teams across multiple time zones, driving architectural strategy, feature delivery, and performance improvements for ARCserve’s enterprise backup products.",
-                "Directed technical planning and long-term product vision, ensuring alignment between engineering efforts and business objectives.",
-                "Oversaw design and development of large-scale, high-reliability systems, promoting strong architecture, code quality, and maintainability.",
-                "Engineered high-performance Win32 C components early in tenure, resolving critical crash sources and significantly improving product stability.",
-                "Implemented formal peer-review practices and cross-team knowledge sharing that elevated code quality and accelerated development efficiency.",
-                "Provided technical training for engineering, support, and sales teams, strengthening cross-functional understanding of product capabilities and constraints."
+                "Led globally distributed engineering teams delivering enterprise backup and recovery software used by large-scale organizations.",
+                "Directed architecture, performance improvements, and product stability across the ARCserve platform.",
+                "Earlier in tenure, developed high-performance Win32 C components and introduced peer-review practices that improved reliability and development efficiency."
             ],
             "resume": true
         }
@@ -155,7 +159,7 @@
                 "TypeScript",
                 "CSS",
                 "Tailwind CSS",
-                "SASS / LESS",                
+                "SASS / LESS",
                 "Responsive Design",
                 "Accessibility (WCAG 2.1)",
                 "Performance Optimization",
@@ -163,13 +167,14 @@
             ]
         },
         {
-            "name": "Frameworks & Libraries",
+            "name": "Front-End Frameworks",
             "level": "Advanced",
             "keywords": [
-                "Svelte",
                 "React",
                 "Vue.js",
+                "Svelte",
                 "Next.js",
+                "SvelteKit",
                 "Astro",
                 "Lit",
                 "jQuery (legacy support)"
