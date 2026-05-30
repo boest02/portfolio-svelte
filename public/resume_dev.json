@@ -9,14 +9,14 @@
         "linkedin_url": "linkedin.com/in/stephenboettcher",
         "github_url": "github.com/boest02",
         "res_summary": [
-            "Versatile and highly accomplished Web Developer with over 10 years of experience delivering scalable, high-performance applications across the stack. Adept at building modern, maintainable interfaces using frameworks like Svelte, React, and Vue, with a strong focus on accessibility, performance, and clean architecture. Experienced in backend integration, API design, and component-based development that supports large, multi-site ecosystems.",
-            "Recognized for leading front-end initiatives and fostering collaboration between design, engineering, and product teams. Successfully directed the redesign of the PCH Weekly Prize site, improving UX and achieving a 20% increase in organic traffic. Known for technical leadership, thoughtful UX implementation, and the ability to translate business goals into efficient, future-proof code solutions that drive measurable impact."
+            "Front-End Focused Full-Stack Developer with over 10 years of experience building scalable web applications, leading front-end initiatives, and mentoring engineering teams. Expertise spans Svelte, SvelteKit, React, Vue, TypeScript, modern testing frameworks, CI/CD automation, accessibility, and performance optimization. Experienced in technical leadership, code reviews, developer mentoring, interviewing, and driving engineering quality improvements.",
+            "Recognized for translating complex business requirements into maintainable solutions that deliver measurable business value. Leverages AI-assisted development tools and agent-based workflows to accelerate development, improve code quality, enhance code reviews, and streamline engineering processes while maintaining a strong focus on user experience, scalability, and long-term maintainability."
         ],
         "home_summary": [
             "Welcome! This portfolio is a work in progress, evolving as I refine and expand my work. Built with Svelte, SASS, and a touch of Tailwind CSS, it's hosted on Netlify. I've also added a Blog section, where I share insights and experiences using markdown-based posts.",
             "I'm a seasoned web technology leader with a deep foundation in front-end development, specializing in crafting dynamic, accessible, and user-friendly web experiences using HTML, CSS, and modern JavaScript frameworks like Svelte, React, and Vue. My expertise also spans into back-end technologies such as PHP, Node.js, and Next.js, enabling me to build seamless full-stack solutions.",
             "Beyond the code, I bring a robust background in technical leadership, project management, and business analysis. I've honed skills in orchestrating cross-functional teams, serving as a Scrum Master to streamline agile delivery, and effectively bridging the gap between complex business needs and impactful technical solutions. My journey in technology started with C programming, developing backup software for Windows, which sharpened my problem-solving skills and attention to detail, qualities that continue to shape my holistic approach to development and project oversight today.",
-            "I thrive on challenges, continuously learning and adapting to the ever-evolving landscape of technology. If you're looking for a professional passionate about performance, usability, and innovation, who can also lead teams and drive projects from concept to completion, let’s connect!"
+            "I thrive on challenges, continuously learning and adapting to the ever-evolving landscape of technology. If you're looking for a professional passionate about performance, usability, and innovation, who can also lead teams and drive projects from concept to completion, let\u2019s connect!"
         ],
         "summary": "",
         "location": {
@@ -69,10 +69,14 @@
             "startDate": "2026-01-01",
             "endDate": "",
             "highlights": [
-                "Develop and maintain customer-facing web applications using Svelte, SvelteKit, and TypeScript, building responsive UI components and improving application performance and usability.",
-                "Collaborate with designers, product managers, and backend engineers to deliver new features and maintain a consistent design system across all paths.",
-                "Improving test coverage across the front-end codebase, working to increase unit test coverage from roughly 10% toward 80% using Vitest and Svelte Testing Library.",
-                "Contribute to improvements in development workflows, build pipelines, and code quality to support reliable deployments and maintainable front-end architecture."
+                "Develop and maintain customer-facing web applications using Svelte, SvelteKit, TypeScript, and Material UI, delivering new features that support customer acquisition and sales workflows.",
+                "Lead front-end engineering best practices through code reviews, technical mentoring, and onboarding support for junior developers across the team.",
+                "Drive improvements in application quality by expanding automated test coverage using Vitest and Svelte Testing Library, increasing confidence in deployments and reducing regressions.",
+                "Partner with product managers, UX designers, and backend engineers to design and deliver scalable solutions that align with business objectives and user needs.",
+                "Modernize development workflows through CI/CD pipeline enhancements, linting improvements, and tooling standardization across repositories.",
+                "Lead integration efforts for key platform initiatives, including migration of address validation and search capabilities from Google APIs to Precisely APIs.",
+                "Participate in technical interviews and hiring activities, helping evaluate engineering talent and contribute to team growth.",
+                "Leverage AI-assisted development tools and agent-based workflows to improve code reviews, accelerate implementation, enhance test generation, and increase overall engineering productivity."
             ],
             "resume": true
         },
@@ -173,9 +177,10 @@
                 "React",
                 "Vue.js",
                 "Svelte",
-                "Next.js",
                 "SvelteKit",
+                "Next.js",
                 "Astro",
+                "Material UI",
                 "Lit",
                 "jQuery (legacy support)"
             ]
@@ -201,8 +206,13 @@
                 "Webpack",
                 "npm",
                 "Docker",
-                "Git & GitHub",
-                "CI/CD (GitHub Actions, Netlify)"
+                "Git",
+                "GitHub",
+                "GitLab",
+                "Bitbucket",
+                "CI/CD",
+                "GitHub Actions",
+                "Netlify"
             ]
         },
         {
@@ -213,8 +223,10 @@
                 "Mocha",
                 "Chai",
                 "Vitest",
+                "Svelte Testing Library",
                 "Playwright",
                 "Storybook",
+                "Code Coverage Analysis",
                 "Lighthouse Audits",
                 "CI/CD Integration"
             ]
@@ -225,8 +237,12 @@
             "keywords": [
                 "Agile (Scrum, Kanban)",
                 "SDLC",
-                "Code Reviews & Mentorship",
-                "Jira & Confluence",
+                "Code Reviews",
+                "Technical Mentorship",
+                "Technical Interviewing",
+                "Pull Request Reviews",
+                "Jira",
+                "Confluence",
                 "Documentation & Knowledge Sharing"
             ]
         },
@@ -237,6 +253,38 @@
                 "Figma",
                 "Adobe Photoshop",
                 "Cross-Functional Collaboration"
+            ]
+        },
+        {
+            "name": "Developer Tools & Collaboration",
+            "level": "Advanced",
+            "keywords": [
+                "Git",
+                "GitHub",
+                "GitLab",
+                "Bitbucket",
+                "Jira",
+                "Confluence",
+                "Figma",
+                "Cursor IDE",
+                "AI Assisted Development",
+                "Pull Request Reviews",
+                "Technical Mentorship",
+                "Technical Interviewing"
+            ]
+        },
+        {
+            "name": "AI Assisted Engineering",
+            "level": "Advanced",
+            "keywords": [
+                "Cursor IDE",
+                "AI Agents",
+                "Prompt Engineering",
+                "AI Assisted Refactoring",
+                "AI Assisted Code Reviews",
+                "AI Assisted Test Generation",
+                "LLM Driven Development",
+                "Developer Productivity Workflows"
             ]
         }
     ],
@@ -292,7 +340,7 @@
                 "blade"
             ],
             "images": [],
-            "description": "PCH was developing a site to collect user information through surveys. I wasn’t involved from the start, but I was brought in to help get the project back on track. The frontend was being handled by two junior developers who were receiving tasks from the backend team but struggling to meet deadlines. After assessing the challenges, I worked closely with them to improve their workflow. We implemented daily touch-point meetings to address roadblocks in real-time and introduced structured code reviews to ensure their work was QA-ready. These changes helped streamline development, and we successfully delivered the site on time with high quality.",
+            "description": "PCH was developing a site to collect user information through surveys. I wasn\u2019t involved from the start, but I was brought in to help get the project back on track. The frontend was being handled by two junior developers who were receiving tasks from the backend team but struggling to meet deadlines. After assessing the challenges, I worked closely with them to improve their workflow. We implemented daily touch-point meetings to address roadblocks in real-time and introduced structured code reviews to ensure their work was QA-ready. These changes helped streamline development, and we successfully delivered the site on time with high quality.",
             "highlights": [
                 "Through pair programming and design discussions we were able to workout a plan on ho to deliver the outstanding features that were needed to get the site out the door.",
                 "Using Storybook I was able to setup their components so they could mock the data sent to the components and see how they would look without a dependency on the backend team."
@@ -542,5 +590,13 @@
             ],
             "url": ""
         }
+    ],
+    "career_highlights": [
+        "10+ years of web development experience",
+        "Led redesign resulting in 20% increase in organic traffic",
+        "Mentored junior developers across multiple teams",
+        "Directed front-end initiatives across high-traffic platforms",
+        "Implemented AI-assisted development workflows",
+        "Built reusable component systems supporting multiple products"
     ]
 }
